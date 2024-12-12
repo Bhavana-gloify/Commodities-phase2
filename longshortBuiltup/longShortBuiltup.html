@@ -4,65 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./trading-signal.css">
-    <title>Trading Signal</title>
-    
+    <link rel="stylesheet" href="./longShortBuiltup.css">
+    <title>Long/Short builtup</title>
 </head>
 <body>
+    
     <div class=" px-md-5">
         
         <div class="row m-0">
             <div class="col-md-8">
             </div>
             <div class="col-md-4 px-0" >
-              <div class="px-3">
-                <h5 class="tableHeading" >Trading Signal</h5>
-                <div class=" tableBorder table-rounded">
+                <div class="cardBg p-3 table-rounded">
+                    <h5 class="tableHeading" >Long / short builtup </h5>
+                <select class="form-select borderRadius10 mb-3 mt-2" aria-label="Default select example">
+                    <option class="optionss" selected value="MCX">MCX</option>
+                    <option value="NCDEX">NCDEX</option>
+                    <option value="ZCE">ZCE</option>
+                    <option value="MDEX">MDEX</option>
+                    <option value="CBOT">CBOT</option>
+                    <option value="DEC">DEC</option>
+                    <option value="COMMEX">COMMEX</option>
+                    <option value="ICE">ICE</option>
+                    <option value="SHEF">SHEF</option>
+                    <option value="LME">LME</option>
+                  </select>
+
+
+                <div class=" bg-white tableBorder table-rounded">
                     
                    <table class="table table-striped tableText w-100 topTable-rounded mb-0">
                     <thead class="tableHeaderColor" >
                       <tr>
-                        <th scope="col">Exchange</th>
                         <th scope="col">Contract</th>
-                        <th scope="col">Recommended</th>
+                        <th scope="col">Recommendation</th>
+                        <th scope="col">Month</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>MCX</td>
                         <td>Aluminium</td>
-                        <td class="text-success" >Buy</td>
+                        <td>Short covering</td>
+                        <td>12 May</td>
                       </tr>
                       <tr>
-                        <td>NCDX</td>
-                        <td>Copper</td>
-                        <td class="text-success" >Sell</td>
-                      </tr>
-                      <tr>
-                        <td>MCX</td>
                         <td>Aluminium</td>
-                        <td class="text-success" >Buy</td>
+                        <td>Short Buildup</td>
+                        <td>12 May</td>
                       </tr>
                       <tr>
-                        <td>NCDX</td>
-                        <td>Copper</td>
-                        <td class="text-danger" >Sell</td>
-                      </tr>
-                      <tr>
-                        <td>MCX</td>
                         <td>Aluminium</td>
-                        <td class="text-success" >Buy</td>
+                        <td>Short covering</td>
+                        <td>12 May</td>
                       </tr>
                       <tr>
-                        <td>NCDX</td>
-                        <td>Copper</td>
-                        <td class="text-danger" >Sell</td>
-                      </tr>
-                      <tr>
-                        <td>MCX</td>
                         <td>Aluminium</td>
-                        <td class="text-success" >Buy</td>
+                        <td>Short covering</td>
+                        <td>12 May</td>
                       </tr>
+                      <tr>
+                        <td>Aluminium</td>
+                        <td>Short Buildup</td>
+                        <td>12 May</td>
+                      </tr>
+                      <tr>
+                        <td>Aluminium</td>
+                        <td>Short covering</td>
+                        <td>12 May</td>
+                      </tr>
+                      <tr>
+                        <td>Aluminium</td>
+                        <td>Short covering</td>
+                        <td>12 May</td>
+                      </tr>
+                      
                       
                     </tbody>
                   </table>
@@ -73,7 +88,7 @@
                   
 
                 </div>
-              </div>
+                </div>
                 
                 
 
@@ -81,8 +96,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 
