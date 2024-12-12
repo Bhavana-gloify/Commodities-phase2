@@ -1,0 +1,44 @@
+
+.tableHeaderColor{
+    background-color: #DC8513;
+    color: #FFF;
+    font-weight: 600;
+}
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+.viewMore{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+}
+.tableText tbody tr td {
+    color: #475467 ;
+}
+.table td:first-child {
+    padding-left: 15px;
+}
+.table th:first-child {
+    padding-left: 15px;
+}
+.tableHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E293B;
+}
