@@ -4,6 +4,8 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+
+
 .tableHeaderColor{
     background-color: #DC8513;
     color: #FFF;
@@ -47,7 +49,16 @@
     line-height: 30px;
     color: #1E293B;
 }
-
+.borderRadius10{
+    border-radius: 10px;
+}
+select.form-select option:checked {
+    background-color: #DC8513;
+    color: black;
+  }
+.cardBg{
+    background-color: #FEF9F0;
+}
 @media screen and (max-width:900px) {
     .tableHeading{
         font-size: 18px;
