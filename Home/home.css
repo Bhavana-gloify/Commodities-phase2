@@ -1,0 +1,254 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header p {
+    margin: 0;
+    text-align: center;
+}
+
+.message {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    }
+.navbar-toggler{
+    background: #F8A53824;
+    border: 0.5px solid #F8A538;
+    padding:5px 7px !important;
+
+} 
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.navbar-icon{
+    color: #F8A538;
+
+}   
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 250px;
+    height: auto;
+}
+
+.nav-link {
+    color: #1E293B;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #DC8513;
+    font-weight: 600;
+}
+.nav-item{
+    position: relative
+}
+
+.premium{
+    position: absolute;
+    right: 12px;
+    top: 0px;
+}
+
+.contact-info {
+    color: #DC8513;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.searchbtn {
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+}
+
+.btn-signin a{
+    color: #DC8513 !important;
+    border-color: #DC8513 !important;
+    text-decoration: none;
+}
+
+.varities {
+    background: #DC8513;
+    color: white;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.varities::-webkit-scrollbar {
+    display: none;
+}
+
+.varities ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.varities li {
+    padding: 0 2.5rem;
+    font-size: 14px;
+    border-right: 1px solid white;
+
+}
+.varities li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.varities li:last-child {
+    border-right: none;
+}
+
+.internationalSpot {
+    background: #37474F; /* Dark background */
+    color: white;       /* Text color */
+    font-size: 14px;
+    border: 1px solid #ddd; /* Light border */
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+/* Scrolling Container */
+.scrolling-container {
+    overflow: hidden; /* Hide overflow */
+    width: 100%;
+    position: relative;
+}
+
+/* Scrolling List */
+.scrolling-list {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 2rem; /* Spacing between items */
+    animation: scroll-left 25s linear infinite;
+}
+
+/* Scrolling Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Individual List Items */
+.scrolling-list li {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Profit and Loss Styling */
+.deviation.profit {
+    color: #4CAF50; /* Green for profit */
+}
+
+.deviation.loss {
+    color: #E53935; /* Red for loss */
+}
+
+/* Icons */
+.bi {
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+@media (max-width: 992px) {
+    .message {
+        font-size: 10px;
+    }
+
+    .navbar-brand img {
+        width: 180px;
+    }
+    .premium{
+        position: relative;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .varities li {
+        padding: 0 0.75rem;
+    }
+}
+
+.top-news-heading {
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.carousel-item img{
+    width: 830px;
+    height: 336px;
+    gap: 0px;
+    border-radius: 15px 0px 0px 0px;
+    opacity: 0px;
+
+
+}
+.carousel-control{
+    
+}
+.carousel-caption {
+    /* background: rgba(0, 0, 0, 0.5);
+    
+    padding: 15px;
+    border-radius: 5px; */
+
+    font-family: Poppins;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+
+}
+.news-card img {
+    object-fit: cover;
+    width: 193px;
+    height: 100px;
+    border-radius: 10px 0px 0px 0px;
+}
+.news-card-title {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #707070;
+    
+}
+.news-card-footer a{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #707070B2 !important;
+    
+}
