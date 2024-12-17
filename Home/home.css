@@ -89,8 +89,9 @@ body {
     display: none;
 }
 
-.varities ul {
-    display: flex;
+.listofvarities {
+    display: flex    /* display: flex; */
+    ex;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -111,6 +112,7 @@ body {
 .varities li:last-child {
     border-right: none;
 }
+
 
 .internationalSpot {
     background: #37474F; /* Dark background */
@@ -190,6 +192,9 @@ body {
         padding: 0 0.75rem;
     }
 }
+
+
+/* topnews css */
 
 .top-news-heading {
     margin-bottom: 20px;

@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
 
     <title>Header</title>
     <link rel="stylesheet" href="./header.css">
 </head>
 
 <body>
-    <!-- Message Bar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Header div -->
     <div class="header">
+        <!-- Message Bar -->
         <p class="text-danger message mb-0 text-center">
             MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
         </p>
@@ -79,17 +87,17 @@
                         <button class="btn searchbtn rounded-circle me-3" type="button">
                             <i class="bi bi-search"></i>
                         </button>
-                        <button class="btn btn-outline-warning btn-signin rounded-pill px-3 dropdown">
-                            
-                            <a class=" dropdown-toggle" href="#" id="tradeData" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-warning btn-signin rounded-pill px-3 dropdown-toggle" 
+                                    id="tradeData" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Sign In
-                            </a>
+                            </button>
                             <ul class="dropdown-menu" aria-labelledby="tradeData">
                                 <li><a class="dropdown-item" href="#">Option 1</a></li>
                                 <li><a class="dropdown-item" href="#">Option 2</a></li>
                             </ul>
-                        </button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -109,30 +117,32 @@
         </div>
         <!-- Varieties Section -->
         <div class="varities mb-1">
-            <ul class="d-flex justify-content-around p-2 m-0">
+            <ul class="listofvarities d-flex justify-content-around p-2 m-0">
                 <li><a href="#">Veg Oils</a></li>
-                <li><a href="#">Pulses  </a></li>
-                <li><a href="#">Cotton  </a></li>
-                <li><a href="#">Spices  </a></li>
-                <li><a href="#">Sugar/Gur </a></li>
+                <li><a href="#">Pulses</a></li>
+                <li><a href="#">Cotton</a></li>
+                <li><a href="#">Spices</a></li>
+                <li><a href="#">Sugar/Gur</a></li>
                 <li><a href="#">Plantation</a></li>
-                <li><a href="#">Grains    </a></li>
+                <li><a href="#">Grains</a></li>
                 <li><a href="#">Precious Metals</a></li>
-                <li><a href="#">Metals   </a></li>
-                <li><a href="#">Energy   </a></li>
-                <!-- <li>Others</li> -->
+                <li><a href="#">Metals</a></li>
+                <li><a href="#">Energy</a></li>
+                <!-- Dropdown for Others -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="Others" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="dropdown-toggle" href="#" id="othersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Others
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="Others">
+                    <ul class="dropdown-menu " aria-labelledby="othersDropdown"  style="border: 2px solid red;">
                         <li><a class="dropdown-item" href="#">Option 1</a></li>
                         <li><a class="dropdown-item" href="#">Option 2</a></li>
                     </ul>
                 </li>
+                
+                
             </ul>
         </div>
+        
     </div>
 </body>
 
