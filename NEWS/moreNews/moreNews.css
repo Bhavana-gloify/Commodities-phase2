@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.tableHeaderColor{
+    background-color: #DC8513;
+    color: #FFF;
+    font-weight: 600;
+}
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+.viewMore{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+}
+.tableText tbody tr td {
+    color: #475467 ;
+}
+.table td:first-child {
+    padding-left: 15px;
+}
+.table th:first-child {
+    padding-left: 15px;
+}
+.tableHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E293B;
+}
+.nav-link{
+    color: #707070;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.nav-link:hover{
+    color: #707070;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #DC8513;
+    background-color: #FEF9F0;
+    border: 1px solid #DC8513;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .tableHeading{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .tableHeaderColor{
+        font-size: 12px;
+    }
+    .nav-link{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
