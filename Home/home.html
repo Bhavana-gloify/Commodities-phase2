@@ -17,9 +17,16 @@
         <!-- Header div -->
         <div class="header">
             <!-- Message Bar -->
-            <p class="text-danger message mb-0 text-center">
-                MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
-            </p>
+            <div class="scrolling-container">
+                <ul class="scrolling-list d-flex justify-content-between">
+                    <p class="text-danger message mb-0 text-center">
+                        MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
+                    </p>
+                    <p class="text-danger message mb-0 text-center">
+                        MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
+                    </p>
+                </ul>
+            </div>
     
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg">
@@ -149,17 +156,19 @@
                         <h3 class="top-news-heading mb-0">Top news</h3>
                         <!-- Language Checkboxes -->
                         <div class="language-options">
-                            <label class="me-3">
-                                <input type="checkbox" checked> English
+                            <label class="custom-checkbox me-3">
+                                <input type="checkbox" checked>
+                                <span>English</span>
                             </label>
-                            <label>
-                                <input type="checkbox"> हिंदी
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span>हिंदी</span>
                             </label>
                         </div>
                     </div>
         
                     <!-- Carousel -->
-                    <div id="topNewsCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div id="topNewsCarousel " class="carousel slide mb-4 d-none d-md-flex" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/Rectangle_2.png" class="d-block w-100" alt="Oil News">
@@ -193,7 +202,7 @@
                     </div>
         
                     <!-- News Cards -->
-                    <div class="row gy-3">
+                    <div class="row gy-3 d-none d-md-flex">
                         <div class="col-6 col-md-3">
                             <div class="card news-card border-0 shadow-sm">
                                 <img src="images/Rectangle_2.png" class="card-img-top" alt="Oil News">
@@ -227,6 +236,32 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="mobileview d-block d-md-none">
+                        <!--  -->
+                            <div class="mobileview d-flex gap-2 " style="overflow: auto;">
+                                <div class="carousel-item2 active">
+                                    <img src="images/Rectangle_2.png" class="d-block w-100" alt="Oil News">
+                                    <div class="carousel-caption text-start">
+                                        <span>Oil prices rise on OPEC production cuts, summer consumption hopes</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item2">
+                                    <img src="images/Rectangle_3.png" class="d-block w-100" alt="Market News">
+                                    <div class="carousel-caption text-start">
+                                        <span>Energy Transfer, Sunoco form joint venture</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item2">
+                                    <img src="images/Rectangle_4.png" class="d-block w-100" alt="Demand Concerns">
+                                    <div class="carousel-caption text-start">
+                                        <span>Oil falls on lingering demand concerns</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        
         
                     <!-- View More Link -->
                     <div class="news-card-footer  text-end mt-2">

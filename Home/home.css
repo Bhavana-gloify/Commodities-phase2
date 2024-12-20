@@ -216,6 +216,41 @@ body {
 
 
 }
+
+.custom-checkbox {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .custom-checkbox input[type="checkbox"] {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        margin-right: 8px;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .custom-checkbox input[type="checkbox"]:checked {
+        background-color: orange;
+        border-color: orange;
+    }
+
+    .custom-checkbox input[type="checkbox"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 4px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
 .carousel-control{
     
 }
@@ -256,4 +291,32 @@ body {
     line-height: 18px;
     color: #707070B2 !important;
     
+}
+
+
+ .carousel-item2{
+    width: 341px !important;
+    height: 187px;
+    gap: 0px;
+    border-radius: 15px 0px 0px 0px;
+    opacity: 0px;
+    position: relative;
+
+}
+.carousel-item2 img{
+    width: 341px !important;
+    height: 187px;
+}
+
+ .carousel-item2 .carousel-caption
+{
+    position: absolute;
+    bottom: 5px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.20000000298023224px;
+
+
 }
