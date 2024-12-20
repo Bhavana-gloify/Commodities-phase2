@@ -10,19 +10,93 @@
 </head>
 <body>
     <div class=" px-md-5">
-        <p class="pages">Home > <span>News</span></p>
+        <!-- PAGE ROUTE  -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active page" aria-current="page">News</li>
+            </ol>
+          </nav>
+        <!-- HEADING AND DATE FILTER DIV -->
         <div class="row m-0">
             <div class="col-md-8">
-                    <h5 class="tableHeading" >Trading Signal</h5>
-                    <!--TECHNICAL ANALYSIS TABS  -->
+                <div class="align-items-center d-flex headingDiv justify-content-between">
+                  <h5 class="tableHeading mb-0" >Top News</h5>
+                  <div class="date-filter">
+                    <button type="button" class="btn btn-outline-secondary lh18 tableText"> <img src="./filterIcon.svg" alt="filter-icon"> Filter</button>
+                  </div>
+                </div>
+                    
+            <!--MORE NEWS SECTION  -->
+            <div class="moreNewsSection">
+              <div class="newsDiv mt-4">
+                <div class="d-flex headline justify-content-between mb-2">
+                  <div class="d-flex justify-content-between flex-wrap align-items-center leftHeadline">
+                    <p class="m-0 dateText" >14 May 2024 , 09:44 Pm</p>
+                    <p class="m-0 newsText">Economic Survey 2024 Live Updates: FM Sitharaman tables survey</p>
+                  </div>
+                  <div class="crown"><img src="./crown.svg" alt="crown"></div>
+                </div>
+                <div class="d-flex headline justify-content-between mb-2">
+                  <div class="d-flex justify-content-between flex-wrap align-items-center leftHeadline">
+                    <p class="m-0 dateText" >14 May 2024 , 09:44 Pm</p>
+                    <p class="m-0 newsText">Economic Survey 2024 Live Updates: FM Sitharaman tables survey</p>
+                  </div>
+                  <div class="crown"><img src="./crown.svg" alt="crown"></div>
+                </div>
+                <div class="d-flex headline justify-content-between mb-2">
+                  <div class="d-flex justify-content-between flex-wrap align-items-center leftHeadline">
+                    <p class="m-0 dateText" >14 May 2024 , 09:44 Pm</p>
+                    <p class="m-0 newsText">Economic Survey 2024 Live Updates: FM Sitharaman tables survey</p>
+                  </div>
+                  <div class="crown"><img src="./crown.svg" alt="crown"></div>
+                </div>
+                <div class="d-flex headline justify-content-between mb-2">
+                  <div class="d-flex justify-content-between flex-wrap align-items-center leftHeadline">
+                    <p class="m-0 dateText" >14 May 2024 , 09:44 Pm</p>
+                    <p class="m-0 newsText">Economic Survey 2024 Live Updates: FM Sitharaman tables survey</p>
+                  </div>
+                  <div class="crown"><img src="./crown.svg" alt="crown"></div>
+                </div>
+                <div class="d-flex headline justify-content-between mb-2">
+                  <div class="d-flex justify-content-between flex-wrap align-items-center leftHeadline">
+                    <p class="m-0 dateText" >14 May 2024 , 09:44 Pm</p>
+                    <p class="m-0 newsText">Economic Survey 2024 Live Updates: FM Sitharaman tables survey</p>
+                  </div>
+                  <div class="crown"><img src="./crown.svg" alt="crown"></div>
+                </div>
+
+
+
+              <!-- PAGINATION -->
+              <div class="paginationDiv mt-3">
+                <nav aria-label="...">
+                  <ul class="justify-content-end pagination">
+                    <li class="page-item disabled ">
+                      <a class="page-link prevBtn" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                      <a class="page-link nextBtn" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+            </div>
+            
 
                     
 
-                     <!-- View More option -->
-                      <div  class="text-end py-2 pe-4">
-                        <a href="" class="text-decoration-none viewMore " >View more</a>
-                      </div>
+                     
             </div>
+
             <div class="col-md-4 " >
 
             </div>
