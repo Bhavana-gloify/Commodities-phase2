@@ -396,7 +396,7 @@ select.form-select option:checked {
             transition: all 0.3s ease;
         }
         input[type="radio"]:checked + .custom-radio {
-            background: url('./teenyicons_tick-circle-solid.svg') no-repeat ;
+            background: url('./images/teenyicons_tick-circle-solid.svg') no-repeat ;
             height: 22px;
             width: 22px;
             background-size: contain;
@@ -407,7 +407,7 @@ select.form-select option:checked {
             border-color: #aaa;
         }
         .subscriptionDiv{
-            background: url('./subBg.svg');
+            background: url('./images/subBg.svg');
             background-size: cover;
             background-position: center;
             border-radius: 20px;
