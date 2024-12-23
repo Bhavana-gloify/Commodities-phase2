@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.tableHeaderColor{
+    background-color: #DC8513;
+    color: #FFF;
+    font-weight: 600;
+}
+.picksText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+    /* Restricting number of lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.timeText{
+    font-size: 14px;
+    font-weight: 400;
+    color: #475467;
+    line-height: 21px;
+    /* Restricting number of lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+
+.picksHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+}
+.borderRadius12{
+    border-radius: 12px;
+}
+select.form-select option:checked {
+    background-color: #DC8513;
+    color: black;
+  }
+.cardBg{
+    background-color: #FEF9F0;
+}
+.languages input[type="radio"] {
+    display: none;
+  }
+  
+  .languages label {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .languages label:hover {
+    color: #DC8513;
+  }
+  
+  .languages input[type="radio"]:checked + span {
+    color: #DC8513;
+  }
+  .category{
+    background-color: #FEF9F0;
+    color: #DC8513;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    }
+    .topPicksDiv{
+        height: 660px;
+        overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track { 
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #DEDEDE; 
+        border-radius: 10px;
+      }
+    .person{
+        display: none;
+    }
+      
+  
+@media screen and (max-width:900px) {
+    .timeText{
+    font-size: 11px;
+    line-height: 17px;
+    color: #97989F;
+    }
+    .person{
+        display: inline;
+        color: #1E293B;
+        font-weight: 500;
+    }
+    .picksText{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
