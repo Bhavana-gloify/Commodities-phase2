@@ -1,0 +1,42 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.video-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.video-description {
+  font-weight: 600;
+  font-size: 16px;
+  color: #444;
+  margin: 4px 0 0;
+}
+
+.view-more {
+  text-align: right;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.video-card {
+  margin-bottom: 16px;
+}
+
+.video-thumbnail iframe {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+}

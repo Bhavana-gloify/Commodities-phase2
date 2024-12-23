@@ -320,3 +320,412 @@ body {
 
 
 }
+
+
+
+/* === long and short builtup */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.tableHeaderColor tr{
+    background-color: #DC8513 !important;
+    color: #FFF;
+    font-weight: 600;
+}
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+.viewMore{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+}
+.tableText tbody tr td {
+    color: #475467 ;
+}
+.table td:first-child {
+    padding-left: 15px;
+}
+.table th:first-child {
+    padding-left: 15px;
+}
+.tableHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E293B;
+}
+.borderRadius10{
+    border-radius: 10px;
+}
+select.form-select option:checked {
+    background-color: #DC8513;
+    color: black;
+  }
+.cardBg{
+    background-color: #FEF9F0;
+}
+@media screen and (max-width:900px) {
+    .tableHeading{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .tableHeaderColor{
+        font-size: 12px;
+    }
+}
+
+
+/*   technical analysis */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.tableHeaderColor{
+    background-color: #DC8513;
+    color: #FFF;
+    font-weight: 600;
+}
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+.viewMore{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+}
+.tableText tbody tr td {
+    color: #475467 ;
+}
+.table td:first-child {
+    padding-left: 15px;
+}
+.table th:first-child {
+    padding-left: 15px;
+}
+.tableHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E293B;
+}
+.nav-link{
+    color: #707070;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.nav-link:hover{
+    color: #707070;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #DC8513;
+    background-color: #FEF9F0;
+    border: 1px solid #DC8513;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .tableHeading{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .tableHeaderColor{
+        font-size: 12px;
+    }
+    .nav-link{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+
+/* <!-- Exclusive report --> */
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Market comentry */
+
+
+.viewMore{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+}
+.newsText{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.9px;
+    color: #707070;
+}
+.dateText{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #707070;
+}
+.tableHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E293B;
+}
+.newsDiv > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.newsDiv > div > img{
+    min-height: 100px;
+}
+.newsDiv::-webkit-scrollbar{
+    display: none;
+}
+.lightBorder{
+    border: 0.5px solid #E0E0E0;
+}
+.borderRadius10{
+    border-radius: 10px;
+}
+
+@media screen and (max-width:900px) {
+    .tableHeading{
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+/* spot market data */
+
+
+.tableHeaderColor{
+    background-color: #DC8513;
+    color: #FFF;
+    font-weight: 600 !important;
+}
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+.viewMore{
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+}
+.tableText tbody tr td {
+    color: #475467 ;
+}
+.table td:first-child {
+    padding-left: 15px;
+}
+.table th:first-child {
+    padding-left: 15px;
+}
+.tableHeading{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1E293B;
+}
+.nav-link{
+    color: #707070;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.nav-link:hover{
+    color: #707070;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #DC8513;
+    background-color: #FEF9F0;
+    border: 1px solid #DC8513;
+    border-radius: 20px;
+}
+.hiddenCell{
+    display: none;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+th > p, td >p{
+    margin: 0;
+}
+@media screen and (max-width:900px) {
+    .tableHeading{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .tableHeaderColor{
+        font-size: 12px;
+    }
+    .nav-link{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .toHideCell{
+        display: none;
+    }
+    .hiddenCell{
+        display: block;
+    }
+}
+
+/* More news */
+
+
+
+
+
+
+
+/* cc-poll */
+
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.tableBorder{
+    border: 1px solid #DC8513;
+}
+.pollHeading{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #1E293B;
+}
+.borderRadius30{
+    border-radius: 30px;
+}
+.cardBg{
+    background-color: #FEF9F0;
+}
+.cardText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 27px;
+}
+.pollLabelText{
+    font-size: 16px;
+    font-weight: 500;
+    color: #1E293B;
+    line-height: 24px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #DC8513;
+    border-color:  #DC8513;
+    box-shadow: none;
+}
+.btn-primary:hover {background-color: #DC8513;
+    border-color:  #DC8513;
+}
+.btn-primary:focus{
+    background-color: #DC8513;
+}
+.btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .25rem rgba(220,133,19,.5);
+} 
+.voteBtnText{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: transparent;
+    margin-left: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+input[type="radio"]:checked + .custom-radio {
+    background: url('./teenyicons_tick-circle-solid.svg') no-repeat ;
+    height: 22px;
+    width: 22px;
+    background-size: contain;
+    border-color: transparent;
+}
+
+.custom-radio:hover {
+    border-color: #aaa;
+}
+
+@media screen and (max-width:900px) {
+    .pollHeading{
+        font-size: 18px;
+    }
+    .voteBtnText{
+        font-weight: 500;
+    }
+}
