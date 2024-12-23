@@ -9,6 +9,36 @@
   color: #475467;
   line-height: 21px;
 }
+.location{
+  font-size: 12px;
+  font-weight: 500;
+  color: #475467;
+  line-height: 18px;
+}
+.newsDetail{
+  font-size: 12px;
+  font-weight: 400;
+  color: #636363;
+  line-height: 18px;
+  /* Restricting number of lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.headline{
+  font-size: 21px;
+  font-weight: 600;
+  color: #475467;
+  line-height: 31px;
+  /* Restricting number of lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .viewMore {
   font-size: 12px;
   font-weight: 500;
@@ -103,6 +133,18 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.newsTime {
+    font-size: 14px;
+    font-weight: 400;
+    color: #475467;
+    line-height: 21px;
+    /* Restricting number of lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 .table-rounded {
   border-radius: 15px;
   overflow: hidden;
@@ -170,6 +212,12 @@
 .btn-primary:active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(220, 133, 19, 0.5);
+}
+.loadMoreBtn{
+  color: #dc8513;
+  background-color: #fff;
+  border-color: #dc8513;
+  box-shadow: none;
 }
 .voteBtnText {
   font-size: 16px;
@@ -467,6 +515,7 @@ input[type="radio"]:checked + .custom-radio {
   .picksText {
     font-size: 12px;
     line-height: 18px;
+    color: #404040;
   }
   .tableHeading {
     font-size: 18px;
@@ -499,5 +548,8 @@ input[type="radio"]:checked + .custom-radio {
   }
   .voteBtnText {
     font-weight: 500;
+  }
+  .location , .headline{
+    color: #000;
   }
 }
