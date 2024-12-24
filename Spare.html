@@ -1,0 +1,119 @@
+<div class="mb-3 row justify-content-between mt-0 mt-lg-2 pt-1">
+
+    <div class="col-12 col-lg-5 order-1 order-lg-0 justify-content-between" id="internalTabs">
+
+      <ul class="nav scrollable-nav nav nav-pills mb-0" id="subTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary"
+            type="button" role="tab" aria-controls="summary" aria-selected="true">
+            Watchlist
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="charts-tab" data-bs-toggle="tab" data-bs-target="#charts" type="button"
+            role="tab" aria-controls="charts" aria-selected="false" <?php if (!(strtolower($_SESSION['login']) == 'rajendra' || strtolower($_SESSION['login']) == 'maheshr' || strtolower($_SESSION['login']) == 'gloify' || strtolower($_SESSION['login']) == 'test-gloify' || strtolower($_SESSION['login']) == 'gloify-test2' || strtolower($_SESSION['login']) == 'abhinav-livesubs' || strtolower($_SESSION['login']) == 'abhinav-delaysubs' || strtolower($_SESSION['login']) == 'viveka-metal' || strtolower($_SESSION['login']) == 'tradingview')) {
+                                                                      echo "disabled";
+                                                                    } ?>>
+            Charts
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-12 col-lg-7">
+        <div class="row justify-content-end">
+            <div class="col-12 col-lg-5 order-1 order-lg-0 active selectCustomefilter" id="chartSymbolContainer" style="display: none;">
+                <select id="chart-symbol-content" onchange="plotTvChart();" class="js-states form-select me-2 selectOptionFilter">
+          
+                </select>
+              </div>
+              <div class="col-12 col-lg-5 d-flex align-items-center position-relative order-0 mb-4 mb-lg-0 justify-content-end"
+                id="customizeBtnFuture">
+          
+                <div class="selectCustomefilter flex-grow-1" id="selectGroupDiv">
+                  <form name="tickers" class="w-100">
+                    <input type="hidden" id="userid" name="userid" value="<?php echo $userid ?>">
+                    <input type="hidden" id="complex" name="complex" value="<?php echo $complex; ?>">
+                    <input type="hidden" id="complexname" name="complexname" value="<?php echo $complexname; ?>">
+                    <input type="hidden" id="cnt_rec" name="cnt_rec" value="<?php echo $cnt_rec; ?>">
+                    <div class="search-bar m-0">
+          
+                      <?php
+                      $oilComplex = "28-3-2-4,7-9-2-3,34-9-2-3,34-299-2-2,33-3-2-3,33-19-2-2,8-267-1-3,8-268-1-3,8-269-1-3,16-17-2-2,34-17-2-3,5-5-2-2,34-11-2-3,34-4-2-3,33-4-2-3,34-10-2-2,34-139-2-2,34-341-2-3,5-4-2-2,35-4-2-2,34-342-2-3";
+                      // $oilComplex = "28-3-2-4,7-9-2-3,34-9-2-3,34-299-2-2,33-3-2-3,33-19-2-2,8-267-1-3,8-268-1-3,8-269-1-3,16-17-2-2,34-17-2-3,5-5-2-2,34-11-2-3,34-4-2-3,33-4-2-3,34-10-2-2,34-139-2-2,34-341-2-3,5-4-2-2,35-4-2-2,33-20-2-1,33-70-2-1,34-107-2-2";
+                      $soyComplex = "267,269,268,81,221";
+                      $mdex = "152,199";
+                      $grain_complex = "34-142-2-10,34-120-2-10,34-324-2-10,34-14-2-10,34-298-2-10,33-12-2-2,8-14-1-4,8-12-1-4,8-142-2-4,8-14-2-4,8-12-2-4,8-142-2-4,38-142-2-2,38-14-2-2,38-120-2-2,8-213-2-4,8-216-2-4,8-278-2-4";
+                      $spice_complex = "33-22-2-4,33-21-2-4,34-21-2-4,34-145-2-4,34-93-2-4,34-98-2-4,34-100-2-4";
+                      $sugar_complex = "57";
+                      $gur_complex = "34";
+                      $metal_complex = "71,74,72,73,75,76,148,149,151,196,197,325";
+                      $precious_metal_complex = "20,67,104,208,209,217,279,209,53,68,211,218";
+                      $energy_complex = "99,70";
+                      $pulses_complex = "31,37";
+                      $others = "66,82,91,126";
+                      $cotton_complex = "6,7,29,27,21";
+                      ?>
+                      <select id="complexSelect" class="js-states form-select me-2 selectOptionFilter select2-hidden-accessible w-100" onchange="handleSelectChange()">
+          
+                        <!--
+                  28-3-2-4
+                  28 - exchange id
+                  3 - variety id
+                  2,4 - limit and offset
+                  -->
+                        <option value="">Select group</option>
+                        <option funct="1" complexname="Oil+Complex" cid="1" pages="OIL-COMPLEX" complex=<?php echo $oilComplex; ?> value="Oil Complex">Oil Complex</option>
+                        <option funct="2" complexname="Soy+Complex" cid="1" complex=<?php echo $soyComplex; ?>
+                          pages="COMPLEX-PROJECTION" value="Soy Complex">Soy Complex</option>
+                        <option funct="2" complexname="Mdex" cid="9001" complex=<?php echo $mdex; ?> pages="MDEX-CPO-LIVE"
+                          value="MDEX">MDEX</option>
+                        <option funct="1" complexname="Grains+Complex" cid="8" pages="Grains complex" complex=<?php echo $grain_complex; ?> value="Grain Complex">Grain Complex</option>
+                        <option funct="1" complexname="SPICES+COMPLEX" cid="4" complex=<?php echo $spice_complex; ?>
+                          pages="SPICES-COMPLEX" value="Spices Complex">Spices Complex</option>
+                        <option funct="2" complexname="Sugar+COMPLEX" complex=<?php echo $sugar_complex; ?> cid="6"
+                          value="Sugar Complex">Sugar Complex</option>
+                        <option funct="2" complexname="Gur+Complex" complex=<?php echo $gur_complex; ?> cid="6"
+                          value="Gaur Complex">Guar Complex</option>
+                        <option funct="2" complexname="Metalr+Complex" complex=<?php echo $metal_complex; ?> cid="10"
+                          pages="NF-MCX" value="Metal Complex">Metal Complex</option>
+                        <option funct="2" complexname="Precious+Metal+Complex" complex=<?php echo $precious_metal_complex; ?>
+                          cid="9" pages="GOLD-MCX" value="Precious Metal Complex">Precious Metal Complex</option>
+                        <option funct="2" complexname="Energy+Complex" cid="11" complex=<?php echo $energy_complex; ?>
+                          pages="CrudeOilMCX" value="Energy Complex">Energy Complex</option>
+                        <option funct="2" complexname="Pulses+Complex" cid="2" complex=<?php echo $pulses_complex; ?>
+                          value="Pulses Complex">Pulses Complex</option>
+                        <option funct="2" complexname="Gur+Complex" cid="12" complex=<?php echo $others; ?>
+                          value="Pulses Complex">Others</option>
+                        <option funct="2" complexname="Gur+Complex" cid="3" complex=<?php echo $cotton_complex; ?>
+                          value="Pulses Complex">Cotton Complex</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+            </div>
+                <div class="col-12 col-lg-2 d-flex align-items-center position-relative order-0 mb-4 mb-lg-0 justify-content-end">
+
+                <img data-bs-toggle="modal" data-bs-target="#customizeTableModal" onclick="fetchuserpreference()" src='../images/setting.svg'
+                  alt='image not available' height="25" width='25' class='refreshBtn mx-4' data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="Customize">
+                <img src='../images/refresh.svg' alt='image not available' height="25" width='25'
+                  onclick="handleSelectChange()" class='refreshBtn' data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Refresh">
+              </div>
+              <div class="col-12 col-lg-7 d-flex align-items-center position-relative order-0 mb-4 mb-lg-0 justify-content-end"
+                id="customizeBtnSpot">
+                <img data-bs-toggle="modal" class="mx-4" data-bs-target="#customizeWatchlistTableModal" id="toggleDropdownBtnspot" onclick="fetchuserpreferenceSpot()" src='../images/setting.svg'
+                  alt='image not available' height="25" width='25' class='refreshBtn' data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="Customize">         
+                <img src='../images/refresh.svg' alt='image not available' height="25" width='25'
+                  onclick="fetchSpotMarketData()" class='refreshBtn' data-bs-toggle="tooltip" data-bs-placement="top"
+                  title="Refresh">
+          
+              </div>
+        </div>
+    </div>
+
+
+
+  </div>
