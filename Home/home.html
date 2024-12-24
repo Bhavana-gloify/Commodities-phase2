@@ -22,7 +22,7 @@
                 <p class="text-danger message mb-0 text-center">
                     MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
                 </p>
-                <p class="text-danger message mb-0 text-center">
+                <p class="text-danger message mb-0 text-center d-none d-lg block" >
                     MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
                 </p>
             </ul>
@@ -49,14 +49,17 @@
                         <li class="nav-item px-2">
                             <a class="nav-link active" href="#">Home</a>
                         </li>
-                        <li class="nav-item px-2">
-                            <a class="nav-link" href="#">Exchange</a>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="exchange" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Exchange</a>
+                            <ul class="dropdown-menu" aria-labelledby="exchange">
+                                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown px-2">
                             <a class="nav-link dropdown-toggle" href="#" id="tradeData" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Trade Data
-                            </a>
+                            data-bs-toggle="dropdown" aria-expanded="false">Trade Data</a>
                             <ul class="dropdown-menu" aria-labelledby="tradeData">
                                 <li><a class="dropdown-item" href="#">Option 1</a></li>
                                 <li><a class="dropdown-item" href="#">Option 2</a></li>
@@ -64,9 +67,7 @@
                         </li>
                         <li class="nav-item dropdown px-2">
                             <a class="nav-link dropdown-toggle" href="#" id="resources" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                More Resources
-                            </a>
+                            data-bs-toggle="dropdown" aria-expanded="false">More Resources</a>
                             <ul class="dropdown-menu" aria-labelledby="resources">
                                 <li><a class="dropdown-item" href="#">Option 1</a></li>
                                 <li><a class="dropdown-item" href="#">Option 2</a></li>
@@ -78,27 +79,18 @@
                         </li>
                     </ul>
 
-                    <!-- Contact Info -->
-                    <div class="d-none d-lg-block contact-info me-3">
-                        <i class="bi bi-phone"></i> +91-7066 5119 11
-                    </div>
-
                     <!-- Search & Sign In -->
-                    <div class="d-flex align-items-center">
-                        <button class="btn searchbtn rounded-circle me-3" type="button">
-                            <i class="bi bi-search"></i>
-                        </button>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-warning btn-signin rounded-pill px-3 dropdown-toggle"
-                                id="tradeData" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Sign In
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="tradeData">
-                                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                                <li><a class="dropdown-item" href="#">Option 2</a></li>
-                            </ul>
+                    <div class="d-flex align-items-center gap-4">
+                        <!-- Contact Info -->
+                        <div class="d-none d-lg-block contact-info" >
+                            <i class="bi bi-phone"></i> +91-7066 5119 11
                         </div>
-
+                        <button class="btn searchbtn rounded-circle" type="button" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>                        
+                        <button class="btn  btn-signin rounded-pill px-3 ">
+                            Sign In
+                        </button>
                     </div>
                 </div>
             </div>
@@ -108,15 +100,16 @@
         <div class="internationalSpot mb-1 m-0">
             <div class="scrolling-container">
                 <ul class="scrolling-list">
-                    <li>Silver: 75.8696 <span class="deviation profit"><i class="bi bi-arrow-up"></i> +60.7
+
+                    <li>Silver: 75.8696 <span class="deviation profit"><i class="bi bi-arrow-up-short "></i>+60.7
                             (0.35%)</span></li>
-                    <li>Gold: 475.8585 <span class="deviation loss"><i class="bi bi-arrow-down"></i> -60.7
+                    <li>Gold: 475.8585 <span class="deviation loss">   <i class="bi bi-arrow-down-short"></i>-60.7
                             (0.35%)</span></li>
-                    <li>$ vs Rupee: 839.394 <span class="deviation loss"><i class="bi bi-arrow-down"></i> -60.7
+                    <li>$ vs Rupee: 839.394 <span class="deviation loss"> <i class="bi bi-arrow-down-short"></i>-60.7
                             (0.35%)</span></li>
-                    <li>Platinum: 932.123 <span class="deviation profit"><i class="bi bi-arrow-up"></i> +45.6
+                    <li>Platinum: 932.123 <span class="deviation profit"> <i class="bi bi-arrow-up-short"></i>+45.6
                             (0.22%)</span></li>
-                    <li>Crude Oil: 55.675 <span class="deviation profit"><i class="bi bi-arrow-up"></i> +12.8
+                    <li>Crude Oil: 55.675 <span class="deviation profit"> <i class="bi bi-arrow-up-short"></i>+12.8
                             (0.15%)</span></li>
                 </ul>
             </div>
@@ -140,7 +133,7 @@
                         aria-expanded="false">
                         Others
                     </a>
-                    <ul class="dropdown-menu " aria-labelledby="othersDropdown" style="border: 2px solid red;">
+                    <ul class="dropdown-menu " aria-labelledby="othersDropdown">
                         <li><a class="dropdown-item" href="#">Option 1</a></li>
                         <li><a class="dropdown-item" href="#">Option 2</a></li>
                     </ul>

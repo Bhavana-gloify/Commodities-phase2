@@ -1,35 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-*{
-    font-family: "Poppins", sans-serif;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 600;
 }
 
-
-
-
-
-.header p {
+/* Scrolling Container */
+.scrolling-container {
+    overflow: hidden; 
+    width: 100%;
+    position: relative;
+}
+.scrolling-list {
+    display: flex;
+    padding: 0;
     margin: 0;
-    text-align: center;
+    list-style: none;
+    gap: 2rem; 
+    animation: scroll-left 25s linear infinite;
+}
+.scrolling-list li {
+    white-space: nowrap;
 }
 
+/* Scrolling Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} 
+
+
+/* <!-- Message Bar --> */
 .message {
-    font-family: Poppins;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
-    }
+}
+
+/* <!-- International Spot Marquee --> */
+.internationalSpot {
+    background: #37474F; /* Dark background */
+    color: white;       /* Text color */
+    overflow: hidden;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+}
+.internationalSpot li{
+    display: flex;
+    align-items: center;
+}
+/* Profit and Loss Styling */
+.deviation.profit {
+    color: #4CAF50;
+}
+.deviation.loss {
+    color: #E53935;
+}
+.deviation{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+}
+.deviation i {
+    font-size: 24px;
+    margin: 0px!important;
+}
+
+/*  <!-- Navbar --> */
 .navbar-toggler{
     background: #F8A53824;
     border: 0.5px solid #F8A538;
     padding:5px 7px !important;
+
+} 
+.searchbtn,.navbar-toggler{
+    width: 43px;
+    height: 43px;
 
 } 
 .navbar-toggler:focus {
@@ -37,23 +92,17 @@ body {
 }
 .navbar-icon{
     color: #F8A538;
-
-}   
-
-.navbar {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+}  
 .navbar-brand img {
     width: 250px;
     height: auto;
 }
 
 .nav-link {
-    color: #1E293B;
     font-size: 16px;
     font-weight: 400;
+    line-height: 24px;
+    color: #1E293B;
 }
 
 .nav-link:hover,
@@ -62,7 +111,7 @@ body {
     font-weight: 600;
 }
 .nav-item{
-    position: relative
+    position: relative;
 }
 
 .premium{
@@ -71,10 +120,11 @@ body {
     top: 0px;
 }
 
-.contact-info {
+.contact-info, .btn-signin {
     color: #DC8513;
     font-size: 14px;
     font-weight: 600;
+    line-height: 21.01px;
 }
 
 .searchbtn {
@@ -82,11 +132,18 @@ body {
     background: #f8f8f8;
 }
 
-.btn-signin a{
+.btn-signin{
     color: #DC8513 !important;
     border-color: #DC8513 !important;
     text-decoration: none;
 }
+.btn-signin:hover{
+    color: white !important;
+    background-color: #DC8513;
+}
+
+
+/*  <!-- Varieties Section --> */
 
 .varities {
     background: #DC8513;
@@ -101,94 +158,55 @@ body {
 }
 
 .listofvarities {
-    display: flex    /* display: flex; */
-    ex;
+    display: flex;    /* display: flex; */
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .varities li {
-    padding: 0 2.5rem;
+    padding: 0 2rem;
     font-size: 14px;
     border-right: 1px solid white;
-
 }
-.varities li a{
-    color: white;
-    text-decoration: none;
-}
-
 
 .varities li:last-child {
     border-right: none;
 }
 
-
-.internationalSpot {
-    background: #37474F; /* Dark background */
-    color: white;       /* Text color */
-    font-size: 14px;
-    border: 1px solid #ddd; /* Light border */
-    overflow: hidden;
-    padding: 5px 0;
+.varities li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
 }
 
-/* Scrolling Container */
-.scrolling-container {
-    overflow: hidden; /* Hide overflow */
-    width: 100%;
-    position: relative;
-}
 
-/* Scrolling List */
-.scrolling-list {
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 2rem; /* Spacing between items */
-    animation: scroll-left 25s linear infinite;
-}
 
-/* Scrolling Animation */
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
-/* Individual List Items */
-.scrolling-list li {
-    white-space: nowrap;
-    font-size: 14px;
-}
-
-/* Profit and Loss Styling */
-.deviation.profit {
-    color: #4CAF50; /* Green for profit */
-}
-
-.deviation.loss {
-    color: #E53935; /* Red for loss */
-}
 
 /* Icons */
-.bi {
-    font-size: 14px;
-    margin-right: 4px;
-}
 
 @media (max-width: 992px) {
     .message {
-        font-size: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .internationalSpot {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22.5px;
+    }
+    .deviation{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
     }
 
+
     .navbar-brand img {
-        width: 180px;
+        width: 172px;
     }
     .premium{
         position: relative;
@@ -201,6 +219,10 @@ body {
 
     .varities li {
         padding: 0 0.75rem;
+    }
+    .varities li a{
+        font-size: 14px;
+        line-height: 21px;
     }
 }
 
