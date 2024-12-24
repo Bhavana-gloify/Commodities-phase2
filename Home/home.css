@@ -201,11 +201,6 @@ body {
 }
 
 
-
-
-
-
-
 /* topnews css */
 
 .top-news-heading {
@@ -329,7 +324,6 @@ body {
 }
 
 
-
 /* === long and short builtup */
 
 
@@ -431,9 +425,7 @@ select.form-select option:checked {
 /* <!-- Exclusive report --> */
 
 
-
 /* Market comentry */
-
 
 .newsText{
     font-size: 14px;
@@ -502,11 +494,6 @@ th > p, td >p{
 }
 
 /* More news */
-
-
-
-
-
 
 
 /* cc-poll */
@@ -595,31 +582,63 @@ input[type="radio"]:checked + .custom-radio {
 
 /* footer */
 
-
-  
   .footer {
     background-color: #1f2937; /* Dark background */
     color: #fff; /* White text */
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
-  
-  .footer .footer-logo {
-    font-size: 20px;
-    font-weight: 600;
-    color: #f59e0b; /* Gold color */
+
+  .footer-logo img{
+    width: 242px;
+    height: 77px;
   }
-  
-  .footer p {
+
+
+  .footer-logo p{
     font-size: 14px;
-    line-height: 1.6;
+    font-weight: 500;
+    line-height: 21px; 
+    color: #FFFFFF80;
+   
   }
-  
-  .footer h5 {
-    font-weight: 600;
+
+  .categeory h5{
     font-size: 16px;
-    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #F8A538;
+  }
+  .categeory ul li a{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.51px;
+    letter-spacing: -0.20px;
+    
+  }
+
+  .categeory ul li{
+    margin-bottom: 12px;
   }
   
+  .categeory p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.01px;
+  }
+  .categeory span {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    
+  }
+  .copyright, .copyright a{
+    font-family: Poppins;
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.20px;
+  }
   .footer a {
     color: #fff;
     text-decoration: none;
@@ -629,21 +648,21 @@ input[type="radio"]:checked + .custom-radio {
   .footer a:hover {
     text-decoration: underline;
   }
-  
-  .footer .social-icons a {
-    margin-right: 10px;
-    font-size: 20px;
-    color: #fff;
+
+  .social-icons h5{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
   }
+  
+.social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+
+}
   
   .footer .social-icons a:hover {
     color: #f59e0b; /* Gold color on hover */
   }
   
-  .footer .copyright {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 12px;
-    color: #cbd5e0; /* Light gray */
-  }
-  
+
