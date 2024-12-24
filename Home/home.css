@@ -609,18 +609,15 @@ input[type="radio"]:checked + .custom-radio {
     color: #F8A538;
   }
   .categeory ul li a{
-    font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
     line-height: 22.51px;
     letter-spacing: -0.20px;
     
   }
-
   .categeory ul li{
     margin-bottom: 12px;
   }
-  
   .categeory p {
     font-size: 16px;
     font-weight: 600;
