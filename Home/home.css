@@ -219,17 +219,7 @@ body {
 
 /* topnews css */
 
-.top-news-heading {
-    margin-bottom: 20px;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 
-}
 .carousel-item img{
     width: 830px;
     height: 336px;
@@ -286,6 +276,10 @@ body {
     letter-spacing: 0.20000000298023224px;
     text-align: left;
 
+}
+.carousel-item a{
+    color: white !important;
+    text-decoration: none;
 }
 .news-card img {
     object-fit: cover;
@@ -440,6 +434,42 @@ select.form-select option:checked {
 
 /* <!-- Exclusive report --> */
 
+/* Videos */
+
+.vidoessection{
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+}
+/* .video{
+    border-bottom: 1px solid #E2E8F0
+
+} */
+.video:not(:last-of-type) {
+    border-bottom: 1px solid #E2E8F0; /* Replace #000 with your desired color */
+    padding-bottom: 15px; /* Optional: Add padding for spacing */
+    margin-bottom: 15px; /* Optional: Add margin for spacing between sections */
+}
+.tagline{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #707070;
+}
+.descript{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #1E293B;
+
+
+}
+.video > img{
+    height: 85px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 
 /* Market comentry */
 
@@ -456,12 +486,7 @@ select.form-select option:checked {
     line-height: 22px;
     color: #707070;
 }
-.tableHeading{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    color: #1E293B;
-}
+
 .newsDiv > div{
     display: flex;
     flex-direction: column;
@@ -480,12 +505,7 @@ select.form-select option:checked {
     border-radius: 10px;
 }
 
-@media screen and (max-width:900px) {
-    .tableHeading{
-        font-size: 18px;
-        line-height: 27px;
-    }
-}
+
 
 /* spot market data */
 
