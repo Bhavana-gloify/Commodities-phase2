@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <!-- Header starts here -->
     <div class="header">
         <!-- Message Bar -->
@@ -214,7 +215,7 @@
                             <div class="card news-card border-0 shadow-sm">
                                 <img src="../images/Rectangle_2.png" class="card-img-top" alt="Oil News">
                                 <div class="card-body p-2">
-                                    <div class="news-card-title">Oil prices rise on OPEC production cuts...</div>
+                                    <div class="news-card-title limited-content">Oil prices rise on OPEC production cuts production cuts</div>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +223,7 @@
                             <div class="card news-card border-0 shadow-sm">
                                 <img src="../images/Rectangle_5.png" class="card-img-top" alt="Market Update">
                                 <div class="card-body p-2">
-                                    <div class="news-card-title">भारत के क्रूडियल गोंडसाइडर में...</div>
+                                    <div class="news-card-title limited-content ">भारत के क्रूडियल गोंडसाइडर में...</div>
                                 </div>
                             </div>
                         </div>
@@ -230,7 +231,7 @@
                             <div class="card news-card border-0 shadow-sm">
                                 <img src="../images/Rectangle_4.png" class="card-img-top" alt="Energy News">
                                 <div class="card-body p-2">
-                                    <div class="news-card-title">Energy Transfer, Sunoco form joint venture of...</div>
+                                    <div class="news-card-title limited-content">Energy Transfer, Sunoco form joint venture of...</div>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +239,7 @@
                             <div class="card news-card border-0 shadow-sm">
                                 <img src="../images/Rectangle_3.png" class="card-img-top" alt="Demand Concerns">
                                 <div class="card-body p-2">
-                                    <div class="news-card-title">Oil falls on lingering demand concerns in...</div>
+                                    <div class="news-card-title limited-content">Oil falls on lingering demand concerns in...</div>
                                 </div>
                             </div>
                         </div>
@@ -1237,8 +1238,8 @@
                 </div>
 
                 <!-- Exclusive report -->
-                <div class="Exclusive-report mb-4">                      
-                    <div class="px-3">
+                <div class="Exclusive-report mb-4 px-3">                      
+                    <div class="">
                         <a href="w-100">
                             <img src="../images/reports.svg" alt="image-not found" class="w-100">
                         </a>
@@ -1246,7 +1247,7 @@
                 </div>
 
                 <!-- Videos section -->
-                <div class="Videos p-4">  
+                <div class="Videos px-3 mb-4">  
                     <h5 class="tableHeading">Videos </h5>                    
                     <div class="vidoessection ">
                         <div class="p-3 d-flex flex-column ">
@@ -1274,7 +1275,7 @@
                 </div>
 
                 <!-- cc poll -->
-                <div class="px-3 cc-poll">
+                <div class="px-3 cc-poll mb-4">
                     <div class="cardBg p-4 table-rounded tableBorder">
                         <h5 class="pollHeading" >CC POLL </h5>
                         <p class="cardText" >Which crop to be hit most by recent rain/hailstorm?</p>
@@ -1308,7 +1309,7 @@
                 </div>
 
                 <!-- crop report -->
-                <div class="px-3 crop-report">
+                <div class="px-3 crop-report mb-4">
                     <h5 class="tableHeading" >Crop Reports </h5>
                     <div>
                       <img src="../images/opec.svg" alt="image-not-found" class="w-100 borderRadius10">
@@ -1321,7 +1322,7 @@
                 </div>
 
                 <!-- weather report -->
-                <div class="px-3 weather-report">
+                <div class="px-3 weather-report mb-4">
                   <h5 class="tableHeading" >Weather updates</h5>
                   <div>
                     <img src="../images/opec.svg" alt="image-not-found" class="w-100 borderRadius10">
@@ -1401,6 +1402,23 @@
         </div>
     </footer>
 <!-- footer ends here -->
+
+
+<!-- Your existing HTML content -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".limited-content"); // Get all elements with the class "limited-content"
+        const wordLimit = 5; // Set the word limit
+
+        elements.forEach((element) => {
+            const words = element.innerText.split(" ");
+            if (words.length > wordLimit) {
+                element.innerText = words.slice(0, wordLimit).join(" ") + "...";
+            }
+        });
+    });
+</script>
 
 </body>
 

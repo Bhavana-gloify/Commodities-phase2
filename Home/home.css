@@ -282,8 +282,8 @@ body {
     text-decoration: none;
 }
 .news-card img {
-    object-fit: cover;
-    width: 193px;
+    object-fit: fill;
+    /* width: 193px; */
     height: 100px;
     border-radius: 10px 0px 0px 0px;
 }
@@ -291,11 +291,13 @@ body {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
-    line-height: 21px;
+    height: 2.4rem;
+    line-height: 21px !important;
     text-align: left;
     color: #707070;
     
 }
+
 .news-card-footer a{
     font-family: Poppins;
     font-size: 12px;
@@ -335,6 +337,12 @@ body {
 
 
 /* === long and short builtup */
+
+
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+}
 
 
 
@@ -400,7 +408,7 @@ select.form-select option:checked {
         line-height: 27px;
     }
     .tableHeaderColor{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
