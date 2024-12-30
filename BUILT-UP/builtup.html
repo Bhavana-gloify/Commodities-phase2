@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./builtup.css" />
+    <title>Long / short builtup Analysis </title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <!-- Message Bar -->
+      <p class="text-danger message mb-0 text-center">
+        MDEX / KLC Close Today I.E 21 Nov, 2024 Due to Diwali Festival
+      </p>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container align-items-end">
+          <!-- Brand Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="../images/Logo.svg" alt="Logo" />
+          </a>
+
+          <!-- Mobile Toggler -->
+          <button
+            class="navbar-toggler rounded-circle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-icon">
+              <i class="bi bi-list m-0" style="font-size: 24px"></i
+            ></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse mb-2" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">Exchange</a>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="tradeData"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Trade Data
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="tradeData">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="resources"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Resources
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="resources">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2 d-flex">
+                <a class="nav-link" href="#">Subscription</a>
+                <img
+                  src="../images/premium.svg"
+                  class="premium ms-3 ms-md-none"
+                  alt=""
+                />
+              </li>
+            </ul>
+
+            <!-- Contact Info -->
+            <div class="d-none d-lg-block contact-info me-3">
+              <i class="bi bi-phone"></i> +91-7066 5119 11
+            </div>
+
+            <!-- Search & Sign In -->
+            <div class="d-flex align-items-center">
+              <button class="btn searchbtn rounded-circle me-3" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-warning btn-signin rounded-pill px-3 dropdown-toggle"
+                  id="tradeData"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sign In
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="tradeData">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- International Spot Marquee -->
+      <div class="internationalSpot mb-1 m-0">
+        <div class="scrolling-container">
+          <ul class="scrolling-list">
+            <li>
+              Silver: 75.8696
+              <span class="deviation profit"
+                ><i class="bi bi-arrow-up"></i> +60.7 (0.35%)</span
+              >
+            </li>
+            <li>
+              Gold: 475.8585
+              <span class="deviation loss"
+                ><i class="bi bi-arrow-down"></i> -60.7 (0.35%)</span
+              >
+            </li>
+            <li>
+              $ vs Rupee: 839.394
+              <span class="deviation loss"
+                ><i class="bi bi-arrow-down"></i> -60.7 (0.35%)</span
+              >
+            </li>
+            <li>
+              Platinum: 932.123
+              <span class="deviation profit"
+                ><i class="bi bi-arrow-up"></i> +45.6 (0.22%)</span
+              >
+            </li>
+            <li>
+              Crude Oil: 55.675
+              <span class="deviation profit"
+                ><i class="bi bi-arrow-up"></i> +12.8 (0.15%)</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Varieties Section -->
+      <div class="varities mb-1">
+        <ul class="listofvarities d-flex justify-content-around p-2 m-0">
+          <li><a href="#">Veg Oils</a></li>
+          <li><a href="#">Pulses</a></li>
+          <li><a href="#">Cotton</a></li>
+          <li><a href="#">Spices</a></li>
+          <li><a href="#">Sugar/Gur</a></li>
+          <li><a href="#">Plantation</a></li>
+          <li><a href="#">Grains</a></li>
+          <li><a href="#">Precious Metals</a></li>
+          <li><a href="#">Metals</a></li>
+          <li><a href="#">Energy</a></li>
+          <!-- Dropdown for Others -->
+          <li class="dropdown">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              id="othersDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Others
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="othersDropdown"
+              style="border: 2px solid red"
+            >
+              <li><a class="dropdown-item" href="#">Option 1</a></li>
+              <li><a class="dropdown-item" href="#">Option 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BODY DIV -->
+    <div class="p-md-5">
+      <!-- PAGE ROUTE  -->
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item ms-0"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active page" aria-current="page">
+            Long / short builtup Analysis 
+          </li>
+        </ol>
+      </nav>
+      <!-- BUILTUP ANALYSIS SECTION -->
+      <section>
+        <!-- HEADING AND INDEX FILTER -->
+         <div class="align-items-center d-flex headingIndex justify-content-between">
+            <h5 class="tableHeading" >Long / short builtup Analysis </h5>
+                    <!--TECHNICAL ANALYSIS TABS  -->
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">MCX</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">NCDEX</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">ZCE</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">MDEX</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CBOT</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">DEC</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">COMMEX</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">ICE</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SHEF</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">LME</button>
+                          </li>
+                    </ul>
+         </div>
+         <div class="tab-content" id="pills-tabContent">
+            <!-- For Domestic -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="greyBorder overflow-auto table-rounded">
+                            <table class="table table-striped tableText mb-0 text-center">
+                                <thead class="" >
+                                  <tr class="text-center">
+                                    <th scope="col">Contract</th>
+                                    <th scope="col">Close</th>
+                                    <th scope="col">Change In Close</th>
+                                    <th scope="col">Open Interest</th>
+                                    <th scope="col">Change In Open Interest</th>
+                                    <th scope="col">Result</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                <!-- TABLE SUBHEADING -->
+                                  <tr class="slate" >
+                                    <td class=""></td>
+                                    <td class="builtDate">
+                                      <p>
+                                        <span class="startDate" >Jul19,2024</span>
+                                        <span class="endDate" >Jul20,2024</span>
+                                      </p>
+                                    </td>
+                                    <td ></td>
+                                    <td class="builtDate">
+                                      <p>
+                                        <span class="startDate" >Jul19,2024</span>
+                                        <span class="endDate" >Jul20,2024</span>
+                                      </p>
+                                    </td>
+                                    <td ></td>
+                                    <td ></td>
+                                  </tr>
+                                <!-- BODY ROW-1 -->
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >ALUMINI</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >388.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">534359.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >9.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>534359.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Short buildup</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >COPPER</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >92090.00</span>
+                                      <span class="endDate" >323339.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">5343.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >534359.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>5343.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Long liqidation</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >CRUDEOIL</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >52359.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="lossBg">
+                                      
+                                      <span><img src="../images/redarrow.svg" alt="image-not-found">559.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="lossBg">
+                                      <img src="../images/redarrow.svg" alt="image-not-found">
+                                      <span>559.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Short buildup</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >CRUOIM</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >92090.00</span>
+                                      <span class="endDate" >-559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >534359.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Long liqidation</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >GOLD</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">559.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>559.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Short buildup</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >GOLDGINEA</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >5529.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Short covering</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >GOLDPETAL</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >-92090.00</span>
+                                      <span class="endDate" >-559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">559.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>559.00</span>
+                                    </span>
+                                  </td>
+                                  <td >N/A</td>
+                                 </tr>
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >LEAD</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >52359.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="lossBg">
+                                      
+                                      <span><img src="../images/redarrow.svg" alt="image-not-found">559.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="lossBg">
+                                      <img src="../images/redarrow.svg" alt="image-not-found">
+                                      <span>559.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Short buildup</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >LEAD</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >92090.00</span>
+                                      <span class="endDate" >-559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >534359.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Long liqidation</td>
+                                 </tr>
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >COPPER</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >52359.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="lossBg">
+                                      
+                                      <span><img src="../images/redarrow.svg" alt="image-not-found">559.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >559.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="lossBg">
+                                      <img src="../images/redarrow.svg" alt="image-not-found">
+                                      <span>559.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Short buildup</td>
+                                 </tr>
+
+                                 <tr>
+                                  <td >
+                                    <p class="m-0 element" >CRUOIM</p>
+                                    <p class="m-0 expiration" >Exp: Jul20,2024</p>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >92090.00</span>
+                                      <span class="endDate" >-559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      
+                                      <span><img src="../images/greenArrow.svg" alt="image-not-found">3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td class="builtDate">
+                                    <p>
+                                      <span class="startDate" >534359.00</span>
+                                      <span class="endDate" >559.00</span>
+                                    </p>
+                                  </td>
+                                  <td class="text-center">
+                                    <span class="profitBg">
+                                      <img src="../images/greenArrow.svg" alt="image-not-found">
+                                      <span>3322.00</span>
+                                    </span>
+                                  </td>
+                                  <td >Long liqidation</td>
+                                 </tr>
+                                 
+                                 
+                                  
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+            </div>
+            <!-- For International -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                    <div class=" col-6">
+                        <div class="table-rounded tableBorder">
+                            <table class="table table-striped tableText mb-0">
+                                <thead class="tableHeaderColor" >
+                                  <tr>
+                                    <th scope="col">Daily</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Jaipur : Castor Seed Weekly Chart</td>
+                                  </tr>
+                                  <tr>
+                                   <td>Mumbai : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Meta oil : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Mumbai : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Cotton candy</td>
+                                 </tr>
+                                  
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <div class=" col-6">
+                        <div class="table-rounded tableBorder">
+                            <table class="table table-striped tableText mb-0">
+                                <thead class="tableHeaderColor" >
+                                  <tr>
+                                    <th scope="col">Weekly</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>NCDEX : Castor Seed Weekly Chart</td>
+                                  </tr>
+                                  <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Cotton candy</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Cotton candy</td>
+                                 </tr>
+                                  
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- For Forex -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                    <div class=" col-6">
+                        <div class="table-rounded tableBorder">
+                            <table class="table table-striped tableText mb-0">
+                                <thead class="tableHeaderColor" >
+                                  <tr>
+                                    <th scope="col">Daily</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Jaipur : Castor Seed Weekly Chart</td>
+                                  </tr>
+                                  <tr>
+                                   <td>Mumbai : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Meta oil : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Mumbai : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Cotton candy</td>
+                                 </tr>
+                                  
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <div class=" col-6">
+                        <div class="table-rounded tableBorder">
+                            <table class="table table-striped tableText mb-0">
+                                <thead class="tableHeaderColor" >
+                                  <tr>
+                                    <th scope="col">Weekly</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>NCDEX : Castor Seed Weekly Chart</td>
+                                  </tr>
+                                  <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>NCDEX : Castor Seed Weekly Chart</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Cotton candy</td>
+                                 </tr>
+                                 <tr>
+                                   <td>Cotton candy</td>
+                                 </tr>
+                                  
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <!-- PAGINATION -->
+          <div class="paginationDiv mt-3">
+            <nav aria-label="...">
+              <ul class="justify-content-end pagination">
+                <li class="page-item disabled ">
+                  <a class="page-link prevBtn" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+                </li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item " >
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link nextBtn" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+      </section>
+      
+
+
+    </div>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-md-4">
+            <div class="footer-logo">
+              <img src="../images/Logo@2.svg" alt="logo" /><br />
+              <p class="my-3">
+                CommodityControl provides <br />latest commodities exchange news
+              </p>
+            </div>
+            <div class="social-icons">
+              <h5>Follow Us On</h5>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <!-- Company Links -->
+          <div class="col-md-2 categeory d-none d-lg-block">
+            <h5 class="">Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-md-3 categeory d-none d-lg-block">
+            <h5 class="">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Platform Partner</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Bookmark</a></li>
+              <li><a href="#">Dow Jones News Archives</a></li>
+              <li><a href="#">Disclaimers</a></li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div class="col-md-3 categeory">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="d-flex gap-2">
+                <i class="bi bi-telephone"></i>
+                <p>+91-7066 5119 11</p>
+              </li>
+              <li class="d-flex gap-2">
+                <i class="bi bi-telephone"></i>
+                <p>
+                  <span>For Subscriptions</span
+                  ><br />Sales@commoditiescontrol.com
+                </p>
+              </li>
+              <li class="d-flex gap-2">
+                <i class="bi bi-telephone"></i>
+                <p>
+                  <span>For Partnership & Advertising Enquiries</span
+                  ><br />bizdev@commoditiescontrol.com
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <p class="copyright text-center">
+              Copyright © CC Commodity Info Services LLP. / All rights reserved
+              @2024 &nbsp; | &nbsp; <a href="#">Terms & Conditions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
