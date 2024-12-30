@@ -118,8 +118,8 @@ body {
 
 .premium{
     position: absolute;
-    right: 12px;
-    top: 0px;
+    right: 13px;
+    top: 2px;
 }
 
 .contact-info, .btn-signin {
@@ -608,7 +608,7 @@ input[type="radio"] {
     transition: all 0.3s ease;
 }
 input[type="radio"]:checked + .custom-radio {
-    background: url('./teenyicons_tick-circle-solid.svg') no-repeat ;
+    background: url('images/teenyicons_tick-circle-solid.svg') no-repeat ;
     height: 22px;
     width: 22px;
     background-size: contain;
