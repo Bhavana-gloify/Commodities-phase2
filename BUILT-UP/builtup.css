@@ -169,10 +169,24 @@
     padding: 6px 16px;
 }
 .profitBg{
-  background-color: #EBF7F1; 
+  background-color: #EBF7F1;
+  border-radius: 9px;
   margin: 0;
+  padding: 6px 8px;
   vertical-align: middle;
-  background-color: transparent;
+}
+.lossBg{
+  background-color: #FFE2E2;
+  border-radius: 9px;
+  margin: 0;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.profitArrow{
+  color: #0E9B4F;
+}
+.lossArrow{
+  color: #FA0909;
 }
 
 .builtDate span {
@@ -244,6 +258,9 @@ td{
 }
 .greyBorder::-webkit-scrollbar{
   display: none;
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #6B788A;
 }
 
 @media (max-width: 992px) {
