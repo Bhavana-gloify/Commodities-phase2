@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./tradingSignal.css" />
+    <title>Long / short builtup Analysis</title>
+  </head>
+  <body>
+    <!-- BODY DIV -->
+    <div class="p-md-5">
+      <!-- PAGE ROUTE  -->
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="toHide"
+      >
+        <ol class="breadcrumb mb-2">
+          <li class="breadcrumb-item ms-0 ps-3"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active page" aria-current="page">
+            Trading signal
+          </li>
+        </ol>
+      </nav>
+      <!-- BUILTUP ANALYSIS SECTION -->
+      <section>
+        <!-- HEADING AND INDEX FILTER -->
+        <div
+          class="align-items-center d-flex justify-content-between ps-3 mb-2"
+        >
+          <h5 class="builtHeading mb-0 toHide">Trading signal</h5>
+          <a class="builtHeading text-decoration-none hidden" href="">
+            <i class="bi bi-chevron-left"></i>Trading signal</a
+          >
+          <button
+            type="button"
+            class="btn btn-outline-secondary lh18 tableText me-2"
+          >
+            <img src="../Home/images/filterIcon.svg" alt="filter-icon" /> Filter
+          </button>
+        </div>
+
+        <div class="ps-3">
+          <div class="greyBorder overflow-auto table-rounded">
+            <table class="table table-striped tableText mb-0 text-center">
+              <thead class="">
+                <tr class="text-center">
+                  <th scope="col">Date</th>
+                  <th scope="col">Commodity</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Call/Put</th>
+                  <th scope="col">Strike Price</th>
+                  <th scope="col">QTY</th>
+                  <th scope="col">Expiry</th>
+                  <th scope="col">Buy Price</th>
+                  <th scope="col">Target</th>
+                  <th scope="col">Stop Loss</th>
+                  <th scope="col">Exit Date</th>
+                  <th scope="col">Sell Price</th>
+                  <th scope="col">Profit/Loss</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- BODY ROW-1 -->
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Exide Industries </td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>201</td>
+                  <td></td>
+                  <td>497</td>
+                  <td class="text-center">
+                    <span class="profitBg">516/567</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">477</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td>516</td>
+                  <td class="">
+                    <span class="lossBg">
+                      <span
+                        ><i class="bi bi-caret-down-fill lossArrow"></i
+                        >981</span
+                      >
+                    </span>
+                  </td>
+                  <td class="text-center ">
+                    <span class="profitBg">Target</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Oil India</td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>156</td>
+                  <td></td>
+                  <td>650</td>
+                  <td class="text-center">
+                    <span class="profitBg">703/777</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">643</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td>643</td>
+                  <td class="">
+                    <span class="lossBg">
+                      <span
+                        ><i class="bi bi-caret-down-fill lossArrow"></i
+                        >1092</span
+                      >
+                    </span>
+                  </td>
+                  <td class="text-center ">
+                    <span class="lossBg">Stop Loss</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Karurvysya</td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>485</td>
+                  <td></td>
+                  <td>206</td>
+                  <td class="text-center">
+                    <span class="profitBg">219/249</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">196</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td>3801</td>
+                  <td class="">
+                    <span class="lossBg">
+                      <span
+                        ><i class="bi bi-caret-down-fill lossArrow"></i
+                        >4800</span
+                      >
+                    </span>
+                  </td>
+                  <td class="text-center ">Open</td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">HDFCAMC</td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>201</td>
+                  <td></td>
+                  <td>497</td>
+                  <td class="text-center">
+                    <span class="profitBg">516/567</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">477</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td>516</td>
+                  <td class="">
+                    <span class="lossBg">
+                      <span
+                        ><i class="bi bi-caret-down-fill lossArrow"></i
+                        >981</span
+                      >
+                    </span>
+                  </td>
+                  <td class="text-center ">
+                    <span class="lossBg">Stop Loss</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Knrcon</td>
+                  <td>Option</td>
+                  <td>PE</td>
+                  <td>1450</td>
+                  <td>272</td>
+                  <td></td>
+                  <td>650</td>
+                  <td class="text-center">
+                    <span class="profitBg">703/777</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">643</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td>643</td>
+                  <td class="">
+                    <span class="profitBg">
+                      <span
+                        ><i class="bi bi-caret-down-fill profitArrow"></i
+                        >1092</span
+                      >
+                    </span>
+                  </td>
+                  <td class="text-center ">
+                    <span class="lossBg">Stop Loss</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Sun Pharma</td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>485</td>
+                  <td></td>
+                  <td>206</td>
+                  <td class="text-center">
+                    <span class="profitBg">219/249</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">196</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td>3801</td>
+                  <td class="">
+                    <span class="profitBg">
+                      <span
+                        ><i class="bi bi-caret-down-fill profitArrow"></i
+                        >4800</span
+                      >
+                    </span>
+                  </td>
+                  <td class="text-center ">
+                    <span class="profitBg">Target</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Cholafin</td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>201</td>
+                  <td></td>
+                  <td>497</td>
+                  <td class="text-center">
+                    <span class="profitBg">516/567</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">477</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td></td>
+                  <td >
+                  </td>
+                  <td class="text-center ">
+                    Open
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Federal Bank</td>
+                  <td>Option</td>
+                  <td>PE</td>
+                  <td>1450</td>
+                  <td>272</td>
+                  <td></td>
+                  <td>650</td>
+                  <td class="text-center">
+                    <span class="profitBg">703/777</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">643</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td></td>
+                  <td>
+                  </td>
+                  <td class="text-center ">
+                    <span class="lossBg">Stop Loss</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>May 27, 2024</td>
+                  <td class="builtDate">Gmr Infra</td>
+                  <td>Equity</td>
+                  <td></td>
+                  <td></td>
+                  <td>485</td>
+                  <td></td>
+                  <td>206</td>
+                  <td class="text-center">
+                    <span class="profitBg">219/249</span>
+                  </td>
+                  <td>
+                    <span class="lossBg">196</span>
+                  </td>
+                  <td>May 27, 2024</td>
+                  <td></td>
+                  <td ></td>
+                  <td class="text-center ">
+                    <span class="profitBg">Target</span>
+                  </td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+          <!-- PAGINATION -->
+          <div class="paginationDiv mt-3">
+            <nav aria-label="...">
+              <ul class="justify-content-end pagination">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link prevBtn"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Prev</a
+                  >
+                </li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link nextBtn" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
