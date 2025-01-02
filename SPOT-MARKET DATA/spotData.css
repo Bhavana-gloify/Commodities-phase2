@@ -268,12 +268,16 @@ td{
 .selectCategory{
     display: flex;
     flex-direction: column;
+    padding-top: 12px;
 }
 .required{
     background-color: #EDF1F8;
 }
 .borderRadius10{
     border-radius: 10px;
+}
+.searchInput{
+  border: 1px solid #282828;
 }
 
 @media (max-width: 992px) {
