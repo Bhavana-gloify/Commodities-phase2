@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./spotData.css" />
+    <link rel="stylesheet" href="../NEWS/Home2.css" />
     <title>Spot Market Data</title>
   </head>
   <body>
@@ -145,12 +145,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link active"
-                id="pills-mcx-tab"
+                id="pills-latest-tab"
                 data-bs-toggle="pill"
-                data-bs-target="#pills-mcx"
+                data-bs-target="#pills-latest"
                 type="button"
                 role="tab"
-                aria-controls="pills-mcx"
+                aria-controls="pills-latest"
                 aria-selected="true"
               >
                 Latest
@@ -159,12 +159,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="pills-ncdex-tab"
+                id="pills-weekly-tab"
                 data-bs-toggle="pill"
-                data-bs-target="#pills-ncdex"
+                data-bs-target="#pills-weekly"
                 type="button"
                 role="tab"
-                aria-controls="pills-ncdex"
+                aria-controls="pills-weekly"
                 aria-selected="false"
               >
                 Weekly
@@ -173,12 +173,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="pills-zce-tab"
+                id="pills-monthly-tab"
                 data-bs-toggle="pill"
-                data-bs-target="#pills-zce"
+                data-bs-target="#pills-monthly"
                 type="button"
                 role="tab"
-                aria-controls="pills-zce"
+                aria-controls="pills-monthly"
                 aria-selected="false"
               >
                 Monthly
@@ -196,189 +196,524 @@
           </div>
         </div>
 
-
-
         <div class="tab-content" id="pills-tabContent">
           <!-- For Latest -->
-          <div class="tab-pane fade show active" id="pills-mcx" role="tabpanel" aria-labelledby="pills-mcx-tab">
-                      <div class="ps-3" >
-                        <div class="greyBorder2 overflow-auto table-rounded">
-                          <table class="table table-striped tableText mb-0 text-center">
-                              <thead class="" >
-                                <tr class="text-center">
-                                  <th scope="col">Variety/Sub-Variety</th>
-                                  <th scope="col">Market</th>
-                                  <th scope="col">Latest Prices <span>(08Aug.2024)</span> </th>
-                                  <th scope="col">Previous Day Prices <span>(07Aug.2024)</span> </th>
-                                  <th scope="col">Cur/Unit</th>
-                                  <th scope="col">Time</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                              <!-- TABLE SUBHEADING -->
-                                <tr class="slate" >
-                                  <td class=""></td>
-                                  <td ></td>
-                                  <td class="builtDate">
-                                    <p>
-                                      <span class="startDate" >Min</span>
-                                      <span class="endDate" >Max</span>
-                                    </p>
-                                  </td>
-                                  
-                                  <td class="builtDate">
-                                    <p>
-                                      <span class="startDate" >Min</span>
-                                      <span class="endDate" >Max</span>
-                                    </p>
-                                  </td>
-                                  <td ></td>
-                                  <td ></td>
-                                </tr>
-                              <!-- BODY ROW-1 -->
-                               <tr>
-                                <td >
-                                  Chana / Gram-Tanzania
-                                </td>
-                                <td >
-                                  Nagpur
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >559.00</span>
-                                    <span class="endDate" >388.00</span>
-                                  </p>
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >388.00</span>
-                                    <span class="endDate" >559.00</span>
-                                  </p>
-                                </td>
-                                <td>
-                                  Rs/100kg
-                                </td>
-                                <td >
-                                  <p class="m-0 " >May27,2024</p>
-                                  <p class="m-0 " >05:39</p>
-                                </td>
-                               </tr>
+          <div
+            class="tab-pane fade show active"
+            id="pills-latest"
+            role="tabpanel"
+            aria-labelledby="pills-latest-tab"
+          >
+            <div class="ps-3">
+              <div class="greyBorder2 overflow-auto table-rounded">
+                <table class="table table-striped tableText mb-0 text-center">
+                  <thead class="">
+                    <tr class="text-center">
+                      <th scope="col">Variety/Sub-Variety</th>
+                      <th scope="col">Market</th>
+                      <th scope="col">
+                        Latest Prices <span>(08Aug.2024)</span>
+                      </th>
+                      <th scope="col">
+                        Previous Day Prices <span>(07Aug.2024)</span>
+                      </th>
+                      <th scope="col">Cur/Unit</th>
+                      <th scope="col">Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- TABLE SUBHEADING -->
+                    <tr class="slate">
+                      <td class=""></td>
+                      <td></td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">Min</span>
+                          <span class="endDate">Max</span>
+                        </p>
+                      </td>
 
-                               <tr>
-                                <td >
-                                  Chana / Gram-Tanzania
-                                </td>
-                                <td >
-                                  Nagpur
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >559.00</span>
-                                    <span class="endDate" >388.00</span>
-                                  </p>
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >388.00</span>
-                                    <span class="endDate" >559.00</span>
-                                  </p>
-                                </td>
-                                <td>
-                                  Rs/100kg
-                                </td>
-                                <td >
-                                  <p class="m-0 " >May27,2024</p>
-                                  <p class="m-0 " >05:39</p>
-                                </td>
-                               </tr>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">Min</span>
+                          <span class="endDate">Max</span>
+                        </p>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- BODY ROW-1 -->
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Nagpur</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
 
-                               <tr>
-                                <td >
-                                  Chana / Gram-Tanzania
-                                </td>
-                                <td >
-                                  Nagpur
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >559.00</span>
-                                    <span class="endDate" >388.00</span>
-                                  </p>
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >388.00</span>
-                                    <span class="endDate" >559.00</span>
-                                  </p>
-                                </td>
-                                <td>
-                                  Rs/100kg
-                                </td>
-                                <td >
-                                  <p class="m-0 " >May27,2024</p>
-                                  <p class="m-0 " >05:39</p>
-                                </td>
-                               </tr>
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Indore</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
 
-                               <tr>
-                                <td >
-                                  Chana / Gram-Tanzania
-                                </td>
-                                <td >
-                                  Nagpur
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >559.00</span>
-                                    <span class="endDate" >388.00</span>
-                                  </p>
-                                </td>
-                                <td class="builtDate">
-                                  <p>
-                                    <span class="startDate" >388.00</span>
-                                    <span class="endDate" >559.00</span>
-                                  </p>
-                                </td>
-                                <td>
-                                  Rs/100kg
-                                </td>
-                                <td >
-                                  <p class="m-0 " >May27,2024</p>
-                                  <p class="m-0 " >05:39</p>
-                                </td>
-                               </tr>
-                                 
-                              </tbody>
-                            </table>
-                      </div>
-                      <!-- PAGINATION -->
-                      <div class="paginationDiv mt-3">
-              <nav aria-label="...">
-                <ul class="justify-content-end pagination">
-                  <li class="page-item disabled ">
-                    <a class="page-link prevBtn" href="#" tabindex="-1" aria-disabled="true">Prev</a>
-                  </li>
-                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item " >
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item">
-                    <a class="page-link nextBtn" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-                      </div>
-                      </div>
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Akola</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Nagpur</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- PAGINATION -->
+              <div class="paginationDiv mt-3">
+                <nav aria-label="...">
+                  <ul class="justify-content-end pagination">
+                    <li class="page-item disabled">
+                      <a
+                        class="page-link prevBtn"
+                        href="#"
+                        tabindex="-1"
+                        aria-disabled="true"
+                        >Prev</a
+                      >
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link nextBtn" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
 
           <!-- For Weekly -->
+          <div
+            class="tab-pane fade show"
+            id="pills-weekly"
+            role="tabpanel"
+            aria-labelledby="pills-weekly-tab"
+          >
+            <div class="ps-3">
+              <div class="greyBorder2 overflow-auto table-rounded">
+                <table class="table table-striped tableText mb-0 text-center">
+                  <thead class="">
+                    <tr class="text-center">
+                      <th scope="col">Variety/Sub-Variety</th>
+                      <th scope="col">Market</th>
+                      <th scope="col">
+                        Latest Prices <span>(08Aug.2024)</span>
+                      </th>
+                      <th scope="col">
+                        Previous Day Prices <span>(07Aug.2024)</span>
+                      </th>
+                      <th scope="col">Cur/Unit</th>
+                      <th scope="col">Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- TABLE SUBHEADING -->
+                    <tr class="slate">
+                      <td class=""></td>
+                      <td></td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">Min</span>
+                          <span class="endDate">Max</span>
+                        </p>
+                      </td>
 
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">Min</span>
+                          <span class="endDate">Max</span>
+                        </p>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- BODY ROW-1 -->
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Nagpur</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Indore</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Akola</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Nagpur</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- PAGINATION -->
+              <div class="paginationDiv mt-3">
+                <nav aria-label="...">
+                  <ul class="justify-content-end pagination">
+                    <li class="page-item disabled">
+                      <a
+                        class="page-link prevBtn"
+                        href="#"
+                        tabindex="-1"
+                        aria-disabled="true"
+                        >Prev</a
+                      >
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link nextBtn" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
           <!-- For Monthly -->
+          <div
+            class="tab-pane fade show"
+            id="pills-monthly"
+            role="tabpanel"
+            aria-labelledby="pills-monthly-tab"
+          >
+            <div class="ps-3">
+              <div class="greyBorder2 overflow-auto table-rounded">
+                <table class="table table-striped tableText mb-0 text-center">
+                  <thead class="">
+                    <tr class="text-center">
+                      <th scope="col">Variety/Sub-Variety</th>
+                      <th scope="col">Market</th>
+                      <th scope="col">
+                        Latest Prices <span>(08Aug.2024)</span>
+                      </th>
+                      <th scope="col">
+                        Previous Day Prices <span>(07Aug.2024)</span>
+                      </th>
+                      <th scope="col">Cur/Unit</th>
+                      <th scope="col">Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- TABLE SUBHEADING -->
+                    <tr class="slate">
+                      <td class=""></td>
+                      <td></td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">Min</span>
+                          <span class="endDate">Max</span>
+                        </p>
+                      </td>
 
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">Min</span>
+                          <span class="endDate">Max</span>
+                        </p>
+                      </td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <!-- BODY ROW-1 -->
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Nagpur</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
 
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Indore</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Akola</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chana / Gram-Tanzania</td>
+                      <td>Nagpur</td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">559.00</span>
+                          <span class="endDate">388.00</span>
+                        </p>
+                      </td>
+                      <td class="builtDate">
+                        <p>
+                          <span class="startDate">388.00</span>
+                          <span class="endDate">559.00</span>
+                        </p>
+                      </td>
+                      <td>Rs/100kg</td>
+                      <td>
+                        <p class="m-0">May27,2024</p>
+                        <p class="m-0">05:39</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- PAGINATION -->
+              <div class="paginationDiv mt-3">
+                <nav aria-label="...">
+                  <ul class="justify-content-end pagination">
+                    <li class="page-item disabled">
+                      <a
+                        class="page-link prevBtn"
+                        href="#"
+                        tabindex="-1"
+                        aria-disabled="true"
+                        >Prev</a
+                      >
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link nextBtn" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
