@@ -20,8 +20,8 @@
   border-color: #e8e8e8;
   border-radius: 22px;
 }
-.greyBorder {
-  border: 2px solid #6b788a;
+.greyBorder2 {
+  border: 2px solid #CDD8E7;
   overflow: auto;
 }
 
@@ -216,8 +216,8 @@ td{
   background-color: inherit; /* Matches the hover color of the row */
 }
 
-.table>:not(:last-child)>:last-child>* {
-  background-color: #6B788A;
+.greyBorder2 .table>:not(:last-child)>:last-child>* {
+  background-color: #37474F ;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -256,7 +256,7 @@ td{
 .nextBtn{
   border: none;
 }
-.greyBorder::-webkit-scrollbar{
+.greyBorder2::-webkit-scrollbar{
   display: none;
 }
 .table > :not(:last-child) > :last-child > * {
