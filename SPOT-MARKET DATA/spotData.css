@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.breadcrumb-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-left: 12px;
+}
+.breadcrumb-item a {
+  color: #1e293b;
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #dc8513;
+}
+.btn-outline-secondary {
+  border-color: #e8e8e8;
+  border-radius: 22px;
+}
+.greyBorder2 {
+  border: 2px solid #CDD8E7;
+  overflow: auto;
+}
+
+.hidden {
+  display: none;
+}
+.navbar-toggler {
+  background: #f8a53824;
+  border: 0.5px solid #f8a538;
+  padding: 5px 7px !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar-icon {
+  color: #f8a538;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  width: 250px;
+  height: auto;
+}
+
+.nav-link {
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #dc8513;
+  font-weight: 600;
+}
+.nav-item {
+  position: relative;
+}
+
+.btn-signin a {
+  color: #dc8513 !important;
+  border-color: #dc8513 !important;
+  text-decoration: none;
+}
+/* Scrolling Container */
+.scrolling-container {
+  overflow: hidden; /* Hide overflow */
+  width: 100%;
+  position: relative;
+}
+
+/* Scrolling List */
+.scrolling-list {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 2rem; /* Spacing between items */
+  animation: scroll-left 25s linear infinite;
+}
+
+/* Scrolling Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Individual List Items */
+.scrolling-list li {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+/* Icons */
+.bi {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.builtHeading{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #1E293B;
+}
+.social-icons h5{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25.5px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 15px;
+
+}
+
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.tableText tbody tr td {
+    color: #475467 ;
+    border-right: 0.5px solid #979797;
+}
+
+.table td:first-child {
+    padding-left: 15px;
+}
+.table th:first-child {
+    padding-left: 15px;
+}
+
+.nav-link{
+    color: #475467;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #707070;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #DC8513;
+    background-color: #FEF9F0;
+    border: 1px solid #DC8513;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 6px 16px;
+}
+.profitBg{
+  background-color: #EBF7F1;
+  border-radius: 9px;
+  margin: 0;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.lossBg{
+  background-color: #FFE2E2;
+  border-radius: 9px;
+  margin: 0;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.profitArrow{
+  color: #0E9B4F;
+}
+.lossArrow{
+  color: #FA0909;
+}
+
+.builtDate span {
+  display: inline-block;
+  padding: 0.25rem;
+}
+.builtDate p{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+td{
+  vertical-align: middle;
+}
+.expiration{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+.element{
+  font-weight: 600;
+}
+
+/* Ensure consistent hover effects (if row hover is used) */
+.table tbody tr:hover .builtDate {
+  background-color: inherit; /* Matches the hover color of the row */
+}
+
+.greyBorder2 .table>:not(:last-child)>:last-child>* {
+  background-color: #37474F ;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.slate td{
+  background-color: #F2EFEF;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+}
+td{
+  padding: 4px 0 !important;
+  min-width: 140px;
+}
+.page-link {
+  margin-right: 5px;
+  border-radius: 8px;
+  color: #475467;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+.page-item.active .page-link {
+  background-color: #DC8513;
+  border-color: #DC8513;
+}
+.page-item.disabled .page-link {
+  border: none;
+  color: #cccccc;
+}
+.nextBtn{
+  border: none;
+}
+.greyBorder2::-webkit-scrollbar{
+  display: none;
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #6B788A;
+}
+.star{
+    color: #FF6666;
+}
+.selectCategory{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+.selectCategory label{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 4px;
+  color: #64748B;
+}
+.required{
+    background-color: #EDF1F8;
+}
+.borderRadius10{
+    border-radius: 10px;
+}
+.searchInput{
+  border: 1px solid #282828;
+}
+.searchInput input::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000;
+}
+.tagBg{
+  background-color: #FFF7EC;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .message {
+    font-size: 10px;
+  }
+
+  .navbar-brand img {
+    width: 180px;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .timeText {
+    font-size: 11px;
+    line-height: 17px;
+    color: #97989f;
+  }
+  .headDiv h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    line-height: 28px;
+  }
+  .timeText2{
+  font-size: 12px;
+  line-height: 18px;
+  }
+  .timeText2 span{
+    font-weight: 500;
+    color: #1e293b;
+  }
+  .person {
+    display: inline;
+    color: #1e293b;
+    font-weight: 500;
+  }
+  .picksText {
+    font-size: 12px;
+    line-height: 18px;
+    color: #404040;
+  }
+.nav-link{
+    font-size: 14px;
+    line-height: 21px;
+}
+  .btn-primary {
+    color: #dc8513;
+    background-color: #fff;
+  }
+  .toHide {
+    display: none;
+  }
+  .hidden {
+    display: inline;
+  }
+  .paginationDiv {
+    padding-right: 24px;
+  }
+  .tagBg{
+    background-color: #FFF7EC;
+    border-radius: 20px;
+  }
+}
