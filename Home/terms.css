@@ -4,17 +4,23 @@
   .orangetext{
     color: #DC8513;
 }
+.header{
+  height: 311px;
+  background-image: url('./images/agreements.png');
+  background-size: contain; /* Ensures the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image in the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header h1 {
-    height: 311px;
     width: 100%;
     font-family: Poppins;
     font-size: 40px;
     font-weight: 700;
     line-height: 64px;
-    background-image: url('./images/agreements.png');
-    background-size: contain; /* Ensures the image covers the entire container */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image in the container */
+
 }
 
 
@@ -66,3 +72,163 @@
       }
 
   /* terms  */
+
+
+  .feedback .header {
+    height: 399px;
+    background-image: url('./images/feedback.svg');
+  }
+  
+  .feedback .container {
+    background: #F9F9F9;
+  }
+  
+  .feedbackcard {
+    position: relative;
+    top: -15rem;
+    width: 476px;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 45px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    background: #DC8513;
+    color: #F6F9FF;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .heading h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44.97px;
+  }
+  
+  .heading p {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  
+  form {
+    border-bottom: 1px solid #E2E8F0;
+  }
+  
+  .form-container {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .form-container .form-label,
+  .form-container .form-check-label {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #475467;
+  }
+  
+  .form-container .form-label {
+    font-weight: 600;
+  }
+  
+  .form-container .form-check-label {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .form-container .form-check {
+    margin-bottom: 1rem;
+  }
+  
+  .form-check-input {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .form-check-input:checked {
+    background-color: #DC8513;
+    border-color: #DC8513;
+    border: 1px solid #DC8513;
+  }
+  
+  .form-container .form-control {
+    background: #F9F9F9;
+    margin-bottom: 1.5rem;
+    border: none;
+    padding: 0.5rem 1.2rem !important;
+  }
+  
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+  
+  .form-container .form-control::placeholder {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #475467;
+  }
+  
+  input {
+    border-radius: 50px !important;
+    height: 59px;
+  }
+  
+  textarea {
+    border-radius: 25px !important;
+  }
+  
+  .btn-submit {
+    background: #DC8513;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-radius: 50px;
+    height: 50px;
+  }
+  
+  .customer-support {
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #475467;
+  }
+  
+  .customer-support a {
+    color: #475467;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .feedback .header {
+      height: 272px;
+      background-image: url('./images/feedbackmobile.svg');
+    }
+    
+    .heading h3 {
+      font-size: 29px;
+    }
+  
+    .heading p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .feedbackcard {
+      position: relative;
+      top: -10rem;
+      width: 90%;
+      border-radius: 20px !important;
+      box-shadow: 0px 4px 12px 0px #00000005;
+    }
+  }
+  
