@@ -1109,3 +1109,111 @@ input[type="radio"]:checked + .custom-radio {
     color: #f59e0b; /* Gold color on hover */
   }
 
+
+
+  /* ABOUT US PAGE CSS */
+
+  .exchangePrice{
+    /* background: url('../Home//images/aboutusBg.svg'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background : linear-gradient(180deg, #F6F4F4, #FFE5C7);
+    border-radius: 0% 0% 100% 100%/ 5% 5% 28% 28%;
+  }
+  
+  .fw700{
+    font-weight: 700;
+  }
+  .fw600{
+    font-weight: 600;
+  }
+  .fw400{
+    font-weight: 400;
+  }
+  .fs34{
+    font-size: 34px;
+  }
+  .fs20{
+    font-size: 20px;
+  }
+  .fs18{
+    font-size: 18px;
+  }
+  .fs17{
+    font-size: 17px;
+  }
+  .fs16{
+    font-size: 16px;
+  }
+  .fs14{
+    font-size: 14px;
+  }
+  .exchangePrice .title{
+    line-height: 33px;
+  }
+  .exchangePrice h4{
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .exchangePrice h4 span{
+    color: #DC8513;
+  }
+  .captions{
+    line-height: 32px;
+    color: #475467;
+  }
+  .ourStory h4{
+    color: #1E293B;
+    line-height: 66px;
+  }
+  .whyUs{
+    background-color: #64748B;
+  }
+  .whyUs h4{
+    line-height: 66px;
+  }
+  .btnDiv div{
+    height: 85px;
+    width: 85px;
+  }
+  .btnDiv a{
+    height: 50px;
+    background-color: #F8A538;
+  }
+  .borderRadius25{
+    border-radius: 25px;
+  }
+  
+
+  @media (max-width:900px) {
+    .exchangePrice{
+      border-radius: 0% 0% 100% 100%/ 5% 5% 15% 15%;
+    }
+    .rfs12{
+      font-size: 12px;
+    }
+    .rfs14{
+      font-size: 14px;
+    }
+    .rfs20{
+      font-size: 20px;
+    }
+    .exchangePrice h4{
+      font-size: 20px;
+      line-height: 35px;
+    }
+    .ourStory img{
+      height: 306px;
+      width: 297.5px;
+    }
+    .captions{
+      line-height: 29px;
+    }
+    .whyUs img{
+      width: 45px;
+      height: 45px;
+    }
+    .whyUs p{
+      line-height: 22px;
+    }
+  }
