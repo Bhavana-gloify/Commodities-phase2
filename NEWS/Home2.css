@@ -1172,6 +1172,14 @@ input[type="radio"]:checked + .custom-radio {
   .whyUs h4{
     line-height: 66px;
   }
+  .whyUs p{
+    /* Restricting number of lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .btnDiv div{
     height: 85px;
     width: 85px;
