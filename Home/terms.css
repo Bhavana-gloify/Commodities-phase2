@@ -1,0 +1,66 @@
+  /* privacy policy */
+
+
+  .orangetext{
+    color: #DC8513;
+}
+.header h1 {
+    height: 311px;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    background-image: url('./images/agreements.png');
+    background-size: contain; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the container */
+}
+
+
+
+  .Agreements h5{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #1E293B;
+
+  }
+  .Agreements p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #475467;
+    margin-bottom: 2rem;
+
+
+  }
+  @media screen and (max-width: 900px) {
+
+    .header h1 {
+      height: 165px;
+      width: 100%;
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 64px;
+      background-image: url('./images/AgreeMobview.png');
+      background-size: contain; /* Ensures the image covers the entire container */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-position: center; /* Centers the image in the container */
+  /* background: linear-gradient(180deg, rgba(246, 244, 244, 0.5) 0%, rgba(255, 229, 199, 0.5) 83.99%); */
+      }
+      .Agreements h5{
+        font-size: 18px;
+        text-transform: capitalize !important;
+      }
+      .Agreements p{
+        font-size: 14px;
+        line-height: 28px;
+        word-wrap: break-word;
+      }
+      }
+
+  /* terms  */
