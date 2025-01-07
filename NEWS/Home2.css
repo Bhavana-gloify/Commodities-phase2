@@ -1133,6 +1133,9 @@ input[type="radio"]:checked + .custom-radio {
   .fs34{
     font-size: 34px;
   }
+  .fs30{
+    font-size: 30px;
+  }
   .fs20{
     font-size: 20px;
   }
@@ -1203,6 +1206,9 @@ input[type="radio"]:checked + .custom-radio {
     .rfs14{
       font-size: 14px;
     }
+    .rfs16{
+      font-size: 16px;
+    }
     .rfs20{
       font-size: 20px;
     }
@@ -1242,8 +1248,52 @@ input[type="radio"]:checked + .custom-radio {
   .contactHero h4{
     line-height: 45.5px;
   }
+  .contactUs{
+    background-color: #F9F9F9;
+  }
+  .iconDiv{
+    height: 31px;
+    width: 31px;
+    background-color: #EEEEEE;
+  }
+  .iconDiv .bi{
+    margin: 0;
+  }
+  .services{
+    color: #475467;
+    line-height: 32px;
+  }
+  .cred{
+    line-height: 27px;
+  }
+  .formDiv{
+    position: absolute;
+    width: 40%;
+    max-width: 476px;
+    top: 100px;
+    right: 120px;
+  }
+  .formDiv p{
+    color: #1E293B;
+  }
   @media (max-width:900px){
     .contactHero{
       height: 290px;
+    }
+    .contactHero h4{
+      line-height: 30px;
+    }
+    .cred{
+      line-height: 24px;
+    }
+    .formDiv{
+      width: 100%;
+      position: relative;
+      /* max-width: 476px; */
+      top: auto;
+      right: auto;
+    }
+    .contactHero p{
+      line-height: 24px;
     }
   }
