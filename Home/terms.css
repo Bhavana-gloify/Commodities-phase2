@@ -1,8 +1,8 @@
   /* privacy policy */
 
 
-  .orangetext{
-    color: #DC8513;
+.orangetext{
+  color: #DC8513;
 }
 .header{
   height: 311px;
@@ -246,7 +246,7 @@
     color: #DC8513;
 }
 
-h1{
+.trading h1{
   font-family: Poppins;
   font-size: 28px;
   font-weight: 600;
@@ -262,7 +262,7 @@ h1{
   color: #97989F;
 
 }
-.subheading{
+.trading .subheading{
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
