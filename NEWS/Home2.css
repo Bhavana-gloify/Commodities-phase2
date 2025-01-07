@@ -1114,9 +1114,6 @@ input[type="radio"]:checked + .custom-radio {
   /* ABOUT US PAGE CSS */
 
   .exchangePrice{
-    /* background: url('../Home//images/aboutusBg.svg'); */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
     background : linear-gradient(180deg, #F6F4F4, #FFE5C7);
     border-radius: 0% 0% 100% 100%/ 5% 5% 28% 28%;
   }
@@ -1129,6 +1126,9 @@ input[type="radio"]:checked + .custom-radio {
   }
   .fw400{
     font-weight: 400;
+  }
+  .fs35{
+    font-size: 35px;
   }
   .fs34{
     font-size: 34px;
@@ -1155,7 +1155,7 @@ input[type="radio"]:checked + .custom-radio {
     font-size: 40px;
     line-height: 64px;
   }
-  .exchangePrice h4 span{
+   h4 span{
     color: #DC8513;
   }
   .captions{
@@ -1223,5 +1223,27 @@ input[type="radio"]:checked + .custom-radio {
     }
     .whyUs p{
       line-height: 22px;
+    }
+  }
+
+
+  /* CONTACT US PAGE CSS */
+  .contactHero{
+    background: url('../Home/images/contactBg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 375px;
+  }
+  .contactHero p{
+    color: #F8F8F8;
+    line-height: 28px;
+  }
+  .contactHero h4{
+    line-height: 45.5px;
+  }
+  @media (max-width:900px){
+    .contactHero{
+      height: 290px;
     }
   }
