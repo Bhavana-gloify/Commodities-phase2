@@ -22,9 +22,6 @@
     line-height: 64px;
 
 }
-
-
-
   .Agreements h5{
     font-family: Poppins;
     font-size: 20px;
@@ -232,3 +229,81 @@
     }
   }
   
+
+
+  /* Trading Knowledge */
+
+.breadcrumb-item{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.breadcrumb-item a{
+    color: #1E293B;
+    text-decoration: none;
+}
+.breadcrumb-item.active {
+    color: #DC8513;
+}
+
+h1{
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #1E293B;
+
+}
+.datetime{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #97989F;
+
+}
+.subheading{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.08365951478481293px;
+  color: #475467;
+
+}
+.trading p, .trading li{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #475467;
+  
+
+
+}
+.trading p{
+  text-align: justify;
+  margin-bottom: 1.8rem;
+}
+@media screen and (max-width: 900px) {
+  .container{
+    padding: 1.5rem;
+  }
+  h1{
+    font-size: 20px;  
+  }
+  .datetime{
+    font-size: 11px;
+  }
+  .mobile-breadcrumb{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .subheading{
+    font-size: 16px;
+  }
+  .trading p, .trading li{
+    font-size: 16px;
+  }
+
+}
