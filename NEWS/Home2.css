@@ -1114,8 +1114,11 @@ input[type="radio"]:checked + .custom-radio {
   /* ABOUT US PAGE CSS */
 
   .exchangePrice{
-    background : linear-gradient(180deg, #F6F4F4, #FFE5C7);
-    border-radius: 0% 0% 100% 100%/ 5% 5% 28% 28%;
+    background: url('../Home/images/aboutusBg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 493px;
   }
   
   .fw700{
@@ -1158,6 +1161,11 @@ input[type="radio"]:checked + .custom-radio {
     font-size: 40px;
     line-height: 64px;
   }
+  .exchangePrice img{
+    padding: 5px;
+    border-radius: 140px; 
+    border: 1px dashed #FFBE5A ;
+  }
    h4 span{
     color: #DC8513;
   }
@@ -1198,7 +1206,8 @@ input[type="radio"]:checked + .custom-radio {
 
   @media (max-width:900px) {
     .exchangePrice{
-      border-radius: 0% 0% 100% 100%/ 5% 5% 15% 15%;
+      background-image: url('../Home/images/AgreeMobview.png');
+      min-height: auto;
     }
     .rfs12{
       font-size: 12px;
@@ -1278,7 +1287,10 @@ input[type="radio"]:checked + .custom-radio {
   }
   @media (max-width:900px){
     .contactHero{
-      height: 290px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* height: 290px; */
     }
     .contactHero h4{
       line-height: 30px;
@@ -1289,7 +1301,6 @@ input[type="radio"]:checked + .custom-radio {
     .formDiv{
       width: 100%;
       position: relative;
-      /* max-width: 476px; */
       top: auto;
       right: auto;
     }
