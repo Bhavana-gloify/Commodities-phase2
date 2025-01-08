@@ -1114,11 +1114,11 @@ input[type="radio"]:checked + .custom-radio {
   /* ABOUT US PAGE CSS */
 
   .exchangePrice{
-    /* background: url('../Home//images/aboutusBg.svg'); */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
-    background : linear-gradient(180deg, #F6F4F4, #FFE5C7);
-    border-radius: 0% 0% 100% 100%/ 5% 5% 28% 28%;
+    background: url('../Home/images/aboutusBg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 493px;
   }
   
   .fw700{
@@ -1130,8 +1130,14 @@ input[type="radio"]:checked + .custom-radio {
   .fw400{
     font-weight: 400;
   }
+  .fs35{
+    font-size: 35px;
+  }
   .fs34{
     font-size: 34px;
+  }
+  .fs30{
+    font-size: 30px;
   }
   .fs20{
     font-size: 20px;
@@ -1155,7 +1161,12 @@ input[type="radio"]:checked + .custom-radio {
     font-size: 40px;
     line-height: 64px;
   }
-  .exchangePrice h4 span{
+  .exchangePrice img{
+    padding: 5px;
+    border-radius: 140px; 
+    border: 1px dashed #FFBE5A ;
+  }
+   h4 span{
     color: #DC8513;
   }
   .captions{
@@ -1195,13 +1206,17 @@ input[type="radio"]:checked + .custom-radio {
 
   @media (max-width:900px) {
     .exchangePrice{
-      border-radius: 0% 0% 100% 100%/ 5% 5% 15% 15%;
+      background-image: url('../Home/images/AgreeMobview.png');
+      min-height: auto;
     }
     .rfs12{
       font-size: 12px;
     }
     .rfs14{
       font-size: 14px;
+    }
+    .rfs16{
+      font-size: 16px;
     }
     .rfs20{
       font-size: 20px;
@@ -1223,5 +1238,73 @@ input[type="radio"]:checked + .custom-radio {
     }
     .whyUs p{
       line-height: 22px;
+    }
+  }
+
+
+  /* CONTACT US PAGE CSS */
+  .contactHero{
+    background: url('../Home/images/contactBg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 375px;
+  }
+  .contactHero p{
+    color: #F8F8F8;
+    line-height: 28px;
+  }
+  .contactHero h4{
+    line-height: 45.5px;
+  }
+  .contactUs{
+    background-color: #F9F9F9;
+  }
+  .iconDiv{
+    height: 31px;
+    width: 31px;
+    background-color: #EEEEEE;
+  }
+  .iconDiv .bi{
+    margin: 0;
+  }
+  .services{
+    color: #475467;
+    line-height: 32px;
+  }
+  .cred{
+    line-height: 27px;
+  }
+  .formDiv{
+    position: absolute;
+    width: 40%;
+    max-width: 476px;
+    top: 100px;
+    right: 120px;
+  }
+  .formDiv p{
+    color: #1E293B;
+  }
+  @media (max-width:900px){
+    .contactHero{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* height: 290px; */
+    }
+    .contactHero h4{
+      line-height: 30px;
+    }
+    .cred{
+      line-height: 24px;
+    }
+    .formDiv{
+      width: 100%;
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+    .contactHero p{
+      line-height: 24px;
     }
   }
