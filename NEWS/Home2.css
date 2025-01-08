@@ -1330,6 +1330,14 @@ input[type="radio"]:checked + .custom-radio {
   .formDiv .btn-primary{
     height: 50px;
   }
+  .form-control:focus{
+    box-shadow: none;
+    background-color: #F9F9F9;
+  }
+  .form-select:focus{
+    box-shadow: none;
+    background-color: #F9F9F9;
+  }
   
   @media (max-width:900px){
     .contactUs{
@@ -1363,6 +1371,9 @@ input[type="radio"]:checked + .custom-radio {
     .formDiv .btn-primary{
       background-color: #DC8513;
       color: #fff;
+    }
+    .formDiv input{
+      height: 53px;
     }
   }
   @media(max-width:425px){
