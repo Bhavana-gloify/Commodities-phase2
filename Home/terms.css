@@ -135,6 +135,7 @@
     font-size: 12px;
     font-weight: 400;
     text-align: left;
+    padding-left: 9px;
   }
   
   .form-container .form-check {
@@ -147,16 +148,21 @@
   }
   
   .form-check-input:checked {
-    background-color: #DC8513;
-    border-color: #DC8513;
+    background-color: #FFFFFF;
     border: 1px solid #DC8513;
+  }
+  .form-check-input:checked[type=radio] {
+    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -3 6 6'%3e%3ccircle r='2' fill='%23DC8513'/%3e%3c/svg%3e");
+
+  }
+  .form-check-input:focus {
+    box-shadow: none !important;
   }
   
   .form-container .form-control {
     background: #F9F9F9;
     margin-bottom: 1.5rem;
     border: none;
-    padding: 0.5rem 1.2rem !important;
   }
   
   .form-control:focus {
@@ -164,20 +170,26 @@
   }
   
   .form-container .form-control::placeholder {
-    font-family: Poppins, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 22px;
-    color: #475467;
+    font-family: Poppins, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 22px !important;
+    color: #475467 !important;
   }
   
   input {
     border-radius: 50px !important;
     height: 59px;
   }
-  
+
+  input.form-control{
+    padding: 0.5rem 1.2rem !important;
+  }
   textarea {
     border-radius: 25px !important;
+  }
+  textarea.form-control{
+    padding: 1.5rem 1.5rem !important;
   }
   
   .btn-submit {
@@ -189,6 +201,9 @@
     color: #FFFFFF;
     border-radius: 50px;
     height: 50px;
+  }
+  .btn-submit:hover{
+    background-color: #DC8513;
   }
   
   .customer-support {
@@ -205,6 +220,9 @@
     text-decoration: none;
     font-weight: 600;
   }
+  
+
+
   
   @media screen and (max-width: 900px) {
     .feedback .header {
@@ -228,6 +246,9 @@
       box-shadow: 0px 4px 12px 0px #00000005;
     }
   }
+
+
+
   
 
 
