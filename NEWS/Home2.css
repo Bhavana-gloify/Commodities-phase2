@@ -1127,6 +1127,9 @@ input[type="radio"]:checked + .custom-radio {
   .fw600{
     font-weight: 600;
   }
+  .fw500{
+    font-weight: 500;
+  }
   .fw400{
     font-weight: 400;
   }
@@ -1153,6 +1156,9 @@ input[type="radio"]:checked + .custom-radio {
   }
   .fs14{
     font-size: 14px;
+  }
+  .fs12{
+    font-size: 12px;
   }
   .exchangePrice .title{
     line-height: 33px;
@@ -1220,6 +1226,9 @@ input[type="radio"]:checked + .custom-radio {
     }
     .rfs16{
       font-size: 16px;
+    }
+    .rfs18{
+      font-size: 18px;
     }
     .rfs20{
       font-size: 20px;
@@ -1380,5 +1389,69 @@ input[type="radio"]:checked + .custom-radio {
     .form-select{
       width: 60%;
       max-width: 90px;
+    }
+  }
+
+  /* PAYMENTS PAGE CSS */
+
+  .btns .btn{
+    min-width: 211px;
+    height: 54px;
+  }
+  .btns .btn-outline-secondary{
+    background-color: #f1f1f1;
+    color: #474747;
+    border: 1px solid #f1f1f1;
+  }
+  .download{
+    color: #DC8513;
+  }
+  .billBox div{
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #E2E8F0;
+  }
+  .billBox{
+    border: 1px solid #E2E8F0;
+  }
+  .nextBill{
+    color: #979797;
+  }
+  .gst{
+    color: #475467;
+  }
+  .cost{
+    color: #1E293B;
+  }
+  .shade475{
+    color: #475467;
+  }
+  .lh30{
+    line-height: 30px;
+  }
+  .lh31{
+    line-height: 31px;
+  }
+  .lh27{
+    line-height: 27px;
+  }
+  .lh24{
+    line-height: 24px;
+  }
+  .lh22{
+    line-height: 22px;
+  }
+  .lh18{
+    line-height: 18px;
+  }
+  @media(max-width:900px){
+    .btns .btn{
+      min-width: 90px;
+    }
+    .rlh24{
+      line-height: 24px;
+    }
+    .btns .btn-primary {
+      color: #fff ;
+      background-color: #dc8513;
     }
   }
