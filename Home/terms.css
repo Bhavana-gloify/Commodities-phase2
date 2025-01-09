@@ -1,6 +1,8 @@
   /* privacy policy */
 
-
+*{
+  font-family: poppins;
+}
 .orangetext{
   color: #DC8513;
 }
@@ -74,6 +76,7 @@
   .feedback .header {
     height: 399px;
     background-image: url('./images/feedback.svg');
+
   }
   
   .feedback .container {
@@ -327,4 +330,131 @@
     font-size: 16px;
   }
 
+}
+
+
+/* -----Careers----- */
+
+.careers{
+  background: #F9F9F9;
+
+}
+
+.careersheader{
+  height: 510px;
+  background-image: url('./images/careersbanner.png');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image in the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.careersheader h1{
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 69.12px;
+  color: #FFFFFF;
+}
+.careersheader p{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.careercontainer{
+  background: #F9F9F9;
+}
+
+.careercontainer h1{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 61.92px;
+
+}
+.careercontainer p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #475467;
+
+}
+
+.careercard{
+  box-shadow: 0px 14px 24px 0px #0000000A;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border: none;
+  position: relative;
+
+}
+
+ .role{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 42px;  
+  color: #1E293B;
+
+}
+.jobtype{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #979797;
+
+}
+.job-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #999;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 900px) {
+  .careersheader{
+    height: 287px;
+    background-image: url('./images/carrermobilebanner.png');
+    background-size: center; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  
+  }
+
+  .careersheader h1{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .careersheader p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .careercontainer h1{
+    font-size: 20px;
+    line-height: 66.24px;
+  }
+  .careercontainer p{
+    font-size: 14px;
+    line-height: 28px;    
+  }
+  .role{
+    font-size: 18px;
+  }
+  .jobtype{
+    font-size: 14px;
+  }
+  
 }
