@@ -579,9 +579,6 @@ th > p, td >p{
     line-height: 27px;
     color: #1E293B;
 }
-.borderRadius30{
-    border-radius: 30px;
-}
 .cardBg{
     background-color: #FEF9F0;
 }
@@ -777,9 +774,6 @@ input[type="radio"]:checked + .custom-radio {
   }
   .required{
       background-color: #EDF1F8;
-  }
-  .borderRadius10{
-      border-radius: 10px;
   }
   .searchInput{
     border: 1px solid #282828;
@@ -1163,12 +1157,6 @@ input[type="radio"]:checked + .custom-radio {
     height: 50px;
     background-color: #F8A538;
   }
-  .borderRadius25{
-    border-radius: 25px;
-  }
-  .borderRadius50{
-    border-radius: 50px;
-  }
   
 
   @media (max-width:900px) {
@@ -1446,6 +1434,18 @@ input[type="radio"]:checked + .custom-radio {
 }
 .lh18{
   line-height: 18px;
+}
+.borderRadius10{
+  border-radius: 10px;
+}
+.borderRadius25{
+  border-radius: 25px;
+}
+.borderRadius30{
+  border-radius: 30px;
+}
+.borderRadius50{
+  border-radius: 50px;
 }
 
 
