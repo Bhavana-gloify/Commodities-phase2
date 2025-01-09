@@ -1028,7 +1028,6 @@ input[type="radio"]:checked + .custom-radio {
 
 
 /* footer */
-
   .footer {
     background-color: #1f2937; /* Dark background */
     color: #fff; /* White text */
@@ -1039,7 +1038,6 @@ input[type="radio"]:checked + .custom-radio {
     width: 242px;
     height: 77px;
   }
-
 
   .footer-logo p{
     font-size: 14px;
@@ -1120,46 +1118,6 @@ input[type="radio"]:checked + .custom-radio {
     background-repeat: no-repeat;
     min-height: 493px;
   }
-  
-  .fw700{
-    font-weight: 700;
-  }
-  .fw600{
-    font-weight: 600;
-  }
-  .fw500{
-    font-weight: 500;
-  }
-  .fw400{
-    font-weight: 400;
-  }
-  .fs35{
-    font-size: 35px;
-  }
-  .fs34{
-    font-size: 34px;
-  }
-  .fs30{
-    font-size: 30px;
-  }
-  .fs20{
-    font-size: 20px;
-  }
-  .fs18{
-    font-size: 18px;
-  }
-  .fs17{
-    font-size: 17px;
-  }
-  .fs16{
-    font-size: 16px;
-  }
-  .fs14{
-    font-size: 14px;
-  }
-  .fs12{
-    font-size: 12px;
-  }
   .exchangePrice .title{
     line-height: 33px;
   }
@@ -1218,21 +1176,7 @@ input[type="radio"]:checked + .custom-radio {
       background-image: url('../Home/images/AgreeMobview.png');
       min-height: auto;
     }
-    .rfs12{
-      font-size: 12px;
-    }
-    .rfs14{
-      font-size: 14px;
-    }
-    .rfs16{
-      font-size: 16px;
-    }
-    .rfs18{
-      font-size: 18px;
-    }
-    .rfs20{
-      font-size: 20px;
-    }
+    
     .exchangePrice h4{
       font-size: 20px;
       line-height: 35px;
@@ -1429,33 +1373,100 @@ input[type="radio"]:checked + .custom-radio {
   .shade475{
     color: #475467;
   }
-  .lh30{
-    line-height: 30px;
-  }
-  .lh31{
-    line-height: 31px;
-  }
-  .lh27{
-    line-height: 27px;
-  }
-  .lh24{
-    line-height: 24px;
-  }
-  .lh22{
-    line-height: 22px;
-  }
-  .lh18{
-    line-height: 18px;
-  }
+  
   @media(max-width:900px){
     .btns .btn{
       min-width: 90px;
-    }
-    .rlh24{
-      line-height: 24px;
     }
     .btns .btn-primary {
       color: #fff ;
       background-color: #dc8513;
     }
   }
+
+
+
+
+
+
+ /* COMMON CSS CLASSES */
+.fw700{
+  font-weight: 700;
+}
+.fw600{
+  font-weight: 600;
+}
+.fw500{
+  font-weight: 500;
+}
+.fw400{
+  font-weight: 400;
+}
+.fs35{
+  font-size: 35px;
+}
+.fs34{
+  font-size: 34px;
+}
+.fs30{
+  font-size: 30px;
+}
+.fs20{
+  font-size: 20px;
+}
+.fs18{
+  font-size: 18px;
+}
+.fs17{
+  font-size: 17px;
+}
+.fs16{
+  font-size: 16px;
+}
+.fs14{
+  font-size: 14px;
+}
+.fs12{
+  font-size: 12px;
+}
+ .lh30{
+  line-height: 30px;
+}
+.lh31{
+  line-height: 31px;
+}
+.lh27{
+  line-height: 27px;
+}
+.lh24{
+  line-height: 24px;
+}
+.lh22{
+  line-height: 22px;
+}
+.lh18{
+  line-height: 18px;
+}
+
+
+@media(max-width:900px){
+  .rlh24{
+    line-height: 24px;
+  }
+
+  .rfs12{
+    font-size: 12px;
+  }
+  .rfs14{
+    font-size: 14px;
+  }
+  .rfs16{
+    font-size: 16px;
+  }
+  .rfs18{
+    font-size: 18px;
+  }
+  .rfs20{
+    font-size: 20px;
+  }
+}
