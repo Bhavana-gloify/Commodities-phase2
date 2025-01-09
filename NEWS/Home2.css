@@ -1202,6 +1202,9 @@ input[type="radio"]:checked + .custom-radio {
   .borderRadius25{
     border-radius: 25px;
   }
+  .borderRadius50{
+    border-radius: 50px;
+  }
   
 
   @media (max-width:900px) {
@@ -1285,12 +1288,67 @@ input[type="radio"]:checked + .custom-radio {
   .formDiv p{
     color: #1E293B;
   }
+  .formDiv input{
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 50px;
+    height: 59px;
+  }
+  .formDiv select{
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 50px;
+  }
+  .formDiv textarea{
+    background-color: #f9f9f9;
+    border: none;
+    min-height: 130px;
+  }
+  .mobView{
+    background-color: #f9f9f9;
+    border: none;
+  }
+  .formDiv input::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #475467;
+  }
+  .formDiv textarea::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #475467;
+  }
+  .form-select {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #475467;
+    width: 30%;
+  }
+  .formDiv .btn-primary{
+    height: 50px;
+  }
+  .form-control:focus{
+    box-shadow: none;
+    background-color: #F9F9F9;
+  }
+  .form-select:focus{
+    box-shadow: none;
+    background-color: #F9F9F9;
+  }
+  
   @media (max-width:900px){
+    .contactUs{
+      background-color: #fff;
+    }
     .contactHero{
+      background: url('../Home/images/contactMobi.svg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      /* height: 290px; */
+      height: 290px;
     }
     .contactHero h4{
       line-height: 30px;
@@ -1301,10 +1359,26 @@ input[type="radio"]:checked + .custom-radio {
     .formDiv{
       width: 100%;
       position: relative;
-      top: auto;
+      top: 50px;
       right: auto;
     }
     .contactHero p{
       line-height: 24px;
+    }
+    .formDiv form{
+      border: 1px solid #E2E8F0;
+    }
+    .formDiv .btn-primary{
+      background-color: #DC8513;
+      color: #fff;
+    }
+    .formDiv input{
+      height: 53px;
+    }
+  }
+  @media(max-width:425px){
+    .form-select{
+      width: 60%;
+      max-width: 90px;
     }
   }
