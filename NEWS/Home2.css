@@ -1261,7 +1261,7 @@ input[type="radio"]:checked + .custom-radio {
     background-position: center;
     background-repeat: no-repeat;
     height: 375px;
-  }
+  } 
   .contactHero p{
     color: #F8F8F8;
     line-height: 28px;
@@ -1383,6 +1383,10 @@ input[type="radio"]:checked + .custom-radio {
     }
     .formDiv input{
       height: 53px;
+    }
+    .services{
+      color: #64748B !important;
+
     }
   }
   @media(max-width:425px){
