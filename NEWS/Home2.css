@@ -1364,7 +1364,7 @@ input[type="radio"]:checked + .custom-radio {
   
   @media(max-width:900px){
     .btns .btn{
-      min-width: 90px;
+      min-width: 100px;
     }
     .btns .btn-primary {
       color: #fff ;
@@ -1447,6 +1447,9 @@ input[type="radio"]:checked + .custom-radio {
 .borderRadius50{
   border-radius: 50px;
 }
+.billBox .profitBg{
+  border: 0.5px solid #0BC44A;
+}
 
 
 @media(max-width:900px){
@@ -1470,3 +1473,4 @@ input[type="radio"]:checked + .custom-radio {
     font-size: 20px;
   }
 }
+
