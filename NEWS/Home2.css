@@ -1334,7 +1334,26 @@ input[type="radio"]:checked + .custom-radio {
     min-width: 211px;
     height: 54px;
   }
+  .btns .btn-primary:active {
+    color: #fff;
+    background-color: #DC8513;
+    border-color:  #DC8513;
+    box-shadow: none;
+}
   .btns .btn-outline-secondary{
+    background-color: #f1f1f1;
+    color: #474747;
+    border: 1px solid #f1f1f1;
+  }
+  .btns .btn:focus{
+    box-shadow: none;
+  }
+  .btns .btn-outline-secondary{
+    background-color: #f1f1f1;
+    color: #474747;
+    border: 1px solid #f1f1f1;
+  }
+  .btns .btn-outline-secondary:active{
     background-color: #f1f1f1;
     color: #474747;
     border: 1px solid #f1f1f1;
@@ -1361,16 +1380,45 @@ input[type="radio"]:checked + .custom-radio {
   .shade475{
     color: #475467;
   }
+  td a:hover {
+    color: #DC8513;
+  }
+  .billBox .profitBg{
+    border: 0.5px solid #0BC44A;
+  }
   
   @media(max-width:900px){
     .btns .btn{
-      min-width: 90px;
+      min-width: 100px;
     }
     .btns .btn-primary {
       color: #fff ;
       background-color: #dc8513;
     }
   }
+
+/* PLATFORM PARTNERS CSS */
+.partner{
+    background: url('../Home/images/aboutusBg.svg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 292px;
+}
+.tradingView img{
+  width: 25%;
+}
+.tradingView p a{
+  color: #0d6efd;
+}
+
+@media(max-width:900px){
+  .partner{
+    background-image: url('../Home/images/AgreeMobview.png');
+    min-height: 165px;
+  }
+}
+
 
 
 
@@ -1389,6 +1437,9 @@ input[type="radio"]:checked + .custom-radio {
 }
 .fw400{
   font-weight: 400;
+}
+.fs40{
+  font-size: 40px;
 }
 .fs35{
   font-size: 35px;
@@ -1417,11 +1468,14 @@ input[type="radio"]:checked + .custom-radio {
 .fs12{
   font-size: 12px;
 }
- .lh30{
-  line-height: 30px;
+.lh32{
+  line-height: 32px;
 }
 .lh31{
   line-height: 31px;
+}
+ .lh30{
+  line-height: 30px;
 }
 .lh27{
   line-height: 27px;
@@ -1449,7 +1503,11 @@ input[type="radio"]:checked + .custom-radio {
 }
 
 
+
 @media(max-width:900px){
+  .rlh29{
+    line-height: 24px;
+  }
   .rlh24{
     line-height: 24px;
   }
@@ -1470,3 +1528,4 @@ input[type="radio"]:checked + .custom-radio {
     font-size: 20px;
   }
 }
+
