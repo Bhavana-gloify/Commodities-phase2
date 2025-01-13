@@ -1377,9 +1377,6 @@ input[type="radio"]:checked + .custom-radio {
   .cost{
     color: #1E293B;
   }
-  .shade475{
-    color: #475467;
-  }
   td a:hover {
     color: #DC8513;
   }
@@ -1421,11 +1418,88 @@ input[type="radio"]:checked + .custom-radio {
 
 
 
+/* SUBSCRIBER LOGIN PAGE CSS */
+
+.loginDIv input{
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 50px;
+  height: 59px;
+}
+.pwDiv{
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 50px;
+}
+.loginDIv select{
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 50px;
+}
+.loginDIv input::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #475467;
+}
+.signInBtn{
+  background-color: #707070;
+  border: 1px solid #707070;
+  height: 50px;
+}
+.resetBtn{
+  background-color: #DC8513;
+  border: 1px solid #DC8513;
+  height: 50px;
+}
+.pwDiv .bi{
+  font-size: 18px;
+  color: #475467;
+}
+.socialBtn .btn-primary{
+  background-color: #fff;
+  border: 0.5px solid #D9D9D9;
+  color: #7D857F;
+  min-width: 133px;
+  height: 45px;
+}
+.resetPw{
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+@media(max-width:900px){
+  .loginDIv .pw::placeholder{
+    font-size: 15px;
+  }
+  .loginDIv input{
+    height: 53px;
+  }
+  .signInBtn{
+    background-color: #DC8513;
+    border: 1px solid #DC8513;
+    color: #fff;
+  }
+  .resetPw{
+    box-shadow: none;
+  }
+}
+
+
 
 
 
 
  /* COMMON CSS CLASSES */
+.shade475{
+  color: #475467;
+}
+.shade282{
+  color: #282828;
+}
+.shadeDC8{
+  color:#DC8513;
+}
 .fw700{
   font-weight: 700;
 }
@@ -1468,6 +1542,9 @@ input[type="radio"]:checked + .custom-radio {
 .fs12{
   font-size: 12px;
 }
+.lh36{
+  line-height: 36px;
+}
 .lh32{
   line-height: 32px;
 }
@@ -1492,6 +1569,9 @@ input[type="radio"]:checked + .custom-radio {
 .borderRadius10{
   border-radius: 10px;
 }
+.borderRadius20{
+  border-radius: 20px;
+}
 .borderRadius25{
   border-radius: 25px;
 }
@@ -1510,6 +1590,9 @@ input[type="radio"]:checked + .custom-radio {
   }
   .rlh24{
     line-height: 24px;
+  }
+  .rlh21{
+    line-height: 21px;
   }
 
   .rfs12{
