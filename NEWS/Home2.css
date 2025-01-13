@@ -1466,6 +1466,17 @@ input[type="radio"]:checked + .custom-radio {
 .resetPw{
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
 }
+.terms .bi{
+  font-size: 16px;
+}
+.terms p{
+  display: flex;
+  color: #45C669;
+  margin-bottom: 0;
+}
+.terms .shade475{
+  color: #475467;
+}
 
 
 @media(max-width:900px){
@@ -1482,6 +1493,9 @@ input[type="radio"]:checked + .custom-radio {
   }
   .resetPw{
     box-shadow: none;
+  }
+  .resetBtn{
+    color: #fff;
   }
 }
 
@@ -1542,8 +1556,14 @@ input[type="radio"]:checked + .custom-radio {
 .fs12{
   font-size: 12px;
 }
+.lh45{
+  line-height: 45px;
+}
 .lh36{
   line-height: 36px;
+}
+.lh33{
+  line-height: 33px;
 }
 .lh32{
   line-height: 32px;
@@ -1562,6 +1582,9 @@ input[type="radio"]:checked + .custom-radio {
 }
 .lh22{
   line-height: 22px;
+}
+.lh21{
+  line-height: 21px;
 }
 .lh18{
   line-height: 18px;

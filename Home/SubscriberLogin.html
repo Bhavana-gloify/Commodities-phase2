@@ -27,8 +27,8 @@
     <div class="login-container m-0 p-md-5 p-4">
         <div class="row bg-white mx-md-5 content">
             <!-- Left Column -->
-            <div class="col-12 col-md-6 p-3 p-md-5">
-                <div class=" loginDIv pt-md-5 px-md-5">
+            <div class="col-12 col-md-6 ">
+                <div class="align-items-center d-flex flex-column h-100 justify-content-center loginDIv">
 
                     <!-- NORMAL LOGIN DIV -->
                     <div class="signIn d-none">
@@ -62,14 +62,47 @@
 
 
                     <!-- PASSWORD RESET DIV -->
-                    <div class="borderRadius20 mt-md-5 p-md-4 resetPw">
+                    <div class="borderRadius20 p-md-4 resetPw d-none">
                         <form class="bg-white  d-flex flex-column gap-3 text-center " >
                             <h4 class=" shade475 fw700 mb-0 mt-3">Reset password</h4>
-                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475" >Hi, enter your details to get sign in to your account</p>
+                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475" >Enter your email address, phone number</p>
                             <input type="text" class="form-control ps-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID or Mobile number*" >
                             
     
                             <button type="submit" class="btn btn-primary borderRadius50 resetBtn">Next</button>
+                            
+                            <p class="fs14 fw500 lh36 shade475 mb-0" >Back to <a href="" class="shadeDC8" >Sign In</a> </p>
+                        
+                        </form>
+                    </div>
+
+
+                    <!-- CREATING NEW PASSWORD DIV -->
+                    <div class="borderRadius20 p-md-4 resetPw">
+                        <form class="bg-white  d-flex flex-column gap-3 text-center " >
+                            <h4 class=" shade475 fw700 fs30 mb-0 mt-3 lh45">Reset password</h4>
+                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475" >Enter your email address, phone number</p>
+                            <div class="align-items-center d-flex justify-content-between pwDiv pe-3">
+                                <input type="password" class="form-control ps-3 pw" id="exampleInputPassword1" placeholder="Password*">
+                                <span><i class="bi bi-eye"></i></span>
+                                <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+                            <div class="align-items-center d-flex justify-content-between pwDiv pe-3">
+                                <input type="password" class="form-control ps-3 pw" id="exampleInputPassword1" placeholder="Confirm Password*">
+                                <span><i class="bi bi-eye"></i></span>
+                                <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+
+                            <div class="terms fw400 fs14 lh33 text-start">
+                                <p  ><i class="bi bi-check"></i> Must include at least 1 upper case</p>
+                                <p  ><i class="bi bi-check"></i> Must include at least 1 lower case</p>
+                                <p  ><i class="bi bi-check"></i> Must include at least 1 number</p>
+                                <p  ><i class="bi bi-check"></i> Must include minimum of 8 characters</p>
+                                <p class="shade475" ><i class="bi bi-check"></i> Must include at least 1 special character (e.g. ! @ # $ % ^ )</p>
+                            </div>
+                            
+    
+                            <button type="submit" class="btn btn-primary borderRadius50 resetBtn">Submit</button>
                             
                             <p class="fs14 fw500 lh36 shade475 mb-0" >Back to <a href="" class="shadeDC8" >Sign In</a> </p>
                         
