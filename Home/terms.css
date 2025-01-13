@@ -458,3 +458,128 @@
   }
   
 }
+
+/* careers2 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.breadcrumb-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-left: 12px;
+}
+.breadcrumb-item a {
+  color: #1e293b;
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #dc8513;
+}
+
+.role{
+  border-bottom: 1px solid #CCCCCC8A
+}
+
+.role h3{
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #1E293B;
+
+}
+.role span{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 54px;
+
+}
+.details span{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 40px !important;
+  color: #DC8513 !important;
+}
+
+.descript h4, .card h4{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #1E293B;
+
+}
+
+
+.descript li, p{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #475467;
+  overflow-wrap: break-word;
+}
+.formcontainer{
+  background: #F9F9F9;
+  border: 0.5px solid #D9D9D9;
+  width: 65%;
+  border-radius: 15px;
+}
+.resumebtn{
+  background: #F2D6AC59;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;  
+  color: #DC8513;
+  height: 60px;
+  border: 1px dashed #F8A538;
+  border-radius: 14px;
+}
+.submitbtn{
+  background: #DC8513;
+  border: none;
+  box-shadow: 0px 20px 35px 0px #6C84A940;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #F7F7F7;  
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 900px) {
+
+.role h3{
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 45px;
+  
+}
+.role  span{
+  font-size: 18px;
+}
+
+.descript li, p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.descript h4{
+  font-size: 20px;
+}
+.formcontainer{
+  background: #F9F9F9;
+  border: 0.5px solid #D9D9D9;
+  width: 100%;
+}
+.submitbtn{
+  font-weight: 500;
+  width:100%;
+}
+}
