@@ -1,122 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
     <title>Login</title>
-    
+
     <!-- Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./SigninLogin.css">
-    <link rel="stylesheet" href="../NEWS/Home2.css">
-</head>
+    <link rel="stylesheet" href="./SigninLogin.css" />
+    <link rel="stylesheet" href="../NEWS/Home2.css" />
+  </head>
 
-<body>
+  <body>
     <div class="login-container m-0 p-md-5 p-4">
-        <div class="row bg-white mx-md-5 content">
-            <!-- Left Column -->
-            <div class="col-12 col-md-6 ">
-                <div class="align-items-center d-flex flex-column h-100 justify-content-center loginDIv">
-
-                    <!-- NORMAL LOGIN DIV -->
-                    <div class="signIn d-none">
-                        <form class="bg-white borderRadius30 d-flex flex-column gap-3 " >
-                            <h4 class="text-center text-md-start shade475 fw700 fs28 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2">Let's <span  >Start</span></h4>
-                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475" >Hi, enter your details to get sign in to your account</p>
-                            <input type="text" class="form-control ps-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID or Mobile number*" >
-                            <div class="align-items-center d-flex justify-content-between pwDiv pe-3">
-                                <input type="password" class="form-control ps-3 pw" id="exampleInputPassword1" placeholder="Password*">
-                                <span><i class="bi bi-eye"></i></span>
-                                <span class="d-none"><i class="bi bi-eye-slash"></i></span>
-                            </div>
-                            
-                            <a href="" class="fs12 fw500 lh36 shade475 text-end" >Forgot password ?</a>
-                            
-    
-                            <button type="submit" class="btn btn-primary borderRadius50 signInBtn">Sign In</button>
-                            <!-- other login options -->
-                            <div class="text-center" >
-                                <p class="fs12 fw500 lh36 shade475">Or sign in with</p>
-                                <div class="d-flex gap-3 justify-content-center socialBtn">
-                                    <button type="submit" class="align-items-center btn btn-primary d-flex gap-1 justify-content-center"> <img src="../Home/images/google.svg" alt="google-logo">Google</button>
-    
-                                    <button type="submit" class="align-items-center btn btn-primary d-flex gap-1 justify-content-center"> <img src="../Home/images/fb.svg" alt="facebook-logo">Facebook</button>
-                                </div>
-                                <p class="fs14 fw500 lh36 shade282 mt-3 mb-0" >Don’t have an account ? <a href="" class="shadeDC8" >Sign Up</a> </p>
-                            </div>
-                        
-                        </form>
-                    </div>
-
-
-                    <!-- PASSWORD RESET DIV -->
-                    <div class="borderRadius20 p-md-4 resetPw d-none">
-                        <form class="bg-white  d-flex flex-column gap-3 text-center " >
-                            <h4 class=" shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2">Reset <span class="toHide shade475">Password</span> <span class="hidden">Password</span></h4>
-                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475" >Enter your email address, phone number</p>
-                            <input type="text" class="form-control ps-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email ID or Mobile number*" >
-                            
-    
-                            <button type="submit" class="btn btn-primary borderRadius50 resetBtn">Next</button>
-                            
-                            <p class="fs14 fw500 lh36 shade475 mb-0" >Back to <a href="" class="shadeDC8" >Sign In</a> </p>
-                        
-                        </form>
-                    </div>
-
-
-                    <!-- CREATING NEW PASSWORD DIV -->
-                    <div class="borderRadius20 p-md-4 resetPw">
-                        <form class="bg-white  d-flex flex-column gap-3 text-center " >
-                            <h4 class=" shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2">Reset <span class="toHide shade475">Password</span> <span class="hidden">Password</span></h4>
-                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475" >Enter your email address, phone number</p>
-                            <div class="align-items-center d-flex justify-content-between pwDiv pe-3">
-                                <input type="password" class="form-control ps-3 pw" id="exampleInputPassword1" placeholder="Password*">
-                                <span><i class="bi bi-eye"></i></span>
-                                <span class="d-none"><i class="bi bi-eye-slash"></i></span>
-                            </div>
-                            <div class="align-items-center d-flex justify-content-between pwDiv pe-3">
-                                <input type="password" class="form-control ps-3 pw" id="exampleInputPassword1" placeholder="Confirm Password*">
-                                <span><i class="bi bi-eye"></i></span>
-                                <span class="d-none"><i class="bi bi-eye-slash"></i></span>
-                            </div>
-
-                            <div class="terms fw400 fs14 lh33 text-start">
-                                <p  ><i class="bi bi-check"></i> Must include at least 1 upper case</p>
-                                <p  ><i class="bi bi-check"></i> Must include at least 1 lower case</p>
-                                <p  ><i class="bi bi-check"></i> Must include at least 1 number</p>
-                                <p  ><i class="bi bi-check"></i> Must include minimum of 8 characters</p>
-                                <p class="shade475 rshade7D8" ><i class="bi bi-check"></i> Must include at least 1 special character (e.g. ! @ # $ % ^ )</p>
-                            </div>
-                            
-    
-                            <button type="submit" class="btn btn-primary borderRadius50 resetBtn">Submit</button>
-                            
-                            <p class="fs14 fw500 lh36 shade475 mb-0" >Back to <a href="" class="shadeDC8" >Sign In</a> </p>
-                        
-                        </form>
-                    </div>
-
+      <div class="row bg-white mx-md-5 content">
+        <!-- Left Column -->
+        <div class="col-12 col-md-6">
+          <div
+            class="align-items-center d-flex flex-column h-100 justify-content-center loginDIv"
+          >
+            <!-- NORMAL LOGIN DIV -->
+            <div class="signIn d-none">
+              <form class="bg-white borderRadius30 d-flex flex-column gap-3">
+                <h4
+                  class="text-center text-md-start shade475 fw700 fs28 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
+                >
+                  Let's <span>Start</span>
+                </h4>
+                <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                  Hi, enter your details to get sign in to your account
+                </p>
+                <input
+                  type="text"
+                  class="form-control ps-3"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email ID or Mobile number*"
+                />
+                <div
+                  class="align-items-center d-flex justify-content-between pwDiv pe-3"
+                >
+                  <input
+                    type="password"
+                    class="form-control ps-3 pw"
+                    id="exampleInputPassword1"
+                    placeholder="Password*"
+                  />
+                  <span><i class="bi bi-eye"></i></span>
+                  <span class="d-none"><i class="bi bi-eye-slash"></i></span>
                 </div>
+
+                <a href="" class="fs12 fw500 lh36 shade475 text-end"
+                  >Forgot password ?</a
+                >
+
+                <button
+                  type="submit"
+                  class="btn btn-primary borderRadius50 signInBtn"
+                >
+                  Sign In
+                </button>
+                <!-- other login options -->
+                <div class="text-center">
+                  <p class="fs12 fw500 lh36 shade475">Or sign in with</p>
+                  <div class="d-flex gap-3 justify-content-center socialBtn">
+                    <button
+                      type="submit"
+                      class="align-items-center btn btn-primary d-flex gap-1 justify-content-center"
+                    >
+                      <img
+                        src="../Home/images/google.svg"
+                        alt="google-logo"
+                      />Google
+                    </button>
+
+                    <button
+                      type="submit"
+                      class="align-items-center btn btn-primary d-flex gap-1 justify-content-center"
+                    >
+                      <img
+                        src="../Home/images/fb.svg"
+                        alt="facebook-logo"
+                      />Facebook
+                    </button>
+                  </div>
+                  <p class="fs14 fw500 lh36 shade282 mt-3 mb-0">
+                    Don't have an account ?
+                    <a href="" class="shadeDC8">Sign Up</a>
+                  </p>
+                </div>
+              </form>
             </div>
 
-            <!-- Right Column -->
-            <div class="col-md-6 d-none d-md-block p-0">
-                <img class="w-100" src="./images/Group 4.png" alt="Image Description">
+            <!-- PASSWORD RESET DIV -->
+            <div class="borderRadius20 p-md-4 resetPw d-none">
+              <form class="bg-white d-flex flex-column gap-3 text-center">
+                <h4
+                  class="shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
+                >
+                  Reset <span class="toHide shade475">Password</span>
+                  <span class="hidden">Password</span>
+                </h4>
+                <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                  Enter your email address, phone number
+                </p>
+                <input
+                  type="text"
+                  class="form-control ps-3"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email ID or Mobile number*"
+                />
+
+                <button
+                  type="submit"
+                  class="btn btn-primary borderRadius50 resetBtn"
+                >
+                  Next
+                </button>
+
+                <p class="fs14 fw500 lh36 shade475 mb-0">
+                  Back to <a href="" class="shadeDC8">Sign In</a>
+                </p>
+              </form>
             </div>
+
+            <!-- CREATING NEW PASSWORD DIV -->
+            <div class="borderRadius20 p-md-4 resetPw d-none">
+              <form class="bg-white d-flex flex-column gap-3 text-center">
+                <h4
+                  class="shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
+                >
+                  Reset <span class="toHide shade475">Password</span>
+                  <span class="hidden">Password</span>
+                </h4>
+                <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                  Enter your email address, phone number
+                </p>
+                <div
+                  class="align-items-center d-flex justify-content-between pwDiv pe-3"
+                >
+                  <input
+                    type="password"
+                    class="form-control ps-3 pw"
+                    id="exampleInputPassword1"
+                    placeholder="Password*"
+                  />
+                  <span><i class="bi bi-eye"></i></span>
+                  <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                </div>
+                <div
+                  class="align-items-center d-flex justify-content-between pwDiv pe-3"
+                >
+                  <input
+                    type="password"
+                    class="form-control ps-3 pw"
+                    id="exampleInputPassword1"
+                    placeholder="Confirm Password*"
+                  />
+                  <span><i class="bi bi-eye"></i></span>
+                  <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                </div>
+
+                <div class="terms fw400 fs14 lh33 text-start">
+                  <p>
+                    <i class="bi bi-check"></i> Must include at least 1 upper
+                    case
+                  </p>
+                  <p>
+                    <i class="bi bi-check"></i> Must include at least 1 lower
+                    case
+                  </p>
+                  <p>
+                    <i class="bi bi-check"></i> Must include at least 1 number
+                  </p>
+                  <p>
+                    <i class="bi bi-check"></i> Must include minimum of 8
+                    characters
+                  </p>
+                  <p class="shade475 rshade7D8">
+                    <i class="bi bi-check"></i> Must include at least 1 special
+                    character (e.g. ! @ # $ % ^ )
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-primary borderRadius50 resetBtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Submit
+                </button>
+
+                <p class="fs14 fw500 lh36 shade475 mb-0">
+                  Back to <a href="" class="shadeDC8">Sign In</a>
+                </p>
+              </form>
+            </div>
+
+            <!-- MODAL FOR OTP FOR PASSWORD RESET-->
+            <div
+              class="modal fade align-content-center"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">Modal body content here.</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PAYMENT SUCCESSFUL DIV -->
+            <div class="borderRadius20 pb-4 p-md-4  resetPw ">
+                <form class="align-items-center bg-white d-flex flex-column text-center">
+                  
+                <span class="tick">
+                    <i class="bi bi-check-circle-fill"></i>
+                </span>
+                  <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                    Password successfully updated
+                  </p>
+  
+                  <button
+                    type="submit"
+                    class="btn btn-primary borderRadius50 resetBtn w188"
+                  >
+                    Ok
+                  </button>
+                </form>
+              </div>
+          </div>
         </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6 d-none d-md-block p-0">
+          <img
+            class="w-100"
+            src="./images/Group 4.png"
+            alt="Image Description"
+          />
+        </div>
+      </div>
     </div>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </body>
 </html>

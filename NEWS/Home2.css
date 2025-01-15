@@ -1477,6 +1477,14 @@ input[type="radio"]:checked + .custom-radio {
 .terms .shade475{
   color: #475467;
 }
+.tick .bi{
+  font-size: 111px;
+  color: #61C478;
+  margin-right: 0;
+}
+.w188{
+  width: 188px;
+}
 
 
 @media(max-width:900px){

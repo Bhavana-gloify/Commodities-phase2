@@ -22,6 +22,11 @@ body {
         background-image: url("./images/backgroundform.png") !important;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /* .content {
