@@ -1505,6 +1505,9 @@ input[type="radio"]:checked + .custom-radio {
 
 
  /* COMMON CSS CLASSES */
+ .shade1E2{
+  color: #1E293B;
+ }
 .shade475{
   color: #475467;
 }
@@ -1514,6 +1517,9 @@ input[type="radio"]:checked + .custom-radio {
 .shadeDC8{
   color:#DC8513;
 }
+.shade7D8{
+  color:#7D857F;
+ }
 .fw700{
   font-weight: 700;
 }
@@ -1608,6 +1614,15 @@ input[type="radio"]:checked + .custom-radio {
 
 
 @media(max-width:900px){
+  .rshade1E2{
+    color: #1E293B;
+   }
+   .terms .rshade7D8{
+    color:#7D857F;
+   }
+  .rlh30{
+    line-height: 30px;
+  }
   .rlh29{
     line-height: 24px;
   }
