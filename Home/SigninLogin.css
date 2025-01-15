@@ -62,14 +62,15 @@ p{
     color: #475467;
 
 }
-input,.submit{
+input,.submit, select{
     background: #F9F9F9;
     height: 59px;
     border-radius: 50px;
     border: none !important;
+    width: 100%;
 
 }
-input{
+input , select{
     padding: 20px 20px;
     font-size: 14px;
     font-weight: 500;
