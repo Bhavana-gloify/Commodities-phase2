@@ -124,3 +124,62 @@ input , select{
     }
 
 }
+
+/* Placeholder-like style for select elements */
+select option[value=""] {
+    color: #475467; /* Placeholder text color */
+}
+
+/* Change the color of selected text in select dropdowns */
+select {
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #F9F9F9 url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>') no-repeat right 16px center;
+    background-size: 16px;
+    padding-right: 40px; /* Space for the custom arrow */
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    height: 59px;
+    width: 100%;
+    select {
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #F9F9F9 url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>') no-repeat right 16px center;
+    background-size: 16px;
+    padding-right: 40px; /* Space for the custom arrow */
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    height: 59px;
+    width: 100%;
+    color: #475467; /* Color for unselected placeholder option */
+
+}
+select:focus-visible{
+    outline: 0px !important;
+}
+}
+/* Style for the disabled placeholder option */
+select:invalid {
+    color: #475467; /* Color for unselected placeholder option */
+}
+
+/* Rounded border and padding for select */
+select {
+    border-radius: 50px;
+    padding-right: 40px; /* Space for the dropdown arrow */
+}
+
+/* Responsive changes for select in smaller screens */
+@media screen and (max-width: 700px) {
+    select {
+        padding-right: 20px;
+    }
+}
