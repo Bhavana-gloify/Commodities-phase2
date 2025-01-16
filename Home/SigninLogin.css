@@ -161,6 +161,15 @@ label{
     padding: 20px;
 
   }
+  .subscriptiontype{
+    background: #FFF1DB;
+    border-radius: 10px;
+    padding: 20px 20px 20px 40px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.4px;
+  }
+
 
 
 
