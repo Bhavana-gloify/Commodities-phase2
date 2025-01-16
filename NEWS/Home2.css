@@ -1506,6 +1506,55 @@ input[type="radio"]:checked + .custom-radio {
     color: #fff;
   }
 }
+/* Login Container */
+.login-container {
+  background-color: #F9F9F9 !important;
+}
+
+.content {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}
+.login-container {
+  background-image: url("./images/backgroundform.png") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* OTP CSS */
+.btn-close{
+  background: none;
+  background-color: #828282;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  right: 5px;
+}
+.modal-content{
+  max-width: 476px;
+}
+.modal-content .btn-primary{
+  height: 50px;
+}
+
+@media(max-width:900px){
+  .modal-content{
+    max-width: 342px;
+  }
+  .modal-content .btn-primary {
+    color: #fff;
+    background-color: #DC8513;
+    border-color:  #DC8513;
+    box-shadow: none;
+}
+}
+
 
 
 
@@ -1528,6 +1577,9 @@ input[type="radio"]:checked + .custom-radio {
 .shade7D8{
   color:#7D857F;
  }
+.width90{
+  width: 90%;
+}
 .fw700{
   font-weight: 700;
 }
