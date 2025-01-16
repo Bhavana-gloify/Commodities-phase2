@@ -51,7 +51,7 @@
         </div>
 
 
-        <div class="Formsection m-md-3 p-md-5 m-md-4 p-4" id="step2">
+        <div class="Formsection m-md-3 p-md-5 m-md-4 p-4 d-none" id="step2">
             <div class="Form mx-md-5 d-flex flex-column gap-3 p-md-3 px-md-5 justify-content-center">
                 <h2 class="headline">Personal  <span class="orangetext">Details</span></h2>
                 <p>Hi, enter your details to get create your account </p>
@@ -93,6 +93,40 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="Formsection m-md-3 p-md-5 m-md-4 p-4" id="step2">
+            <div class="mx-md-5 d-flex flex-column gap-3 p-md-3 px-md-5 justify-content-center">
+                <h2 class="headline">Payment  <span class="orangetext"> Details</span></h2>
+                <p> Please ensure that you submit a valid Phone number for us to communicate on your subscription details. </p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <label class="mb-3" for="">Mode of payment</label><span class="text-danger">*</span>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="paymentMode" id="onlinePayment" value="Online">
+                              &nbsp;<label class="form-check-label" for="onlinePayment">Online (Secure)</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="paymentMode" id="offlinePayment" value="Offline">
+                              &nbsp;<label class="form-check-label" for="offlinePayment">DD/Cheque/Cash</label>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-6">
+                        <label class="mb-3" for="">Validation Code</label><span class="text-danger">*</span>
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <span class="captcha input">y2xknv</span>
+
+                            <input type="text" placeholder="Enter the code above here" class="w-50">
+                        </div>
+                        <p>Can’t read the text? <a class="orangetext">Click here</a> to refresh.</p>
+                        <button type="submit" class="submit my-5">Next</button>
+
+                    </div>
+                </div>
             </div>
         </div>
 
