@@ -464,10 +464,6 @@ select.form-select option:checked {
     border: 1px solid #E2E8F0;
     border-radius: 16px;
 }
-/* .video{
-    border-bottom: 1px solid #E2E8F0
-
-} */
 .video:not(:last-of-type) {
     border-bottom: 1px solid #E2E8F0; /* Replace #000 with your desired color */
     padding-bottom: 15px; /* Optional: Add padding for spacing */
@@ -1377,9 +1373,6 @@ input[type="radio"]:checked + .custom-radio {
   .cost{
     color: #1E293B;
   }
-  .shade475{
-    color: #475467;
-  }
   td a:hover {
     color: #DC8513;
   }
@@ -1421,11 +1414,186 @@ input[type="radio"]:checked + .custom-radio {
 
 
 
+/* SUBSCRIBER LOGIN PAGE CSS */
+
+.loginDIv input{
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 50px;
+  height: 59px;
+}
+.pwDiv{
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 50px;
+}
+.loginDIv select{
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 50px;
+}
+.loginDIv input::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #475467;
+}
+.signInBtn{
+  background-color: #707070;
+  border: 1px solid #707070;
+  height: 50px;
+}
+.resetBtn{
+  background-color: #DC8513;
+  border: 1px solid #DC8513;
+  height: 50px;
+}
+.pwDiv .bi{
+  font-size: 18px;
+  color: #475467;
+}
+.socialBtn .btn-primary{
+  background-color: #fff;
+  border: 0.5px solid #D9D9D9;
+  color: #7D857F;
+  min-width: 133px;
+  height: 45px;
+}
+.resetPw{
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+}
+.terms .bi{
+  font-size: 16px;
+}
+.terms p{
+  display: flex;
+  color: #45C669;
+  margin-bottom: 0;
+}
+.terms .shade475{
+  color: #475467;
+}
+.tick .bi{
+  font-size: 111px;
+  color: #61C478;
+  margin-right: 0;
+}
+.w188{
+  width: 188px;
+}
+
+
+@media(max-width:900px){
+  .loginDIv .pw::placeholder{
+    font-size: 15px;
+  }
+  .loginDIv input{
+    height: 53px;
+  }
+  .signInBtn{
+    background-color: #DC8513;
+    border: 1px solid #DC8513;
+    color: #fff;
+  }
+  .resetPw{
+    box-shadow: none;
+  }
+  .resetBtn{
+    color: #fff;
+  }
+}
+/* Login Container */
+.login-container {
+  background-color: #F9F9F9 !important;
+}
+
+.content {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}
+.login-container {
+  background-image: url("./images/backgroundform.png") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* OTP CSS */
+.btn-close{
+  background: none;
+  background-color: #828282;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  top: 8px;
+  right: 8px;
+}
+.modal-content{
+  max-width: 476px;
+}
+.modal-content .btn-primary{
+  height: 50px;
+}
+
+@media(max-width:900px){
+  .modal-content{
+    max-width: 342px;
+  }
+  .modal-content .btn-primary {
+    color: #fff;
+    background-color: #DC8513;
+    border-color:  #DC8513;
+    box-shadow: none;
+}
+}
+
+/* CC POLL VOTES CSS */
+.pollQuestion{
+  background-color: #DC8513;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.voteContainer p{
+  margin-bottom: 8px;
+}
+.progress-bar{
+  background-color: #dc8513;
+}
+.ccBg{
+  background-color: #f9f9f9;
+}
+.PrevNext a:hover{
+  color: #DC8513;
+}
+
+
 
 
 
 
  /* COMMON CSS CLASSES */
+ .shade1E2{
+  color: #1E293B;
+ }
+.shade475{
+  color: #475467;
+}
+.shade282{
+  color: #282828;
+}
+.shadeDC8{
+  color:#DC8513;
+}
+.shade7D8{
+  color:#7D857F;
+ }
+.width90{
+  width: 90%;
+}
 .fw700{
   font-weight: 700;
 }
@@ -1468,6 +1636,15 @@ input[type="radio"]:checked + .custom-radio {
 .fs12{
   font-size: 12px;
 }
+.lh45{
+  line-height: 45px;
+}
+.lh36{
+  line-height: 36px;
+}
+.lh33{
+  line-height: 33px;
+}
 .lh32{
   line-height: 32px;
 }
@@ -1486,11 +1663,17 @@ input[type="radio"]:checked + .custom-radio {
 .lh22{
   line-height: 22px;
 }
+.lh21{
+  line-height: 21px;
+}
 .lh18{
   line-height: 18px;
 }
 .borderRadius10{
   border-radius: 10px;
+}
+.borderRadius20{
+  border-radius: 20px;
 }
 .borderRadius25{
   border-radius: 25px;
@@ -1505,11 +1688,23 @@ input[type="radio"]:checked + .custom-radio {
 
 
 @media(max-width:900px){
+  .rshade1E2{
+    color: #1E293B;
+   }
+   .terms .rshade7D8{
+    color:#7D857F;
+   }
+  .rlh30{
+    line-height: 30px;
+  }
   .rlh29{
     line-height: 24px;
   }
   .rlh24{
     line-height: 24px;
+  }
+  .rlh21{
+    line-height: 21px;
   }
 
   .rfs12{
