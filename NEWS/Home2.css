@@ -464,10 +464,6 @@ select.form-select option:checked {
     border: 1px solid #E2E8F0;
     border-radius: 16px;
 }
-/* .video{
-    border-bottom: 1px solid #E2E8F0
-
-} */
 .video:not(:last-of-type) {
     border-bottom: 1px solid #E2E8F0; /* Replace #000 with your desired color */
     padding-bottom: 15px; /* Optional: Add padding for spacing */
@@ -1555,6 +1551,24 @@ input[type="radio"]:checked + .custom-radio {
 }
 }
 
+/* CC POLL VOTES CSS */
+.pollQuestion{
+  background-color: #DC8513;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.voteContainer p{
+  margin-bottom: 8px;
+}
+.progress-bar{
+  background-color: #dc8513;
+}
+.ccBg{
+  background-color: #f9f9f9;
+}
+.PrevNext a:hover{
+  color: #DC8513;
+}
 
 
 
