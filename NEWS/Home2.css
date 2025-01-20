@@ -1570,6 +1570,52 @@ input[type="radio"]:checked + .custom-radio {
   color: #DC8513;
 }
 
+/* PAYMENT METHODS CSS */
+.payment-method .modal-header{
+  background-color: #EDAC40;
+}
+.payment-method .modal-content{
+  max-width: 390px;
+}
+.logoC{
+  border: 2px solid #e2d999;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.payRight .form-select{
+  background: url('../Home/images/downArrow.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 6px 0;
+  border: none;
+}
+.langDiv{
+  width: 55px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.langDiv .bi{
+  margin-right: 0;
+}
+.payRight .btn-close{
+  background: none;
+  opacity: 1;
+  font-size: 18px;
+}
+.payRight .btn-close .bi{
+  font-size: 18px;
+}
+.payOptions div{
+  display: flex;
+  justify-content: space-between;
+}
+.bank span{
+  padding-left: 8px;
+}
+.pay-source{
+  border: 1px solid #CFCFCF;
+  padding: 8px;
+}
 
 
 
