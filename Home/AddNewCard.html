@@ -35,64 +35,9 @@
   </head>
 
   <body>
-    <!-- CREATING NEW PASSWORD DIV -->
+    <!-- START PAYMENT DIV -->
     <div class="borderRadius20 p-md-4 resetPw ">
         <form class="bg-white d-flex flex-column gap-3 text-center">
-          <h4
-            class="shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
-          >
-            Reset <span class="toHide shade475">Password</span>
-            <span class="hidden">Password</span>
-          </h4>
-          <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
-            Enter your email address, phone number
-          </p>
-          <div
-            class="align-items-center d-flex justify-content-between pwDiv pe-3"
-          >
-            <input
-              type="password"
-              class="form-control ps-3 pw"
-              id="exampleInputPassword1"
-              placeholder="Password*"
-            />
-            <span><i class="bi bi-eye"></i></span>
-            <span class="d-none"><i class="bi bi-eye-slash"></i></span>
-          </div>
-          <div
-            class="align-items-center d-flex justify-content-between pwDiv pe-3"
-          >
-            <input
-              type="password"
-              class="form-control ps-3 pw"
-              id="exampleInputPassword1"
-              placeholder="Confirm Password*"
-            />
-            <span><i class="bi bi-eye"></i></span>
-            <span class="d-none"><i class="bi bi-eye-slash"></i></span>
-          </div>
-
-          <div class="terms fw400 fs14 lh33 text-start">
-            <p>
-              <i class="bi bi-check"></i> Must include at least 1 upper
-              case
-            </p>
-            <p>
-              <i class="bi bi-check"></i> Must include at least 1 lower
-              case
-            </p>
-            <p>
-              <i class="bi bi-check"></i> Must include at least 1 number
-            </p>
-            <p>
-              <i class="bi bi-check"></i> Must include minimum of 8
-              characters
-            </p>
-            <p class="shade475 rshade7D8">
-              <i class="bi bi-check"></i> Must include at least 1 special
-              character (e.g. ! @ # $ % ^ )
-            </p>
-          </div>
 
           <button
             type="button"
@@ -100,16 +45,12 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            Submit
+            Next
           </button>
-
-          <p class="fs14 fw500 lh36 shade475 mb-0">
-            Back to <a href="" class="shadeDC8">Sign In</a>
-          </p>
         </form>
       </div>
 
-      <!-- MODAL FOR CHOOSE PAYMENT METHOD-->
+      <!-- PAYMENT METOD SELECT-->
       <div
         class="modal fade align-content-center payment-method"
         id="exampleModal"
@@ -149,7 +90,7 @@
 
             <!-- PAYMENT OPTIONS -->
             <div class="payOptions px-3 py-5">
-                <p class="fw400 fs16 rfs14 lh24 rlh21 ">Preferred Payment Methods</p>
+                <p class="fw400 fs16 rfs14 lh24 rlh21 ">Add New Card</p>
 
                 <div class="pay-source">
                     <div class="bank">
