@@ -1640,13 +1640,19 @@ input[type="radio"]:checked + .custom-radio {
  .saveCard{
   min-height: 350px;
  }
- /* .cardDetails input:focus{
-  border: 1px solid #DC8513;
- }
- .cardDetails input:focus-visible{
-  border: 1px solid #DC8513;
- } */
 
+ /* LOADING BANK PAGE CSS */
+.loadingBankPage{
+  background-color: #F5F5F5;
+}
+.topDiv{
+  height: 300px;
+  background-color: #F6A828;
+}
+.loadingPay{
+  background-color: #fff;
+  max-width: 390px;
+}
 
 
 
