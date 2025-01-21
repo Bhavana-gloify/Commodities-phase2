@@ -169,6 +169,67 @@ label{
     font-weight: 400;
     line-height: 20.4px;
   }
+.reasoncard{
+    background-image: url('./images/Mask\ group.png');
+    background: #FFEDD5;
+    border-radius: 20px;
+}
+.subheading{
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.reasons{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    list-style: none;
+}
+.reasons li{
+    padding-bottom: 10px;
+}
+.Gstcontent{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+
+
+}  
+.totalamounttable {
+    border-collapse: separate; /* Change from collapse to separate */
+    border-spacing: 0;
+    box-shadow: 0px 4px 15px 0px #0000000F;
+    border-radius: 20px;
+    overflow: hidden; /* Add this to clip child elements */
+    width: 100%; /* Optional: Adjust width */
+}
+
+.totalamount > td {
+    border: .5px solid #DCDCDC;
+    padding: 20px 25px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: #fff; /* Optional: Set background for visibility */
+}
+
+
+.totalamount:first-child td:first-child {
+    border-top-left-radius: 20px;
+}
+.totalamount:first-child td:last-child {
+    border-top-right-radius: 20px;
+}
+.totalamount:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+.totalamount:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
 
 
 
@@ -204,6 +265,13 @@ label{
         padding-right: 20px;
     }
 
+}
+
+.fs-14{
+    font-size: 14px;
+}
+.fw-400{
+    font-weight: 400;
 }
 
 
