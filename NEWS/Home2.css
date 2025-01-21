@@ -1665,6 +1665,8 @@ input[type="radio"]:checked + .custom-radio {
 }
 .loadFooter{
   background-color: #f5f5f5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .loadFooter img{
   height: 16px;
@@ -1679,9 +1681,32 @@ input[type="radio"]:checked + .custom-radio {
   .loadingPay{
     width: 324px;
     top: 150px;
+    box-shadow: 0px 0px 20px -19px rgba(0, 0, 0, 0.45);
   }
 }
 
+
+
+/* PAYMENT SUCCESS FAILURE STATUS CSS */
+.statusBtns .btn{
+  height: 50px;
+  min-width: 160px;
+  border-radius: 3px;
+  border: none;
+}
+.statusBtns .succesBtn{
+  background-color: #27AE60;
+}
+.statusBtns .failbtn{
+  background-color: #EF6050;
+}
+
+@media(max-width:900px){
+  .statusBtns .btn{
+    height: 45px;
+    min-width: 140px;
+  }
+}
 
 
 
