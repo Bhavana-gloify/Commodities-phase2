@@ -1570,7 +1570,117 @@ input[type="radio"]:checked + .custom-radio {
   color: #DC8513;
 }
 
+/* PAYMENT METHODS CSS */
+.payment-method .modal-header{
+  background-color: #EDAC40;
+  box-shadow: -3px 2px 23px 7px rgba(0, 0, 0, 0.25);
+}
 
+.payment-method .modal-content{
+  max-width: 390px;
+}
+.logoC{
+  border: 2px solid #e2d999;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.payRight .form-select{
+  background: url('../Home/images/downArrow.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 6px 0;
+  border: none;
+}
+.langDiv{
+  width: 55px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.langDiv .bi{
+  margin-right: 0;
+}
+.payRight .btn-close{
+  background: none;
+  opacity: 1;
+  font-size: 18px;
+}
+.payRight .btn-close .bi{
+  font-size: 18px;
+}
+.payOptions div{
+  display: flex;
+  justify-content: space-between;
+}
+.bank span{
+  padding-left: 8px;
+}
+.pay-source{
+  border: 1px solid #CFCFCF;
+  padding: 8px;
+}
+.amtDetails{
+  box-shadow: 11px 13px 23px 7px rgba(0, 0, 0, 0.25);
+}
+.cardDetails label{
+  top: -10px;
+  background-color: white;
+  color: #DC8513;
+  font-weight: 400;
+  font-size:12px;
+ }
+ .cardDetails input{
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #CFCFCF;
+  padding-left: 5px;
+ }
+ .cardDetails div{
+  width: 70%;
+ }
+ .saveCard{
+  min-height: 350px;
+ }
+
+ /* LOADING BANK PAGE CSS */
+.loadingBankPage{
+  background-color: #F5F5F5;
+  height: 100vh;
+}
+.topDiv{
+  height: 300px;
+  background-color: #F6A828;
+}
+.loadingPay{
+  background-color: #fff;
+  width: 390px;
+  top: 225px;
+  box-shadow: 0px 0px 20px -12px rgba(0,0,0,0.45);
+}
+.loadingPay .progress{
+  height: 4px;
+}
+.loadingPay .progress-bar{
+  height: 4px;
+  background-color: #946518;
+}
+.loadFooter{
+  background-color: #f5f5f5;
+}
+.loadFooter img{
+  height: 16px;
+}
+@media(max-width:900px){
+  .loadingBankPage{
+    background-color: #fff;
+  }
+  .topDiv{
+    height: 200px;
+  }
+  .loadingPay{
+    width: 324px;
+    top: 150px;
+  }
+}
 
 
 
@@ -1633,6 +1743,9 @@ input[type="radio"]:checked + .custom-radio {
 .fs14{
   font-size: 14px;
 }
+.fs13{
+  font-size: 13px;
+}
 .fs12{
   font-size: 12px;
 }
@@ -1668,6 +1781,9 @@ input[type="radio"]:checked + .custom-radio {
 }
 .lh18{
   line-height: 18px;
+}
+.borderRadius5{
+  border-radius: 5px;
 }
 .borderRadius10{
   border-radius: 10px;
