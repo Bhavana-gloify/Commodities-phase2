@@ -5,6 +5,102 @@ body {
     padding: 0;
     background: #F9F9F9;
 }
+
+*{
+    font-family: Poppins;
+}
+.orangetext{
+    color:#DC8513 !important;
+}
+
+.Signinflow{
+    background: #47546717;
+}
+
+button{
+    border: none !important;
+}
+
+.navbarbtn{
+    border: none !important;
+    background: #FEFEFE;
+    height: 76px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 20px;
+    text-wrap: nowrap !important;
+    width: 100%;
+
+}
+.navgroup{
+    overflow: scroll;
+
+}
+.navgroup::-webkit-scrollbar {
+    display: none; 
+  }
+
+.navbarbtn.active{
+    color: #FFFFFF !important;
+    background: #DC8513 !important;
+    font-weight: 600 !important;
+}
+
+.Formsection{
+    background: #FFFFFF;
+    border-radius: 20px !important;
+}
+.form1image{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.headline{
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 42px !important;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+
+}
+input,.submit, select{
+    background: #F9F9F9;
+    height: 59px;
+    border-radius: 50px;
+    border: none !important;
+    width: 100%;
+
+}
+input , select{
+    padding: 20px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.submit{
+    background-color: #DC8513 !important;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px ;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+
+}
+.google{
+    border: 0.5px solid #D9D9D9 !important;
+    padding: 10px 20px;
+    width:fit-content;
+    border-radius: 15px;
+    background: white;
+}
 select option[value=""] {
     color: #475467; /* Placeholder text color */
 }
@@ -142,8 +238,118 @@ label{
     border-bottom-right-radius: 20px;
 }
 
+.header1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.free{
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.header2{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+
+}
+.packages{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+/* .subscriptionpackages{
+    border: 1px solid #DCDCDC;
+    border-radius: 20px;
+} */
+.subscriptionpackages {
+    width: 100%;
+    border-collapse: separate; /* Allows border-radius to work */
+    border-spacing: 0; /* Removes spacing between cells */
+    border: 1px solid #cccccc; /* Table border */
+    border-radius: 30px; /* Rounded corners for the whole table */
+    overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+    margin: 0 auto; /* Centers the table */
+}
+
+.subscriptionpackages th,
+.subscriptionpackages td {
+    padding: 15px; /* Cell padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for the first row (header) */
+.subscriptionpackages th {
+    font-weight: bold; /* Bold text */
+    border-bottom: 1px solid #cccccc; /* Adds a bottom border */
+}
+
+/* Styling for the second row */
+.subscriptionpackages tr:nth-child(2) td {
+    border-bottom: 1px solid #cccccc; /* Adds a border below the second row */
+}
+
+/* Remove extra borders between cells */
+.subscriptionpackages td {
+    border: none; /* No individual cell borders */
+}
+
+.subscriptionpackages .free {
+    text-align: center; /* Center align "Free" text */
+}
+.platformitem{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    background: #F1F0F0;
+    border-radius: 50px !important;
+    padding:15px;
+    color:#475467;
+    width: 139px;
+}
+.platformitem.active{
+    background: #DC8513 !important;
+    color: #FFFFFF !important;
+}
 
 
+
+
+
+@media screen and (max-width: 700px) {
+    .Signinflow{
+        background: #FFFFFF;
+    }
+    .navbarbtn{
+
+        height: 48px;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px;
+        text-wrap: nowrap !important;
+        width: 100%;
+    
+    }
+    .active{
+        font-size: 14px !important;
+        font-weight: 600;
+    }
+    .headline{
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    select {
+        padding-right: 20px;
+    }
+
+}
 
 /* Login Container */
 .login-container {
