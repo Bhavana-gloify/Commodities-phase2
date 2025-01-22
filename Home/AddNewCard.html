@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <title>Add Card</title>
+
+    <!-- Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+
+    <!-- Custom Styles -->
+    <!-- <link rel="stylesheet" href="./SigninLogin.css" /> -->
+    <link rel="stylesheet" href="../NEWS/Home2.css" />
+  </head>
+
+  <body>
+    <!-- START PAYMENT DIV -->
+    <div class="borderRadius20 p-md-4 resetPw ">
+        <form class="bg-white d-flex flex-column gap-3 text-center">
+
+          <button
+            type="button"
+            class="btn btn-primary borderRadius50 resetBtn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Next
+          </button>
+        </form>
+      </div>
+
+      <!-- PAYMENT METOD SELECT-->
+      <div
+        class="modal fade align-content-center payment-method"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="d-flex justify-content-center modal-dialog">
+          <div class="modal-content ">
+            <!-- MODAL HEADER/ LANGUAGE SELECT -->
+            <div class="border-0 modal-header p-3 text-white">
+              <div class="payLeft d-flex justify-content-between align-items-center">
+                <div class="logoC d-flex rounded-1 justify-content-center align-items-center" >C</div>
+                <span class="ps-2" >Commoditiescontrol</span>
+              </div>
+
+              <div class="payRight d-flex align-items-center">
+                <div class="align-items-center d-flex justify-content-center langDiv rounded-1">
+                <i class="bi bi-translate"></i>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                
+                <button
+                type="button"
+                class="align-items-center btn-close d-flex justify-content-center "
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ><i class="bi bi-x"></i></button>
+              </div>
+              
+            </div>
+
+            <!-- Add New Card Section -->
+            <div class="saveCard px-3 py-5">
+                <p class="fw400 fs16 rfs14 lh24 rlh21 ">Add New Card</p>
+
+                <div class="cardDetails gap-3 d-flex justify-content-between">
+                  <div class="position-relative" >
+                    <label for="" class="ms-2 position-absolute px-2">Card Number</label>
+                    <input type="text " class="w-100" >
+                  </div>
+                  <input type="text" placeholder="Expiry" class="w-25">
+                </div>
+
+
+                <div class="cardDetails gap-3 d-flex justify-content-between mt-4">
+                  <div class="position-relative" >
+                    <label for="" class="ms-2 position-absolute px-2">Card Holder's Name</label>
+                    <input type="text " class="w-100" >
+                  </div>
+                  <input type="text" placeholder="CVV" class="w-25">
+                </div>
+
+
+                <div class="form-check mt-4 fw400 ">
+                  <div>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label fs13" for="flexCheckDefault">
+                    Save card securely for future payments
+                    </label>
+                  </div>
+
+                  <a href="" class="fs13 shadeDC8 text-decoration-underline">Know More</a>
+                </div>
+                
+
+                
+            </div>
+
+
+
+
+            <div class="amtDetails d-flex justify-content-between px-3 py-2">
+                <div>
+                    <p class="mb-0">59,000</p>
+                    <span>View Details</span>
+                </div>
+                <button type="button" class="btn btn-primary w-75">
+                    Pay Now
+                </button>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </body>
+</html>
