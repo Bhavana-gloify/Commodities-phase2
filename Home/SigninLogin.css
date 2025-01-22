@@ -176,9 +176,8 @@ label{
     font-weight: 400;
     line-height: 20.4px;
   }
-.reasoncard{
-    background-image: url('./images/Mask\ group.png');
-    background: #FFEDD5;
+  .reasoncard {
+    background: #FFEDD5 url('./images/Mask group.png') no-repeat center/cover;
     border-radius: 20px;
 }
 .subheading{
@@ -187,15 +186,31 @@ label{
   font-weight: 600;
   line-height: 30px;
 }
-.reasons{
-    font-family: Poppins;
+.reasons {
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    list-style: none;
+    list-style: none; /* Removes default bullets */
+    padding: 0; /* Removes default list padding */
 }
-.reasons li{
-    padding-bottom: 10px;
+
+.reasons li {
+    position: relative; /* Ensures the ::before is positioned relative to <li> */
+    padding-left: 30px; /* Adds space for the SVG icon */
+    padding-bottom: 20px;
+}
+
+.reasons li::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Position the icon at the start */
+    top: 3%; /* Center the icon vertically */
+    /* transform: translateY(-50%); */
+    width: 20px; /* Set SVG icon width */
+    height: 20px; /* Set SVG icon height */
+    background: url('./images/liststyleicon.svg') no-repeat center center; /* Add SVG icon */
+    background-size: contain; /* Ensures the icon fits within its dimensions */
 }
 .Gstcontent{
     font-family: Poppins;
@@ -273,6 +288,8 @@ label{
     border-radius: 30px; /* Rounded corners for the whole table */
     overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
     margin: 0 auto; /* Centers the table */
+    box-shadow: 0px 4px 14px 0px #00000012;
+
 }
 
 .subscriptionpackages th,
@@ -290,6 +307,10 @@ label{
 /* Styling for the second row */
 .subscriptionpackages tr:nth-child(2) td {
     border-bottom: 1px solid #cccccc; /* Adds a border below the second row */
+}
+.subscriptionpackages tr td:not(:last-child),th:not(:last-child){
+    border-right: 1px solid #cccccc; /* Adds a border below the second row */
+
 }
 
 /* Remove extra borders between cells */
@@ -314,7 +335,17 @@ label{
     background: #DC8513 !important;
     color: #FFFFFF !important;
 }
-
+.nextbtn{
+    background: #DC8513;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    padding: 15px;
+    border-radius: 50px;
+}
 
 
 
