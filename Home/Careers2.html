@@ -21,17 +21,17 @@
 <body>
 
     <div class="careersPage">
-        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="toHide d-none d-md-block">
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb" class="toHide d-none d-md-block mx-5">
             <ol class="breadcrumb mb-2">
                 <li class="breadcrumb-item ms-0 ps-3"><a href="#">Career</a></li>
-                <li class="breadcrumb-item active page" aria-current="page">
+                <li class="breadcrumb-item active page m-0" aria-current="page">
                     Sales manager
                 </li>
             </ol>
         </nav>
 
-        <div class="container">
-            <div class="role">
+        <div class="container p-0">
+            <div class="role px-4 p-md-0">
                 <h3>
                     IT Sales Lead
                 </h3>
@@ -43,12 +43,12 @@
                     project outcomes.
                 </p>
                 <p class="details gap-md-5 gap-3 d-flex align-items-center flex-wrap">
-                    <span></i> <i class="bi bi-geo-alt"></i> Bengaluru/Mumbai</span>
-                    <span><i class="bi bi-briefcase"></i> 15+ years</span>
-                    <span><i class="bi bi-mortarboard"></i> Graduate/ Post Graduate</span>
+                    <span class="d-flex"><i class="bi bi-geo-alt">&nbsp;</i>Bengaluru/Mumbai</span>
+                    <span class="d-flex"><i class="bi bi-briefcase"></i>&nbsp; 15+ years</span>
+                    <span class="d-flex"><i class="bi bi-mortarboard"></i>&nbsp; Graduate/ Post Graduate</span>
                 </p>
             </div>
-            <div class="descript">
+            <div class="descript p-4 p-md-0">
                 <h4>Responsibilities:</h4>
                 <p>We are looking for react-native developers with strong technical skills. The ideal candidate should becapable of working independently with minimal guidance. There is significant potential for growth with this opportunity.We are looking for react-native developers with strong technical skills. The ideal candidate should becapable of working independently with minimal guidance. There is significant potential for growth with this opportunity.We are looking for react-native developers with strong technical skills</p>
                 <h4>Requirements:</h4>
@@ -67,8 +67,8 @@
                     <li>Track record of successful selling IT Solution/IT Services to Director -C-Level Executives at- Fortune 1000/500/100 companies ( CTO, CIO and CEO).</li>
                 </ul>
             </div>
-            <div class="card formcontainer p-4 px-md-5">
-                <h4 class="text-md-start text-center mb-4">
+            <div class="card formcontainer p-3 px-md-5 formcard">
+                <h4 class="text-md-start text-center mb-md-4">
                     Application Form
                 </h4>
                 <form class="row  border-0">
@@ -86,13 +86,15 @@
                     </div>
                     <!-- Mobile Number -->
                     <div class="col-md-6 my-2">
-                        <div class="d-flex align-items-center mobView" style="position: relative;">
-                            <select class="form-select w-auto pe-3" aria-label="Country Code" style="position: absolute;top: 0;left: 0;">
+                        <div class="form-control form-selectmerge d-flex align-items-center mobView p-0" >
+                            <select class="form-select w-auto border-0" aria-label="Country Code" >
                                 <option value="+91" selected>+91</option>
                                 <option value="+1">+1</option>
                                 <option value="+44">+44</option>
                             </select>
-                            <input type="number" class="form-control ps-3" placeholder="Mobile Number" required>
+                            <div class="search-divider d-md-flex d-none"></div>
+
+                            <input type="number" class="form-control ps-3 border-0" placeholder="Mobile Number" required>
                         </div>
 
                     </div>
@@ -108,7 +110,7 @@
                     </div>
                     <!-- Submit Button -->
                     <div class="col-12">
-                        <button type="submit" class="submitbtn ms-auto">Submit</button>
+                        <button type="submit" class="submitbtn ms-auto my-3 my-md-0">Submit</button>
                     </div>
 
                 </form>
