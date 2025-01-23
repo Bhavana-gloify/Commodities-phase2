@@ -394,7 +394,7 @@
 
 }
 
- .role{
+ .roles{
   font-size: 22px;
   font-weight: 700;
   line-height: 42px;  
@@ -410,8 +410,8 @@
 }
 .job-arrow {
   position: absolute;
-  right: 16px;
-  top: 50%;
+  right: 8%;
+  top: 45%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #999;
@@ -450,7 +450,7 @@
     font-size: 14px;
     line-height: 28px;    
   }
-  .role{
+  .roles{
     font-size: 18px;
   }
   .jobtype{
@@ -584,13 +584,20 @@
 }
 }
 
-
+.search-section{
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+}
 
 
 .search-bar {
   background: #fff;
   border-radius: 50px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   padding: 5px 15px;
   display: flex;
   align-items: center;
@@ -606,9 +613,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin: 0px 10px 0px 10px;
 }
-.search-bar button {
+.search-section button {
   background-color: #d59120; /* Gold color */
   color: #fff;
   border: none;
@@ -617,11 +624,39 @@
   cursor: pointer;
   transition: background 0.3s;
 }
-.search-bar button:hover {
+.search-section button:hover {
   background-color: #b87e19; /* Darker gold shade */
 }
 .search-divider {
   border-left: 1px solid #ddd;
   height: 40px;
   margin: 0 15px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+.search-section{
+  background: none !important;
+  border-radius: 50px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: none !important;
+
+}
+.search-bar {
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+.search-section button {
+  width: 100%;
+}
+
 }
