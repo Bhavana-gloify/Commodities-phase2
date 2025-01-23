@@ -5,82 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+
+    <title>Careers</title>
     <link rel="stylesheet" href="./terms.css">
 </head>
 
-<body class="bg-light">
+<body>
 
-    <header class="careers-header text-center text-md-start">
-        <div class="container h-100 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <h1 class="display-5">
-                Be a part of something <span class="text-highlight d-md-inline d-none">great!</span>
-                <span class="d-md-none">great!</span>
+<div class="careers">
+    <div class="careersheader row d-flex align-items-md-end align-items-center m-0">
+        <div class="col-md-6 col-12 ">
+            <h1 class=" mt-md-0 mt-5">
+                Be a part of something <span class="orangetext d-md-flex d-none"> great!</span>
+                <span class="d-md-none d-block">great!</span>
             </h1>
-            <p class="lead">
-                Our services are used by retail traders, banks, brokerage houses, brokers, and all companies associated
-                with the commodity business to take critical decisions in the physical and financial markets.
+            <p class="pe-4">Our services are used by retail traders, banks, brokerage houses, brokers and all companies associated with the commodity 
+                business to take critical decisions in the physical and financial markets. 
             </p>
         </div>
-    </header>
-
-    <section class="career-section py-5 text-center">
-        <div class="container">
-            <h1 class="mb-4">Come, <span class="text-highlight">join us</span></h1>
-            <p class="mx-auto text-secondary" style="max-width: 700px;">
-                It takes a team with diverse talents to craft digital experiences. We are always looking for people with
-                skills, passion, and a great attitude to join our team. Take a look at some of our current openings:
-            </p>
-
-            <!-- Search Bar -->
-            <div class="search-bar-container mt-4">
-                <div class="search-bar">
-                    <div class="icon">
-                        <i class="bi bi-search"></i>
-                        <input type="text" placeholder="Search by Job title or Keyword" class="form-control">
-                    </div>
-                    <div class="search-divider d-none d-md-block"></div>
-                    <div class="icon">
-                        <i class="bi bi-geo-alt"></i>
-                        <input type="text" placeholder="Location" class="form-control">
-                    </div>
-                    <button class="btn btn-primary">Search</button>
-                </div>
+    </div>
+    <div class="careercontainer m-5 text-center">
+        <h1>Come, <span class="orangetext">join us</span></h1>
+        <p class="px-md-5 mx-md-5 px-2">It takes a team with diverse talents to craft digital experiences. We are always looking for people with skills, 
+            passion and a great attitude to join our team. Take a look at some of our current openings:
+        </p>
+        <div class="d-flex justify-content-center">
+            <div class="search-bar">
+              <div class="icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <input type="text" placeholder="Search by Job title or Keyword">
+              <div class="search-divider"></div>
+              <div class="icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <input type="text" placeholder="Location">
+              <button type="button">Search</button>
             </div>
-        </div>
-    </section>
-
-    <section class="job-listing py-5">
-        <div class="container">
-            <div class="row g-3">
-                <!-- Job Card -->
-                <div class="col-md-6">
-                    <article class="card p-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div>
-                                <h3 class="fs-5 fw-bold">Sales Manager</h3>
-                                <span class="badge bg-secondary">Hybrid</span>
-                                <p class="text-muted mb-0">
-                                    Graduate/Post Graduate · 3-4 YEARS
-                                </p>
-                            </div>
-                            <i class="fas fa-angle-right text-muted"></i>
-                        </div>
-                    </article>
+          </div>
+        <div class="container p-md-5">
+        <div class="row gap-2">
+            <div class="col-md-6 card careercard p-3 px-md-5 pb-4 text-start">
+                    <h3 class="role">Sales Manager</h3>
+                    <span class="jobtype">Hybrid</span>
+                    <div class="jobtype">
+                        <span class="job-qualification">Graduate/Post Graduate</span>
+                        <span class="job-experience">3-4 YEARS</span>
+                      </div>
+                    <div class="job-arrow"><i class="fa-solid fa-chevron-right"></i></div>
                 </div>
-                <!-- Add more job cards as needed -->
-            </div>
         </div>
-    </section>
+        </div>
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</div>
 </body>
-
 </html>
+
+
