@@ -1,0 +1,123 @@
+*{
+    font-family: Poppins;
+
+}
+
+.calculatorsection{
+
+}
+
+.catagorysection{
+    /* border-bottom: 1px solid #ddd !important; */
+}
+.categoryheader{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.category{
+    width: fit-content;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #707070;
+    padding: 8px 12px;
+    border-radius: 25px;
+    border: 1px solid #707070;
+
+
+}
+.category.active{
+    /* color: #DC8513;
+    background: #FEF0DA; */
+    background: #DC8513;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 1px solid #DC8513;
+}
+
+
+/* Orange table */
+
+.tableHeaderColor th{
+    background-color: #DC8513 !important;
+    color: #FFF;
+    font-weight: 600;
+    height: 50px;
+    vertical-align: middle;
+
+}
+.tableText{
+    font-size: 14px;
+    font-weight: 500;
+    color: #475467;
+    line-height: 21px;
+}
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.topTable-rounded {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+} 
+.tableBorder{
+    border: 1px solid #DC8513;
+
+}
+
+.tableText tbody tr td {
+    color: #475467 ;
+    width: max-content;
+    vertical-align: middle;
+    min-height: 50px !important;
+    height: 50px;
+}
+.table td:first-child {
+    padding-left: 15px !important;
+}
+.table th:first-child {
+    padding-left: 15px !important;
+}
+.activerow td{
+    background: #FEF0DA;
+    font-weight: 600;
+}
+.activerow2 td{
+    background: #FEF0DA;
+    background: rgba(0, 0, 0, 0.05);
+}
+tr:hover td{
+    color: red;
+
+}
+
+.modal-title{
+    color: #DC8513;
+    font-weight: 700;
+
+}
+input{
+    width: 120px;
+    padding: 6px;
+    border: 1px solid #707070 !important;
+    border-radius: 5px !important;
+    color:#475467
+
+}
+.modal-dialog{
+    max-width: 900px !important;
+}
+input:focus{
+    outline: none !important;
+}
+tbody tr:hover {
+    font-weight: 700;
+}
+.btn-close{
+    font-size: 13px;
+}

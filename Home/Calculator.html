@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    
+        <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+    <button type="button" class="btn btn-primary mt-3 mx-3" data-bs-toggle="modal" data-bs-target="#parityModal">
+        Open Mustard Seed Parity
+    </button>
+
+    
+
+    <div class="modal fade" id="parityModal" tabindex="-1" aria-labelledby="parityModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="parityModalLabel">Calculator</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="calculatorsection p-4">
+                        <h1 class="categoryheader">Crude Palm Oil Import Parity</h1>
+                        <div class="row d-flex gap-4 m-0 catagorysection py-3">
+                            <button class="category active">
+                                Crude Palm Oil 
+                            </button>
+                            <button class="category ">
+                                Crude Palm Oil 
+                            </button>
+                            <button class="category ">
+                                Crude Palm Oil 
+                            </button>
+                            <button class="category ">
+                                Crude Palm Oil 
+                            </button>
+                        </div>
+                        <div class="row calcisection py-4 m-0">
+                            <div class="table-rounded tableBorder p-0">
+                                <table class="table tableText mb-0">
+                                    <thead class="tableHeaderColor">
+                                        <tr>
+                                            <th>Sr.No</th>
+                                            <th>Crude Palm Oil Import Parity - Kandla Port</td>
+                                            <th>Amount</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mustard Ex Plant Price / 100kg (27 Jan 2025, 04:39:02 AM)</td>
+                                            <td>
+                                                <input type="number" value="6225.00">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Mustard seed Price/MT = (Mustard seed Ex Plant / 100kg * 10)</td>
+                                            <td><input type="number" value="6225.00"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Crush Expenses / MT</td>
+                                            <td>1250.00</td>
+                                        </tr>
+                                        <tr class="activerow2">
+                                            <td>4</td>
+                                            <td>Cash Discount = (Mustard seed Price/MT * 1.00%)</td>
+                                            <td>622.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Quality Tolerance = (Mustard seed Price/MT * 0.75%)</td>
+                                            <td>466.88</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td> Total Cost / MT = (Price/MT + Crush Exp. + Cash Dis. + Quality Tolerance) {A} </td>
+                                            <td> 62410.62 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Mustard seed Oil Price / 10Kg (Excl. GST) (27 Jan 2025, 04:39:02 AM)</td>
+                                            <td>1292.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td> Oil recovery (Mustard seed Oil Price (Excl. Vat/10Kg) * 37.00%) {B} </td>
+                                            <td> 47804.00 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Oil Cake Price seller Ex factory (Rs/MT)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td> Oil Cake realisation = (Oil Cake Price * 63.00%) {C} </td>
+                                            <td> 0.00 </td>
+                                        </tr>
+                                        <tr class="activerow">
+                                            <td>11</td>
+                                            <td> Total Realisation {D} = ({C} + {B}) </td>
+                                            <td> 47804.00 </td>
+                                        </tr>
+                                        <tr class="activerow">
+                                            <td>12</td>
+                                            <td> Net Crush Margin(Rs/MT) = ({D} - {A}) </td>
+                                            <td> -14606.62 </td>
+                                        </tr>
+                                        <tr class="activerow">
+                                            <td>13</td>
+                                            <td> (Gross Crush Margin in MT) = (Total Realisation(11) - Mustard Seed PriceMT(2)) </td>
+                                            <td> -14446.00 </td>
+                                        </tr>
+                                        <tr class="activerow">
+                                            <td>14</td>
+                                            <td> Contribution in Total realisation - Oil share (in %) = {B} / {D} </td>
+                                            <td> 100.00 </td>
+                                        </tr>
+                                        <tr class="activerow">
+                                            <td>15</td>
+                                            <td> Contribution in Total realisation - Oil Cake Share Values (in %) = {C} / {D} </td>
+                                            <td> 0.00 </td>
+                                        </tr>                  
+                
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!-- <div class="calculatorsection p-4">
+    <h1 class="categoryheader">Crude Palm Oil Import Parity</h1>
+    <div class="row d-flex gap-4 m-0 catagorysection py-3">
+        <button class="category active">
+            Crude Palm Oil 
+        </button>
+        <button class="category ">
+            Crude Palm Oil 
+        </button>
+        <button class="category ">
+            Crude Palm Oil 
+        </button>
+        <button class="category ">
+            Crude Palm Oil 
+        </button>
+    </div>
+    <div class="row calcisection py-4 m-0">
+        <div class="table-rounded tableBorder p-0">
+            <table class="table tableText mb-0">
+                <thead class="tableHeaderColor">
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Crude Palm Oil Import Parity - Kandla Port</td>
+                        <th>Amount</td>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>1</td>
+                        <td>Mustard Ex Plant Price / 100kg (27 Jan 2025, 04:39:02 AM)</td>
+                        <td>6225.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mustard seed Price/MT = (Mustard seed Ex Plant / 100kg * 10)</td>
+                        <td>62250.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Crush Expenses / MT</td>
+                        <td>1250.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Cash Discount = (Mustard seed Price/MT * 1.00%)</td>
+                        <td>622.50</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Quality Tolerance = (Mustard seed Price/MT * 0.75%)</td>
+                        <td>466.88</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td> Total Cost / MT = (Price/MT + Crush Exp. + Cash Dis. + Quality Tolerance) {A} </td>
+                        <td> 62410.62 </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Mustard seed Oil Price / 10Kg (Excl. GST) (27 Jan 2025, 04:39:02 AM)</td>
+                        <td>1292.00</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td> Oil recovery (Mustard seed Oil Price (Excl. Vat/10Kg) * 37.00%) {B} </td>
+                        <td> 47804.00 </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Oil Cake Price seller Ex factory (Rs/MT)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td> Oil Cake realisation = (Oil Cake Price * 63.00%) {C} </td>
+                        <td> 0.00 </td>
+                    </tr>
+                    <tr class="activerow">
+                        <td>11</td>
+                        <td> Total Realisation {D} = ({C} + {B}) </td>
+                        <td> 47804.00 </td>
+                    </tr>
+                    <tr class="activerow">
+                        <td>12</td>
+                        <td> Net Crush Margin(Rs/MT) = ({D} - {A}) </td>
+                        <td> -14606.62 </td>
+                    </tr>
+                    <tr class="activerow">
+                        <td>13</td>
+                        <td> (Gross Crush Margin in MT) = (Total Realisation(11) - Mustard Seed PriceMT(2)) </td>
+                        <td> -14446.00 </td>
+                    </tr>
+                    <tr class="activerow">
+                        <td>14</td>
+                        <td> Contribution in Total realisation - Oil share (in %) = {B} / {D} </td>
+                        <td> 100.00 </td>
+                    </tr>
+                    <tr class="activerow">
+                        <td>15</td>
+                        <td> Contribution in Total realisation - Oil Cake Share Values (in %) = {C} / {D} </td>
+                        <td> 0.00 </td>
+                    </tr>                  
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div> -->
