@@ -1381,6 +1381,17 @@
             </div>
 
         </div>
+        <div class="header " style="display: flex;justify-content: space-between;align-items: center;">
+            <h2>Parity Crush</h2>
+        <div class="file-upload-container" style="margin-left: 30px;">
+            <input type="file" id="fileInput" (change)="onFileSelected($event)" accept=".xls, .xlsx" hidden />
+            <button for="fileInput" class="upload-btn">Upload Excel File</button>
+            
+            <!-- <p *ngIf="selectedFile">Selected File: {{ selectedFile.name }}</p> -->
+          </div>
+        </div>
+
+          
 
     </div>
 

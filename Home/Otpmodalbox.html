@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .otp-container {
+          border-radius: 20px;
+          background-color: #fff;
+          box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.04);
+          display: flex;
+          max-width: 476px;
+          flex-direction: column;
+          overflow: hidden;
+          align-items: center;
+          padding: 9px 12px 41px 30px;
+        }
+        .close-button {
+          border-radius: 23px;
+          background-color: #828282;
+          align-self: flex-end;
+          display: flex;
+          min-height: 20px;
+          width: 20px;
+          align-items: center;
+          justify-content: center;
+          height: 20px;
+          padding: 0 7px;
+        }
+        .close-icon {
+          aspect-ratio: 1;
+          object-fit: contain;
+          object-position: center;
+          width: 6px;
+          align-self: stretch;
+          margin: auto 0;
+        }
+        .verification-title {
+          color: #1e293b;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 12px 0px 0px 0px;
+          line-height: 45px;
+          font: 700 30px Poppins, sans-serif;
+        }
+        .verification-subtitle {
+          display: flex;
+          width: 319px;
+          max-width: 100%;
+          gap: 6px;
+          color: #475467;
+          margin: 8px 0 0 12px;
+          font: 400 16px Poppins, sans-serif;
+        }
+        .email-sent {
+          flex-grow: 1;
+          flex-basis: auto;
+        }
+        .info-icon {
+          aspect-ratio: 1;
+          object-fit: contain;
+          object-position: center;
+          width: 12px;
+          margin: auto 0;
+        }
+        .otp-input-container {
+          display: flex;
+          margin-top: 31px;
+          width: 100%;
+          max-width: 392px;
+          gap: 18px;
+          color: #1e293b;
+          white-space: nowrap;
+          font: 500 22px Poppins, sans-serif;
+        }
+        .otp-input {
+          border-radius: 30px;
+          background-color: #f9f9f9;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .resend-text {
+          color: #dc8513;
+          letter-spacing: -0.12px;
+          margin-top: 31px;
+          font: 600 16px Roboto, sans-serif;
+        }
+        .verify-button {
+          align-self: flex-start;
+          border-radius: 50px;
+          background-color: #dc8513;
+          margin-top: 37px;
+          min-height: 50px;
+          color: #fff;
+          white-space: nowrap;
+          letter-spacing: 0.32px;
+          padding: 13px 20px;
+          font: 600 16px Poppins, sans-serif;
+          border: none;
+          cursor: pointer;
+        }
+        .orange-text {
+          color: #dc8513;
+        }
+        .lowercase-text {
+          text-transform: lowercase;
+        }
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+      </style>
+      
+      <div class="otp-container">
+        <button class="close-button" aria-label="Close">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7429ff2f9525bc0237f287543c01dff5e6babdeadf89e2ccb24e8b152afefe70?placeholderIfAbsent=true&apiKey=ff4aaaca4c6a46cf9c1a2e7144e64887" class="close-icon" alt="" />
+        </button>
+        <h2 class="verification-title">
+          OTP <span class="orange-text">V<span class="lowercase-text">erification</span></span>
+        </h2>
+        <div class="verification-subtitle">
+          <p class="email-sent">Your OTP was sent to xyz@gmail.com</p>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8df653ac2d4c4e1b4d0ecf03fbb8b748594609ff636b04a69850ee0e65aa6951?placeholderIfAbsent=true&apiKey=ff4aaaca4c6a46cf9c1a2e7144e64887" class="info-icon" alt="" />
+        </div>
+        <form class="otp-input-container">
+          <label for="otp1" class="visually-hidden">OTP digit 1</label>
+          <input type="text" id="otp1" class="otp-input" maxlength="1" aria-label="OTP digit 1" />
+          <label for="otp2" class="visually-hidden">OTP digit 2</label>
+          <input type="text" id="otp2" class="otp-input" maxlength="1" aria-label="OTP digit 2" />
+          <label for="otp3" class="visually-hidden">OTP digit 3</label>
+          <input type="text" id="otp3" class="otp-input" maxlength="1" aria-label="OTP digit 3" />
+          <label for="otp4" class="visually-hidden">OTP digit 4</label>
+          <input type="text" id="otp4" class="otp-input" maxlength="1" aria-label="OTP digit 4" />
+          <label for="otp5" class="visually-hidden">OTP digit 5</label>
+          <input type="text" id="otp5" class="otp-input" maxlength="1" aria-label="OTP digit 5" />
+          <label for="otp6" class="visually-hidden">OTP digit 6</label>
+          <input type="text" id="otp6" class="otp-input" maxlength="1" aria-label="OTP digit 6" />
+        </form>
+        <p class="resend-text">
+          Haven't received OTP? Resend after <span class="orange-text">59</span> second(s)
+        </p>
+        <button class="verify-button" type="submit">Verify</button>
+      </div>
+    
+</body>
+</html>
