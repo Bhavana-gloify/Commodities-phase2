@@ -8,6 +8,8 @@
       rel="stylesheet"
     />
     <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+
 
     <!-- Stylesheets -->
     <link
@@ -41,7 +43,7 @@
         <div class="col-12 col-md-6">
           <div  class="align-items-center d-flex flex-column h-100 justify-content-center loginDIv">
             <!-- NORMAL LOGIN DIV -->
-            <div class="signIn d-none">
+            <div class="signIn">
               <form class="bg-white borderRadius30 d-flex flex-column gap-3">
                 <h4
                   class="text-center text-md-start shade475 fw700 fs28 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
@@ -71,9 +73,7 @@
                   <span class="d-none"><i class="bi bi-eye-slash"></i></span>
                 </div>
 
-                <a href="" class="fs12 fw500 lh36 shade475 text-end"
-                  >Forgot password ?</a
-                >
+                <a href="#" class="fs12 fw500 lh36 shade475 text-end forgotbtn" >Forgot password?</a>
 
                 <button
                   type="submit"
@@ -147,7 +147,7 @@
             </div>
 
             <!-- CREATING NEW PASSWORD DIV -->
-            <div class="borderRadius20 p-md-4 resetPw d-none">
+            <div class="borderRadius20 p-md-4 createpassword d-none">
               <form class="bg-white d-flex flex-column gap-3 text-center">
                 <h4
                   class="shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
@@ -207,7 +207,7 @@
 
                 <button
                   type="button"
-                  class="btn btn-primary borderRadius50 resetBtn"
+                  class="btn btn-primary borderRadius50 submitnewPW"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 >
@@ -219,6 +219,96 @@
                 </p>
               </form>
             </div>
+
+
+
+            <!-- Password SUCCESSFULy updated DIV -->
+            <div class="borderRadius20 pb-4 p-md-4 d-flex succefullyreseted d-none">
+                <form class="align-items-center bg-white d-flex flex-column text-center">
+                  
+                <span class="tick">
+                    <i class="bi bi-check-circle-fill"></i>
+                </span>
+                  <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                    Password successfully updated
+                  </p>
+  
+                  <button
+                    type="submit"
+                    class="btn btn-primary borderRadius50 succefullyupdated w188"
+                  >
+                    Ok
+                  </button>
+                </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6 d-none d-md-block p-0">
+          <img
+            class="w-100"
+            src="./images/Group 4.png"
+            alt="Image Description"
+          />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      defer
+    >
+    </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const signInSection = document.querySelector(".signIn");
+  const resetPasswordSection = document.querySelector(".resetPw");
+  const createNewPasswordSection = document.querySelector(".createpassword");
+  const successSection = document.querySelector(".succefullyreseted");
+
+  const forgotPasswordLink = document.querySelector(".forgotbtn");
+  const resetNextBtn = document.querySelector(".resetBtn");
+  const createPasswordSubmitBtn = document.querySelector(".verifiedotp"); //here we go
+  const successOkBtn = document.querySelector(".succefullyupdated");
+
+  function showSection(section) {
+    [signInSection, resetPasswordSection, createNewPasswordSection, successSection].forEach(sec => sec.classList.add("d-none"));
+    section.classList.remove("d-none");
+  }
+
+  // Show login section on page load
+  // showSection(signInSection);
+
+  forgotPasswordLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    showSection(resetPasswordSection);
+  });
+
+  // Click Next on Reset Password Section -> Show Create New Password Section
+  resetNextBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    showSection(createNewPasswordSection);
+  });
+
+  // Click Submit on Create New Password Section -> Show Success Section
+  createPasswordSubmitBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log("hiiii")
+    let otpModal = bootstrap.Modal.getInstance(document.getElementById("exampleModal"));
+    if (otpModal) otpModal.hide(); // Hides the modal correctly
+    document.querySelectorAll(".modal-backdrop").forEach(el => el.remove());
+
+    showSection(successSection);
+  });
+
+  // Click OK on Success Section -> Show Login Section
+  successOkBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    showSection(signInSection);
+  });
+});
+</script>
+
 
             <!-- MODAL FOR OTP FOR PASSWORD RESET-->
             <div
@@ -249,48 +339,11 @@
                   <p class="fw400 fs16 rfs14 lh24 rlh21 shade475 my-3">
                     Haven’t received OTP?   Resend after <span class="remaining-time shadeDC8">59</span> second(s)
                   </p>
-                    <button type="button" class="btn btn-primary borderRadius50">
+                    <button type="button" class="btn btn-primary borderRadius50 verifiedotp">
                       Verify
                     </button>
                 </div>
               </div>
             </div>
-
-            <!-- PAYMENT SUCCESSFUL DIV -->
-            <div class="borderRadius20 pb-4 p-md-4 d-flex resetPw ">
-                <form class="align-items-center bg-white d-flex flex-column text-center">
-                  
-                <span class="tick">
-                    <i class="bi bi-check-circle-fill"></i>
-                </span>
-                  <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
-                    Password successfully updated
-                  </p>
-  
-                  <button
-                    type="submit"
-                    class="btn btn-primary borderRadius50 resetBtn w188"
-                  >
-                    Ok
-                  </button>
-                </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="col-md-6 d-none d-md-block p-0">
-          <img
-            class="w-100"
-            src="./images/Group 4.png"
-            alt="Image Description"
-          />
-        </div>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
   </body>
 </html>
