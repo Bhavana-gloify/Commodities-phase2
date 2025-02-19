@@ -1,0 +1,1119 @@
+<div class="Formsection m-md-3 p-md-5  p-4 d-none" id="step2">
+    <div class="Form mx-md-5 d-flex flex-column gap-3 p-md-3 px-md-5 justify-content-center">
+        <h2 class="headline">Personal  <span class="orangetext">Details</span></h2>
+        <p>Hi, enter your details to get create your account </p>
+
+        <div class="row">
+            <div class="col-md-6  gap-4 d-flex flex-column mb-4">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" />
+                <input type="text" id="gstin" name="gstin" placeholder="Enter your GSTIN" />
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <!-- Add country options here -->
+                </select>
+                <input type="text" id="city" name="city" placeholder="Enter your city" />
+                <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode/zipcode" />
+                <select id="howDidYouHear" name="howDidYouHear" required>
+                    <option value="">How did you hear about us?</option>
+                    <!-- Add options here -->
+                </select>
+            </div>
+            <div class="col-md-6  gap-4 d-flex flex-column ">
+                <input type="email" id="emailId" name="emailId" placeholder="Enter your email ID" required />
+                <input type="text" id="businessType" name="businessType" placeholder="Enter your business type" required />
+                <input type="text" id="companyName" name="companyName" placeholder="Enter your company name" required />
+                <select id="state" name="state" required>
+                    <option value="">Select State</option>
+                    <!-- Add state options here -->
+                </select>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required />
+                <select id="tradeMarket" name="tradeMarket">
+                    <option value="">Select your trade market</option>
+                    <!-- Add market options here -->
+                </select>  
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-6">
+                <button type="submit" class="submit col-6">Next</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="Formsection m-md-3 p-md-5  p-4  d-none" id="step3">
+    <div class="mx-md-5 d-flex flex-column gap-5 p-md-3 px-md-5 justify-content-center">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="headline">Subscription &   <span class="orangetext"> Type Details</span></h2>
+            </div>
+            <div class="col-md-6 pl-5">
+                <div class="d-md-flex align-items-center ">
+                    <div class="form-check me-5 subscriptiontype">
+                      <input class="form-check-input" type="radio" name="subscriptiontype" id="Subscribe Now" value="freetrial">
+                      &nbsp;<label class="form-check-label" for="Subscribe Now">Free Trial Plan</label>
+                    </div>
+                    <div class="form-check subscriptiontype">
+                      <input class="form-check-input" type="radio" name="subscriptiontype" id="subscribenow" value="Subscribe Now">
+                      &nbsp;<label class="form-check-label" for="subscribenow">Subscribe Now</label>
+                    </div>
+                </div>   
+            </div>
+         
+        </div>
+        <div class="row">
+            <ul class="nav nav-pills d-flex gap-3" id="pills-tab" role="tablist">
+                <li class="nav-item " role="platform">
+                  <button class="nav-link active platformitem" id="pills-website-tab" data-bs-toggle="pill" data-bs-target="#pills-website" type="button" role="tab" aria-controls="pills-website" aria-selected="true">Website</button>
+                </li>
+                <li class="nav-item " role="platform">
+                  <button class="nav-link platformitem" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false">SMS</button>
+                </li>
+                <li class="nav-item " role="platform">
+                  <button class="nav-link platformitem" id="pills-wattsapp-tab" data-bs-toggle="pill" data-bs-target="#pills-wattsapp" type="button" role="tab" aria-controls="pills-wattsapp" aria-selected="false">WhatsApp</button>
+                </li>                          
+                  
+            </ul>
+            
+
+
+        </div>
+        <div class="row" id="FREETRIAL">
+            <div class="col-md-6">
+                    <table class="subscriptionpackages">
+                        <tr>
+                            <th class="header1">
+                                Subscription
+                            </th>
+                            <th class="header1">Trial</th>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td class="free">
+                                Free
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            Access To Full Website (Excluding MDEX Live, CBOT Live, CC Expert)
+                            </td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                                    &nbsp;<label class="form-check-label" for="access">Free</label>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Agri Pack*
+                            </td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="access" value="agripack">
+                                    &nbsp;<label class="form-check-label" for="agripack">Free</label>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Metals Pack**</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="metals" value="metals">
+                                    &nbsp;<label class="form-check-label" for="metals">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MDEX Live (CPO Futures)</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="mdexlive" value="mdexlive">
+                                    &nbsp;<label class="form-check-label" for="mdexlive">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CBOT Live</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="cbotlive" value="cbotlive">
+                                    &nbsp;<label class="form-check-label" for="cbotlive">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vegetable Oil</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="vegetableoil" value="vegetableoil">
+                                    &nbsp;<label class="form-check-label" for="vegetableoil">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pulses</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                                    &nbsp;<label class="form-check-label" for="pulses">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cotton</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="cotton" value="cotton">
+                                    &nbsp;<label class="form-check-label" for="cotton">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Spices</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="spices" value="spices">
+                                    &nbsp;<label class="form-check-label" for="spices">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sugar/Gur</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="sugargur" value="sugargur">
+                                    &nbsp;<label class="form-check-label" for="sugargur">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Plantation</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="plantation" value="plantation">
+                                    &nbsp;<label class="form-check-label" for="plantation">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Grains</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="grains" value="grains">
+                                    &nbsp;<label class="form-check-label" for="grains">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Precious Metals (Gold & Silver)</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="preciousmetals" value="preciousmetals">
+                                    &nbsp;<label class="form-check-label" for="preciousmetals">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Base Metals (Copper + Zinc + Aluminum)</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="basemetals" value="basemetals">
+                                    &nbsp;<label class="form-check-label" for="basemetals">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Energy (Crude oil + Natural Gas)</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="energy" value="energy">
+                                    &nbsp;<label class="form-check-label" for="energy">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Other (Guar Complex, Potato & Mentha Oil)</td>
+                            <td>
+                                <div class="form-check me-5 Packageradio">
+                                    <input class="form-check-input" type="radio" name="package" id="other" value="other">
+                                    &nbsp;<label class="form-check-label" for="other">Free</label>
+                                </div>
+                            </td>
+                        </tr>
+                       
+                </table>
+
+            </div>
+
+            <div class="col-md-6 order-1">
+                <div class="reasoncard p-4 w-75 ms-5">
+                    <h4 class="subheading pb-3">
+                        7 Great Reasons to Join
+                    </h4>
+                    <ul class="reasons p-0 gap-5">
+                        <li>In-depth coverage in Price and Market Behaviour</li>
+                        <li>Access live data from 200 markets, trading exchange in India & globally.</li>
+                        <li>Realtime News & Analysis on 10 commodities.</li>
+                        <li>Expert Interviews & insights.</li>
+                        <li>Trading Views & recommendations.</li>
+                        <li>Multiple delivery channels - Internet & mobile.</li>
+                        <li>24/7 customer support.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="Subscription">
+            <table class="subscriptionpackages">
+                <tr>
+                    <th class="header1">
+                        Subscription
+                    </th>
+                    <th class="header1">Monthly(Rs)</th>
+                    <th class="header1">Quarterly(Rs)</th>
+                    <th class="header1">Half Year(Rs)</th>
+                    <th class="header1">Annual(Rs)</th>
+
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td class="free">25,000</td>
+                    <td class="free">50,000</td>
+                    <td class="free">80,000</td>
+                    <td class="free">1,40,000</td>
+                </tr>
+                <tr>
+                    <td>
+                    Access To Full Website (Excluding MDEX Live, CBOT Live, CC Expert)
+                    </td>
+                        <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                            &nbsp;<label class="form-check-label" for="access">50,000</label>
+                          </div>
+                        </td>
+                         <td> <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                            &nbsp;<label class="form-check-label" for="access">50,000</label>
+                          </div>
+                        </td>
+                         <td> <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                            &nbsp;<label class="form-check-label" for="access">80,000</label>
+                          </div>
+                        </td>
+                         <td> <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                            &nbsp;<label class="form-check-label" for="access">1,40,000</label>
+                          </div>
+                        </td>    
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Agri Pack*
+                    </td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="access" value="agripack">
+                            &nbsp;<label class="form-check-label" for="agripack">40000</label>
+                        </div>
+
+                    </td>
+                    <td> 
+                        <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">40,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">70,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">1,20,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Metals Pack**</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="metals" value="metals">
+                            &nbsp;<label class="form-check-label" for="metals">12,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">12,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">22,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">40,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>MDEX Live (CPO Futures)</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="mdexlive" value="mdexlive">
+                            &nbsp;<label class="form-check-label" for="mdexlive">12,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">12,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">22,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">40,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>CBOT Live</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="cbotlive" value="cbotlive">
+                            &nbsp;<label class="form-check-label" for="cbotlive">35,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">35,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">60,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">1,00,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Vegetable Oil</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="vegetableoil" value="vegetableoil">
+                            &nbsp;<label class="form-check-label" for="vegetableoil">7,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">7,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">13,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">50,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Pulses</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Cotton</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Spices</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>Sugar/Gur</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>Plantation</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Grains</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>Precious Metals (Gold & Silver)</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>    
+                </tr>
+                <tr>
+                    <td>Base Metals (Copper + Zinc + Aluminum)</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="pulses" value="pulses">
+                            &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">6,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">11,000</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">20,000</label>
+                      </div>
+                    </td>  
+                </tr>
+                <tr>
+                    <td>Energy (Crude oil + Natural Gas)</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="energy" value="energy">
+                            &nbsp;<label class="form-check-label" for="energy">Free</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">Free</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">Free</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">Free</label>
+                      </div>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Other (Guar Complex, Potato & Mentha Oil)</td>
+                    <td>
+                        <div class="form-check me-5 Packageradio">
+                            <input class="form-check-input" type="radio" name="package" id="other" value="other">
+                            &nbsp;<label class="form-check-label" for="other">Free</label>
+                        </div>
+                    </td>
+                    <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">Free</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">Free</label>
+                      </div>
+                    </td>
+                     <td> <div class="form-check me-5 Packageradio">
+                        <input class="form-check-input" type="radio" name="package" id="access" value="freetrial">
+                        &nbsp;<label class="form-check-label" for="access">Free</label>
+                      </div>
+                    </td>   
+                </tr>
+               
+        </table>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="Gstcontent">
+                    *GST at 18% will applicable in all the invoices<br>
+                    *GST is not applicable for International Payments.<br>
+                    *Agri Pack Included Vegetable Oil, Pulses, Cotton, Spices, Sugar/Gur, Plantation, Grains, Other<br>
+                    ** Metals Pack Included Precious Metals, Base Metals, Energy
+                </p>
+            </div>
+            <div class="col-md-6">
+                <table class="totalamounttable">
+                    <tr class="totalamount">
+                        <td>TOTAL</td>
+                        <td>₹ 0.00</td>
+                    </tr>
+                    <tr class="totalamount">
+                        <td>GrandTotal</td>
+                        <td>₹ 0.00 <span class="fs-14 fw-400"> (including 18% GST)</span></td>
+                    </tr>
+                </table>
+                <button class="w-100 mt-5 nextbtn">Next</button>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Formsection m-md-3 p-md-5  p-4" id="step4">
+    <div class="mx-md-5 d-flex flex-column gap-3 p-md-3 px-md-5 justify-content-center">
+        <h2 class="headline">Payment  <span class="orangetext"> Details</span></h2>
+        <p> Please ensure that you submit a valid Phone number for us to communicate on your subscription details. </p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label class="mb-3" for="">Mode of payment</label><span class="text-danger">*</span>
+                <div class="d-flex align-items-center">
+                    <div class="form-check me-3">
+                      <input class="form-check-input" type="radio" name="paymentMode" id="onlinePayment" value="Online">
+                      &nbsp;<label class="form-check-label" for="onlinePayment">Online (Secure)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="paymentMode" id="offlinePayment" value="Offline">
+                      &nbsp;<label class="form-check-label" for="offlinePayment">DD/Cheque/Cash</label>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-md-6">
+                <label class="mb-3" for="">Validation Code</label><span class="text-danger">*</span>
+                <div class="d-flex gap-3 align-items-center mb-4">
+                    <span class="captcha input">y2xknv</span>
+
+                    <input type="text" placeholder="Enter the code above here" class="w-50">
+                </div>
+                <p>Can’t read the text? <a class="orangetext">Click here</a> to refresh.</p>
+                <button type="submit" class="submit my-5">Next</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- MODAL FOR OTP FOR PASSWORD RESET-->
+            <div class="modal fade align-content-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="d-flex justify-content-center modal-dialog">
+                <div class="modal-content p-5 text-center borderRadius20 ">
+                  <div class="modal-header py-0 border-0">
+                    <h4 class="text-center shade475 fw700 fs30 rfs20 lh45 rlh30 rshade1E2 width90 ">
+                      OTP <span>Verification</span>
+                    </h4>
+                    <button type="button"
+                      class="align-items-center btn-close d-flex justify-content-center rounded-circle p-0 m-0 position-absolute"
+                      data-bs-dismiss="modal" aria-label="Close">x</button>
+                  </div>
+                  <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                    Your OTP was sent to <span class="mobileNum">9573 383 383</span> <i class="bi bi-pencil-fill"></i>
+                  </p>
+                  <form class="otp-form my-3">
+                    <input type="text" id="otp-1" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-2" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-3" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-4" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-5" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-6" class="otp-input" maxlength="1" />
+                  </form>
+                  <p class="fw500 fs16 rfs14 lh24 rlh21 shade475 my-3">
+                    Haven’t received OTP? Resend after <span class="remaining-time shadeDC8">59</span> second(s)
+                  </p>
+                  <button type="button" class="fw600 btn btn-primary borderRadius50 verifiedotp">
+                    Verify
+                  </button>
+                </div>
+              </div>
+            </div>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+              const otpInputs = document.querySelectorAll(".otp-input");
+              console.log(otpInputs[4])
+
+            
+              otpInputs.forEach((input, index) => {
+                input.addEventListener("input", (event) => {
+                  if (event.target.value.length === 1) {
+                    if (index < otpInputs.length - 1) {
+                      otpInputs[index + 1].focus(); // Move to the next input
+                    }
+                  }
+                });
+            
+                input.addEventListener("keydown", (event) => {
+                  if (event.key === "Backspace") {
+                    if (input.value === "" && index > 0) {
+                      otpInputs[index - 1].focus(); // Move back to the previous input
+                    }
+                  }
+                });
+              });
+            });
+            
+            </script>
+            <!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+                  rel="stylesheet"
+                />
+                <title>Login</title>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+            
+            
+                <!-- Stylesheets -->
+                <link
+                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                />
+                <link
+                  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+                  rel="stylesheet"
+                />
+                <link
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                  rel="stylesheet"
+                />
+            
+                <!-- Scripts -->
+                <script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                  defer
+                ></script>
+            
+                <!-- Custom Styles -->
+                <!-- <link rel="stylesheet" href="./SigninLogin.css" /> -->
+            <link rel="stylesheet" href="../NEWS/Home2.css" />
+    <link rel="stylesheet" href="/Home/Global.css">              </head>
+            
+              <body>
+                <div class="login-container m-0 p-md-5 p-4">
+                  <div class="row bg-white mx-md-5 content">
+                    <!-- Left Column -->
+                    <div class="col-12 col-md-6">
+                      <div  class="align-items-center d-flex flex-column h-100 justify-content-center loginDIv">
+                        <!-- NORMAL LOGIN DIV -->
+                        <div class="signIn">
+                          <form class="bg-white borderRadius30 d-flex flex-column gap-3">
+                            <h4
+                              class="text-center text-md-start shade475 fw700 fs28 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
+                            >
+                              Let's <span>Start</span>
+                            </h4>
+                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                              Hi, enter your details to get sign in to your account
+                            </p>
+                            <input
+                              type="text"
+                              class="form-control ps-3"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              placeholder="Email ID or Mobile number*"
+                            />
+                            <div
+                              class="align-items-center d-flex justify-content-between pwDiv pe-3"
+                            >
+                              <input
+                                type="password"
+                                class="form-control ps-3 pw"
+                                id="exampleInputPassword1"
+                                placeholder="Password*"
+                              />
+                              <span><i class="bi bi-eye"></i></span>
+                              <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+            
+                            <a href="#" class="fs12 fw500 lh36 shade475 text-end forgotbtn" >Forgot password?</a>
+            
+                            <button
+                              type="submit"
+                              class="btn btn-primary borderRadius50 signInBtn"
+                            >
+                              Sign In
+                            </button>
+                            <!-- other login options -->
+                            <div class="text-center">
+                              <p class="fs12 fw500 lh36 shade475">Or sign in with</p>
+                              <div class="d-flex gap-3 justify-content-center socialBtn">
+                                <button
+                                  type="submit"
+                                  class="align-items-center btn btn-primary d-flex gap-1 justify-content-center"
+                                >
+                                  <img
+                                    src="../Home/images/google.svg"
+                                    alt="google-logo"
+                                  />Google
+                                </button>
+            
+                                <button
+                                  type="submit"
+                                  class="align-items-center btn btn-primary d-flex gap-1 justify-content-center"
+                                >
+                                  <img
+                                    src="../Home/images/fb.svg"
+                                    alt="facebook-logo"
+                                  />Facebook
+                                </button>
+                              </div>
+                              <p class="fs14 fw500 lh36 shade282 mt-3 mb-0">
+                                Don't have an account ?
+                                <a href="" class="shadeDC8">Sign Up</a>
+                              </p>
+                            </div>
+                          </form>
+                        </div>
+            
+                        <!-- PASSWORD RESET DIV -->
+                        <div class="borderRadius20 p-md-4 resetPw d-none">
+                          <form class="bg-white d-flex flex-column gap-3 text-center">
+                            <h4
+                              class="shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
+                            >
+                              Reset <span class="toHide shade475">Password</span>
+                              <span class="hidden">Password</span>
+                            </h4>
+                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                              Enter your email address, phone number
+                            </p>
+                            <input
+                              type="text"
+                              class="form-control ps-3"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              placeholder="Email ID or Mobile number*"
+                            />
+            
+                            <button
+                              type="submit"
+                              class="btn btn-primary borderRadius50 resetBtn"
+                            >
+                              Next
+                            </button>
+            
+                            <p class="fs14 fw500 lh36 shade475 mb-0">
+                              Back to <a href="" class="shadeDC8">Sign In</a>
+                            </p>
+                          </form>
+                        </div>
+            
+                        <!-- CREATING NEW PASSWORD DIV -->
+                        <div class="borderRadius20 p-md-4 createpassword d-none">
+                          <form class="bg-white d-flex flex-column gap-3 text-center">
+                            <h4
+                              class="shade475 fw700 fs30 rfs20 mb-0 mt-3 lh45 rlh30 rshade1E2"
+                            >
+                              Reset <span class="toHide shade475">Password</span>
+                              <span class="hidden">Password</span>
+                            </h4>
+                            <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                              Enter your email address, phone number
+                            </p>
+                            <div
+                              class="align-items-center d-flex justify-content-between pwDiv pe-3"
+                            >
+                              <input
+                                type="password"
+                                class="form-control ps-3 pw"
+                                id="exampleInputPassword1"
+                                placeholder="Password*"
+                              />
+                              <span><i class="bi bi-eye"></i></span>
+                              <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+                            <div
+                              class="align-items-center d-flex justify-content-between pwDiv pe-3"
+                            >
+                              <input
+                                type="password"
+                                class="form-control ps-3 pw"
+                                id="exampleInputPassword1"
+                                placeholder="Confirm Password*"
+                              />
+                              <span><i class="bi bi-eye"></i></span>
+                              <span class="d-none"><i class="bi bi-eye-slash"></i></span>
+                            </div>
+            
+                            <div class="terms fw400 fs14 lh33 text-start">
+                              <p>
+                                <i class="bi bi-check"></i> Must include at least 1 upper
+                                case
+                              </p>
+                              <p>
+                                <i class="bi bi-check"></i> Must include at least 1 lower
+                                case
+                              </p>
+                              <p>
+                                <i class="bi bi-check"></i> Must include at least 1 number
+                              </p>
+                              <p>
+                                <i class="bi bi-check"></i> Must include minimum of 8
+                                characters
+                              </p>
+                              <p class="shade475 rshade7D8">
+                                <i class="bi bi-check"></i> Must include at least 1 special
+                                character (e.g. ! @ # $ % ^ )
+                              </p>
+                            </div>
+            
+                            <button
+                              type="button"
+                              class="btn btn-primary borderRadius50 submitnewPW"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              Submit
+                            </button>
+            
+                            <p class="fs14 fw500 lh36 shade475 mb-0">
+                              Back to <a href="" class="shadeDC8">Sign In</a>
+                            </p>
+                          </form>
+                        </div>
+            
+            
+            
+                        <!-- Password SUCCESSFULy updated DIV -->
+                        <div class="borderRadius20 pb-4 p-md-4 d-flex succefullyreseted d-none">
+                            <form class="align-items-center bg-white d-flex flex-column text-center">
+                              
+                            <span class="tick">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </span>
+                              <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                                Password successfully updated
+                              </p>
+              
+                              <button
+                                type="submit"
+                                class="btn btn-primary borderRadius50 succefullyupdated w188"
+                              >
+                                Ok
+                              </button>
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Right Column -->
+                    <div class="col-md-6 d-none d-md-block p-0">
+                      <img
+                        class="w-100"
+                        src="../images/Group 4.png"
+                        alt="Image Description"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                  defer
+                >
+                </script>
+                <script>
+              document.addEventListener("DOMContentLoaded", function () {
+              const signInSection = document.querySelector(".signIn");
+              const resetPasswordSection = document.querySelector(".resetPw");
+              const createNewPasswordSection = document.querySelector(".createpassword");
+              const successSection = document.querySelector(".succefullyreseted");
+            
+              const forgotPasswordLink = document.querySelector(".forgotbtn");
+              const resetNextBtn = document.querySelector(".resetBtn");
+              const createPasswordSubmitBtn = document.querySelector(".verifiedotp"); //here we go
+              const successOkBtn = document.querySelector(".succefullyupdated");
+            
+              function showSection(section) {
+                [signInSection, resetPasswordSection, createNewPasswordSection, successSection].forEach(sec => sec.classList.add("d-none"));
+                section.classList.remove("d-none");
+              }
+            
+              // Show login section on page load
+              // showSection(signInSection);
+            
+              forgotPasswordLink.addEventListener("click", function (e) {
+                e.preventDefault();
+                showSection(resetPasswordSection);
+              });
+            
+              // Click Next on Reset Password Section -> Show Create New Password Section
+              resetNextBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                showSection(createNewPasswordSection);
+              });
+            
+              // Click Submit on Create New Password Section -> Show Success Section
+              createPasswordSubmitBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                console.log("hiiii")
+                let otpModal = bootstrap.Modal.getInstance(document.getElementById("exampleModal"));
+                if (otpModal) otpModal.hide(); // Hides the modal correctly
+                document.querySelectorAll(".modal-backdrop").forEach(el => el.remove());
+            
+                showSection(successSection);
+              });
+            
+              // Click OK on Success Section -> Show Login Section
+              successOkBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                showSection(signInSection);
+              });
+            });
+            </script>
+            
+            
+            
+              </body>
+            </html>
+            

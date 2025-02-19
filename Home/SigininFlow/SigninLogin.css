@@ -22,6 +22,10 @@ button{
 }
 
 .navbarbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     border: none !important;
     background: #FEFEFE;
     height: 76px;
@@ -32,6 +36,10 @@ button{
     text-wrap: nowrap !important;
     width: 100%;
 
+}
+.completed{
+    width: 24px;
+    height: 24px;
 }
 .navgroup{
     overflow: scroll;
@@ -331,7 +339,7 @@ label{
     color:#475467;
     width: 139px;
 }
-.platformitem.active{
+.platformitem.progres{
     background: #DC8513 !important;
     color: #FFFFFF !important;
 }
@@ -354,20 +362,25 @@ label{
     .Signinflow{
         background: #FFFFFF;
     }
+    .navgroup{
+        gap: 1px;
+    }
     .navbarbtn{
 
         height: 48px;
         font-size: 14px;
         font-weight: 400;
         padding: 10px;
+        border: 1px solid #F8F9F9!important;
         text-wrap: nowrap !important;
         width: 100%;
     
     }
-    .active{
-        font-size: 14px !important;
-        font-weight: 600;
+    .completed{
+        width: 14px;
+        height: 14px;
     }
+    
     .headline{
         font-size: 20px !important;
         line-height: 30px !important;
@@ -407,7 +420,31 @@ label{
     select {
         padding-right: 20px;
     }
+    .otp-form {
+        gap: 7px!important;
+      }
 
+      .otp-input {
+        border-radius: 30px;
+        background-color: #f9f9f9;
+        width: 45px !important;
+        height: 45px !important;
+        text-align: center;
+        border: none;
+        font-size: 18px;
+      }
+
+
+}
+
+@media screen and (min-width: 900px) {
+
+.left-border{
+    border-radius: 10px 0px 0px 10px;
+}
+.right-border{
+    border-radius: 0px 10px 10px 0px;x;
+}
 }
 
 .fs-14{
@@ -420,7 +457,59 @@ label{
 
 
 
-    /* .content {
-        height: 544px;
-    } */
 
+
+    .otp-form {
+        display: flex;
+        width: 100%;
+        max-width: 392px;
+        gap: 18px;
+        color: #000;
+        white-space: nowrap;
+        font: 500 22px Poppins, sans-serif;
+      }
+      .otp-input {
+        padding: 15px;
+        border-radius: 30px;
+        background-color: #f9f9f9;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border: none;
+        font-size: 22px;
+      }
+      
+      .otp-input:focus-visible {
+        outline: -webkit-focus-ring-color auto 0px;
+      }
+
+
+
+/* OTP CSS */
+.btn-close{
+    background: none;
+    background-color: #828282;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    top: 8px;
+    right: 8px;
+  }
+  .modal-content{
+    max-width: 476px;
+  }
+  .modal-content .btn-primary{
+    height: 50px;
+  }
+  
+  @media(max-width:900px){
+    .modal-content{
+      max-width: 342px;
+    }
+    .modal-content .btn-primary {
+      color: #fff;
+      background-color: #DC8513;
+      border-color:  #DC8513;
+      box-shadow: none;
+  }
+  }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <title>SignIn</title>
+    <link rel="stylesheet" href="./SigninLogin.css">
+    <link rel="stylesheet" href="../Global.css">
+
+
+</head>
+
+<body>
+    <section class="Signinflow px-md-5 pb-5">
+        <div class="d-flex  navgroup p-md-3 py-3">
+            <button class=" navbarbtn active left-border" >Creat Account</button>
+            <button class=" navbarbtn">Personal Details</button>
+            <button class=" navbarbtn">Subscription Details</button>
+            <button class=" navbarbtn right-border" >Payment Details</button>
+        </div>
+
+        <div class="Formsection m-md-3" id="step1">
+            <div class="row m-0 ">
+                <div class="col-md-6 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <div class="Form  d-flex flex-column gap-3 p-3 justify-content-center">
+                    <h2 class="headline">Let's <span class="orangetext">start</span></h2>
+                    <p>Hi, enter your details to get sign up to your account</p>
+
+                    <input type="email" placeholder="Email ID or Mobile number*">
+                    <input type="password" placeholder="Password*">
+                    <input type="password" placeholder="Confirm Password*">
+                    <button type="submit" class="submit" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Sign Up</button>
+                    <p class="text-center">Or Sign Up with</p>
+                    <button class="google justify-self-center m-auto">
+                        <img src="../images/google 1.svg"  alt=""> Google
+                    </button>
+                    <p class="fw-bold text-center"> Do have an account ? <span class="orangetext">Login</span></p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 m-auto p-0 d-none d-md-block">
+                    <img class="m-auto form1image" src="../images/signin.png" alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div class="modal fade align-content-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="d-flex justify-content-center modal-dialog">
+            <div class="modal-content p-md-5 p-3 text-center borderRadius20 ">
+                <div class="modal-header py-0 border-0">
+                    <h4 class="text-center shade475 fw700 fs30 rfs20 lh45 rlh30 rshade1E2 width90 ">
+                        OTP <span class="orangetext">Verification</span>
+                    </h4>
+                    <button type="button"
+                        class="align-items-center btn-close d-flex justify-content-center rounded-circle p-0 m-0 position-absolute"
+                        data-bs-dismiss="modal" aria-label="Close">x</button>
+                </div>
+                <p class="fw400 fs16 rfs14 lh24 rlh21 shade475">
+                    Your OTP was sent to <span class="mobileNum">9573 383 383</span> <i class="bi bi-pencil-fill"></i>
+                </p>
+                <form class="otp-form my-3">
+                    <input type="text" id="otp-1" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-2" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-3" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-4" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-5" class="otp-input" maxlength="1" />
+                    <input type="text" id="otp-6" class="otp-input" maxlength="1" />
+                </form>
+                <p class="fw500 fs16 rfs14 lh24 rlh21 shade475 my-3">
+                    Haven’t received OTP? Resend after <span class="remaining-time shadeDC8">59</span> second(s)
+                </p>
+                <button type="button" class="fw600 btn btn-primary borderRadius50 verifiedotp">
+                    Verify
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const otpInputs = document.querySelectorAll(".otp-input");
+            console.log(otpInputs[4])
+
+
+            otpInputs.forEach((input, index) => {
+                input.addEventListener("input", (event) => {
+                    if (event.target.value.length === 1) {
+                        if (index < otpInputs.length - 1) {
+                            otpInputs[index + 1].focus(); // Move to the next input
+                        }
+                    }
+                });
+
+                input.addEventListener("keydown", (event) => {
+                    if (event.key === "Backspace") {
+                        if (input.value === "" && index > 0) {
+                            otpInputs[index - 1].focus(); // Move back to the previous input
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>
+
+
+    
+<script>
+
+</script>
+
+</body>

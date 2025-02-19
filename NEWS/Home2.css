@@ -1733,157 +1733,30 @@ input[type="radio"]:checked + .custom-radio {
 
 
  /* COMMON CSS CLASSES */
- .shade1E2{
-  color: #1E293B;
- }
-.shade475{
-  color: #475467;
+
+
+
+
+
+.otp-form {
+  display: flex;
+  width: 100%;
+  max-width: 392px;
+  gap: 18px;
+  color: #000;
+  white-space: nowrap;
+  font: 500 22px Poppins, sans-serif;
 }
-.shade282{
-  color: #282828;
-}
-.shadeDC8{
-  color:#DC8513;
-}
-.shade7D8{
-  color:#7D857F;
- }
-.width90{
-  width: 90%;
-}
-.fw700{
-  font-weight: 700;
-}
-.fw600{
-  font-weight: 600;
-}
-.fw500{
-  font-weight: 500;
-}
-.fw400{
-  font-weight: 400;
-}
-.fs40{
-  font-size: 40px;
-}
-.fs35{
-  font-size: 35px;
-}
-.fs34{
-  font-size: 34px;
-}
-.fs30{
-  font-size: 30px;
-}
-.fs20{
-  font-size: 20px;
-}
-.fs18{
-  font-size: 18px;
-}
-.fs17{
-  font-size: 17px;
-}
-.fs16{
-  font-size: 16px;
-}
-.fs14{
-  font-size: 14px;
-}
-.fs13{
-  font-size: 13px;
-}
-.fs12{
-  font-size: 12px;
-}
-.lh45{
-  line-height: 45px;
-}
-.lh36{
-  line-height: 36px;
-}
-.lh33{
-  line-height: 33px;
-}
-.lh32{
-  line-height: 32px;
-}
-.lh31{
-  line-height: 31px;
-}
- .lh30{
-  line-height: 30px;
-}
-.lh27{
-  line-height: 27px;
-}
-.lh24{
-  line-height: 24px;
-}
-.lh22{
-  line-height: 22px;
-}
-.lh21{
-  line-height: 21px;
-}
-.lh18{
-  line-height: 18px;
-}
-.borderRadius5{
-  border-radius: 5px;
-}
-.borderRadius10{
-  border-radius: 10px;
-}
-.borderRadius20{
-  border-radius: 20px;
-}
-.borderRadius25{
-  border-radius: 25px;
-}
-.borderRadius30{
+.otp-input {
   border-radius: 30px;
-}
-.borderRadius50{
-  border-radius: 50px;
-}
-
-
-
-@media(max-width:900px){
-  .rshade1E2{
-    color: #1E293B;
-   }
-   .terms .rshade7D8{
-    color:#7D857F;
-   }
-  .rlh30{
-    line-height: 30px;
-  }
-  .rlh29{
-    line-height: 24px;
-  }
-  .rlh24{
-    line-height: 24px;
-  }
-  .rlh21{
-    line-height: 21px;
-  }
-
-  .rfs12{
-    font-size: 12px;
-  }
-  .rfs14{
-    font-size: 14px;
-  }
-  .rfs16{
-    font-size: 16px;
-  }
-  .rfs18{
-    font-size: 18px;
-  }
-  .rfs20{
-    font-size: 20px;
-  }
+  background-color: #f9f9f9;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  font-size: 22px;
 }
 
+.otp-input:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
