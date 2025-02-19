@@ -171,9 +171,10 @@ label{
     font-weight: 600;
     line-height: 22px;
     background: #F9F9F9;
-    border-radius: 50px;
+    border-radius: 20px !important;
     border: none !important;
     padding: 20px;
+    width: 30%;
 
   }
   .subscriptiontype{
@@ -380,7 +381,19 @@ label{
         width: 14px;
         height: 14px;
     }
-    
+    .left-arrow{
+
+    }
+    .navgateback
+    {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0%;
+
+    }
+
     .headline{
         font-size: 20px !important;
         line-height: 30px !important;
@@ -392,6 +405,11 @@ label{
     select {
         padding-right: 20px;
     }
+    .captcha{
+
+        width: 40%;
+    
+      }
 
 }
 
