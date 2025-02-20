@@ -17,9 +17,9 @@
 
 <body>
     <section class="Signinflow px-md-5 pb-5">
-        <div class="pt-3 d-flex align-items-center px-3 gap-1">
+        <div class="pt-3 d-flex align-items-center px-3 gap-1 d-md-none">
             <i class="fa fa-angle-left " style="font-size: 23px;"></i> 
-            <span class="navgateback"> Back</span>
+            <span class="navgateback "> Back</span>
         </div>
         <div class="d-flex  navgroup p-md-3 py-3">
             <button class=" navbarbtn active left-border"><img class=" completed" src="../images/Completed.svg" alt=""> Create Account</button>
@@ -35,38 +35,68 @@
                 <h2 class="headline">Personal  <span class="orangetext">Details</span></h2>
                 <p>Hi, enter your details to get create your account </p>
 
-                <div class="row">
-                    <div class="col-md-6  gap-4 d-flex flex-column mb-4">
-                        <input type="text" id="name" name="name" placeholder="Name" required />
-                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
-                        <input type="text" id="gstin" name="gstin" placeholder="GSTIN" />
-                        <select id="country" name="Country" required>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <input class="  p-2 px-3" type="text" id="name" name="name" placeholder="Name" required />
+                    </div>
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="email" id="emailId" name="emailId" placeholder="Email ID" required />
+                    </div>
+                
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" />
+                    </div>
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="businessType" name="businessType" placeholder="Business type" required />
+                    </div>
+                
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="gstin" name="gstin" placeholder="GSTIN" />
+                    </div>
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="companyName" name="companyName" placeholder="Company Name" required />
+                    </div>
+                
+                    <div class="col-md-6">
+                        <select class="   p-2 px-3" id="country" name="Country" required>
                             <option value="">Select Country</option>
                             <!-- Add country options here -->
                         </select>
-                        <input type="text" id="city" name="city" placeholder="City" />
-                        <input type="text" id="pincode" name="pincode" placeholder="Pincode/Zipcode" />
-                        <select id="howDidYouHear" name="howDidYouHear" required>
+                    </div>
+                    <div class="col-md-6">
+                        <select class="   p-2 px-3" id="state" name="state" required>
+                            <option value="">Select State</option>
+                            <!-- Add state options here -->
+                        </select>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="city" name="city" placeholder="City" />
+                    </div>
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="address" name="address" placeholder="Address" required />
+                    </div>
+                
+                    <div class="col-md-6">
+                        <input class="   p-2 px-3" type="text" id="pincode" name="pincode" placeholder="Pincode/Zipcode" />
+                    </div>
+                    <div class="col-md-6">
+                        <select class="   p-2 px-3" id="tradeMarket" name="tradeMarket">
+                            <option value="">Add your trade Market</option>
+                            <option value="Domestic">Domestic</option>
+                            <option value="International">International</option>
+                        </select>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <select class="   p-2 px-3" id="howDidYouHear" name="howDidYouHear" required>
                             <option value="">How did you hear about us?</option>
                             <!-- Add options here -->
                         </select>
                     </div>
-                    <div class="col-md-6  gap-4 d-flex flex-column ">
-                        <input type="email" id="emailId" name="emailId" placeholder="Email ID" required />
-                        <input type="text" id="businessType" name="businessType" placeholder="Business type" required />
-                        <input type="text" id="companyName" name="companyName" placeholder="Company Name" required />
-                        <select id="state" name="state" required>
-                            <option value="">Select State</option>
-                            <!-- Add state options here -->
-                        </select>
-                        <input type="text" id="address" name="address" placeholder="Address" required />
-                        <select id="tradeMarket" name="tradeMarket">
-                            <option value="">Add your trade Market</option>
-                            <!-- Add market options here -->
-                        </select>  
-                    </div>
                 </div>
-                <div class="row justify-content-end">
+                
+                <div class="row justify-content-end mt-4">
                     <div class="col-md-6">
                         <button type="submit" class="submit col-6">Next</button>
                     </div>

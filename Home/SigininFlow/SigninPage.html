@@ -20,9 +20,9 @@
 
 <body>
     <section class="Signinflow px-md-5 pb-5">
-        <div class="pt-3 d-flex align-items-center px-3 gap-1">
+        <div class="pt-3 d-flex align-items-center px-3 gap-1 d-md-none">
             <i class="fa fa-angle-left " style="font-size: 23px;"></i> 
-            <span class="navgateback"> Back</span>
+            <span class="navgateback "> Back</span>
         </div>
         <div class="d-flex  navgroup p-md-3 py-3">
             <button class=" navbarbtn active left-border" >Create Account</button>
@@ -32,31 +32,98 @@
         </div>
 
         <div class="Formsection m-md-3" id="step1">
-            <div class="row m-0 ">
+            <div class="row m-0">
                 <div class="col-md-6 p-0 d-flex flex-column justify-content-center align-items-center">
-                    <div class="Form  d-flex flex-column gap-3 p-3 justify-content-center">
-                    <h2 class="headline">Let's <span class="orangetext">start</span></h2>
-                    <p>Hi, enter your details to get sign up to your account</p>
-
-                    <input type="email" placeholder="Email ID or Mobile number*">
-                    <input type="password" placeholder="Password*">
-                    <input type="password" placeholder="Confirm Password*">
-                    <button type="submit" class="submit" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Sign Up</button>
-                    <p class="text-center">Or Sign Up with</p>
-                    <button class="google justify-self-center m-auto">
-                        <img src="../images/google 1.svg"  alt=""> Google
-                    </button>
-                    <p class="fw-bold text-center"> Do have an account ? <span class="orangetext">Login</span></p>
+                    <div class="Form d-flex flex-column gap-3 p-3 justify-content-center">
+                        <h2 class="headline">Let's <span class="orangetext">start</span></h2>
+                        <p>Hi, enter your details to sign up for your account</p>
+        
+                        <input type="email" id="email" placeholder="Email ID or Mobile number*" required>
+        
+                        <input type="password" id="password" placeholder="Password*" required 
+                            onblur="validatePassword()" onkeypress="handleEnter(event, validatePassword)">
+                        <small id="passwordError" class="text-danger"></small>
+        
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password*" required disabled 
+                        onblur="validateConfirmPassword()" onkeypress="handleEnter(event, validateConfirmPassword)">
+                        <small id="confirmPasswordError" class="text-danger"></small>
+        
+                        <button type="submit" class="submit" onclick="validateForm()">Sign Up</button>
+        
+                        <p class="text-center">Or Sign Up with</p>
+                        <button class="google justify-self-center m-auto">
+                            <img src="../images/google 1.svg" alt=""> Google
+                        </button>
+                        <p class="fw-bold text-center">Do have an account? <span class="orangetext">Login</span></p>
                     </div>
-
                 </div>
+        
                 <div class="col-md-6 m-auto p-0 d-none d-md-block">
                     <img class="m-auto form1image" src="../images/signin.png" alt="">
-
                 </div>
             </div>
         </div>
+        
+        <script>
+        // Function to validate password
+        function validatePassword() {
+            let password = document.getElementById("password").value;
+            let passwordError = document.getElementById("passwordError");
+            let confirmPassword = document.getElementById("confirmPassword");
+        
+            let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^])[A-Za-z\d!@#$%^]{8,}$/;
+        
+            if (!passwordRegex.test(password)) {
+                passwordError.innerText = "Password must contain at least: 1 lowercase, 1 uppercase, 1 number, 1 special character (!@#$%^), and be at least 8 characters long.";
+                confirmPassword.disabled = true;
+                return false;
+            } else {
+                passwordError.innerText = "";
+                confirmPassword.disabled = false;
+                return true;
+            }
+        }
+        
+        // Function to validate confirm password
+        function validateConfirmPassword() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let confirmPasswordError = document.getElementById("confirmPasswordError");
+        
+            if (password !== confirmPassword) {
+                confirmPasswordError.innerText = "Passwords do not match!";
+                return false;
+            } else {
+                confirmPasswordError.innerText = "";
+                return true;
+            }
+        }
+        
+        // Function to validate the form before submitting
+        function validateForm() {
+            if (!validatePassword()) {
+                alert("Please enter a valid password before submitting.");
+                return false;
+            }
+        
+            if (!validateConfirmPassword()) {
+                alert("Passwords do not match.");
+                return false;
+            }
+        
+            alert("Form submitted successfully!");
+            return true;
+        }
+        
+        // Function to handle Enter key press
+        function handleEnter(event, validationFunction) {
+            if (event.key === "Enter") {
+                validationFunction();
+            }
+        }
+        </script>
+        
+        
 
     </section>
 
