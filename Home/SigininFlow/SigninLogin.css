@@ -42,6 +42,11 @@ button{
     background: #DC8513 !important;
     font-weight: 600 !important;
 }
+.nav-item .active{
+    color: #FFFFFF !important;
+    background: #DC8513 !important;
+    font-weight: 600 !important;
+}
 .completed{
     width: 24px;
     height: 24px;

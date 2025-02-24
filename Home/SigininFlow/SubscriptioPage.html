@@ -17,11 +17,15 @@
 
 <body>
     <section class="Signinflow px-md-5 pb-5">
+        <div class="pt-3 d-flex align-items-center px-3 gap-1 d-md-none">
+            <i class="fa fa-angle-left " style="font-size: 23px;"></i> 
+            <span class="navgateback "> Back</span>
+        </div>
         <div class="d-flex  navgroup p-md-3 py-3">
-            <button class=" navbarbtn active" style="border-radius: 10px 0px 0px 10px; ">Creat Account</button>
-            <button class=" navbarbtn active">Personal Details</button>
-            <button class=" navbarbtn active">Subscription Details</button>
-            <button class=" navbarbtn" style="border-radius: 0px 10px 10px 0px;">Payment Details</button>
+            <button class=" navbarbtn active left-border"><img class=" completed" src="../images/Completed.svg" alt=""> Create Account</button>
+            <button class=" navbarbtn active"><img class=" completed" src="../images/Completed.svg" alt=""> Personal Details</button>
+            <button class=" navbarbtn">Subscription Details</button>
+            <button class=" navbarbtn right-border" >Payment Details</button>
         </div>
 
 
@@ -34,769 +38,1174 @@
                     <div class="col-md-6 pl-5">
                         <div class="d-md-flex align-items-center ">
                             <div class="form-check me-5 subscriptiontype">
-                                <input class="form-check-input" type="radio" name="subscriptiontype" id="Subscribe Now"
-                                    value="freetrial">
+                                <input class="form-check-input" type="radio" name="subscriptiontype" id="freeTrialRadio"
+                                    value="freetrial" data-bs-toggle="collapse" data-bs-target="#FREETRIAL"
+                                    aria-expanded="false" aria-controls="FREETRIAL" checked>
                                 &nbsp;<label class="form-check-label" for="Subscribe Now">Free Trial Plan</label>
                             </div>
                             <div class="form-check subscriptiontype">
-                                <input class="form-check-input" type="radio" name="subscriptiontype" id="subscribenow"
-                                    value="Subscribe Now">
+                                <input class="form-check-input" type="radio" name="subscriptiontype"
+                                    id="subscribeNowRadio" value="subscribeNow" data-bs-toggle="collapse"
+                                    data-bs-target="#Subscription" aria-expanded="false" aria-controls="Subscription">
                                 &nbsp;<label class="form-check-label" for="subscribenow">Subscribe Now</label>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="row">
-                    <ul class="nav nav-pills d-flex gap-3" id="pills-tab" role="tablist">
-                        <li class="nav-item " role="platform">
-                            <button class="nav-link progres platformitem" id="pills-website-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-website" type="button" role="tab" aria-controls="pills-website"
-                                aria-selected="true">Website</button>
-                        </li>
-                        <li class="nav-item " role="platform">
-                            <button class="nav-link platformitem" id="pills-sms-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms"
-                                aria-selected="false">SMS</button>
-                        </li>
-                        <li class="nav-item " role="platform">
-                            <button class="nav-link platformitem" id="pills-wattsapp-tab" data-bs-toggle="pill"
-                                data-bs-target="#pills-wattsapp" type="button" role="tab" aria-controls="pills-wattsapp"
-                                aria-selected="false">WhatsApp</button>
-                        </li>
 
-                    </ul>
-
-
-
-                </div>
-                <div class="row" id="FREETRIAL">
-                    <div class="col-md-6">
-                        <table class="subscriptionpackages">
-                            <tr>
-                                <th class="header1">
-                                    Subscription
-                                </th>
-                                <th class="header1">Trial</th>
-                            </tr>
-                            <tr>
-                                <td>
-
-                                </td>
-                                <td class="free">
-                                    Free
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Access To Full Website (Excluding MDEX Live, CBOT Live, CC Expert)
-                                </td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="access"
-                                            value="freetrial">
-                                        &nbsp;<label class="form-check-label" for="access">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Agri Pack*
-                                </td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="access"
-                                            value="agripack">
-                                        &nbsp;<label class="form-check-label" for="agripack">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Metals Pack**</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="metals"
-                                            value="metals">
-                                        &nbsp;<label class="form-check-label" for="metals">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>MDEX Live (CPO Futures)</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="mdexlive"
-                                            value="mdexlive">
-                                        &nbsp;<label class="form-check-label" for="mdexlive">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>CBOT Live</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="cbotlive"
-                                            value="cbotlive">
-                                        &nbsp;<label class="form-check-label" for="cbotlive">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Vegetable Oil</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="vegetableoil"
-                                            value="vegetableoil">
-                                        &nbsp;<label class="form-check-label" for="vegetableoil">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Pulses</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="pulses"
-                                            value="pulses">
-                                        &nbsp;<label class="form-check-label" for="pulses">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Cotton</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="cotton"
-                                            value="cotton">
-                                        &nbsp;<label class="form-check-label" for="cotton">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Spices</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="spices"
-                                            value="spices">
-                                        &nbsp;<label class="form-check-label" for="spices">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Sugar/Gur</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="sugargur"
-                                            value="sugargur">
-                                        &nbsp;<label class="form-check-label" for="sugargur">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Plantation</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="plantation"
-                                            value="plantation">
-                                        &nbsp;<label class="form-check-label" for="plantation">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Grains</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="grains"
-                                            value="grains">
-                                        &nbsp;<label class="form-check-label" for="grains">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Precious Metals (Gold & Silver)</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="preciousmetals"
-                                            value="preciousmetals">
-                                        &nbsp;<label class="form-check-label" for="preciousmetals">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Base Metals (Copper + Zinc + Aluminum)</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="basemetals"
-                                            value="basemetals">
-                                        &nbsp;<label class="form-check-label" for="basemetals">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Energy (Crude oil + Natural Gas)</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="energy"
-                                            value="energy">
-                                        &nbsp;<label class="form-check-label" for="energy">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Other (Guar Complex, Potato & Mentha Oil)</td>
-                                <td>
-                                    <div class="form-check me-5 Packageradio">
-                                        <input class="form-check-input" type="radio" name="package" id="other"
-                                            value="other">
-                                        &nbsp;<label class="form-check-label" for="other">Free</label>
-                                    </div>
-                                </td>
-                            </tr>
-
-                        </table>
-
-                    </div>
-
-                    <div class="col-md-6 order-1">
-                        <div class="reasoncard p-4 w-75 ms-5">
-                            <h4 class="subheading pb-3">
-                                7 Great Reasons to Join
-                            </h4>
-                            <ul class="reasons p-0 gap-5">
-                                <li>In-depth coverage in Price and Market Behaviour</li>
-                                <li>Access live data from 200 markets, trading exchange in India & globally.</li>
-                                <li>Realtime News & Analysis on 10 commodities.</li>
-                                <li>Expert Interviews & insights.</li>
-                                <li>Trading Views & recommendations.</li>
-                                <li>Multiple delivery channels - Internet & mobile.</li>
-                                <li>24/7 customer support.</li>
+                <div id="subscriptionContainer">
+                    <div class="row collapse show" id="FREETRIAL" data-bs-parent="#subscriptionContainer">
+                        <div class="row mx-0">
+                            <ul class="nav nav-pills d-flex gap-3 mb-5" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="platform">
+                                    <button class="nav-link active platformitem" id="pills-website-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-website" type="button" role="tab" aria-controls="pills-website"
+                                        aria-selected="true">Website</button>
+                                </li>
+                                <li class="nav-item" role="platform">
+                                    <button class="nav-link platformitem" id="pills-sms-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms"
+                                        aria-selected="false">SMS</button>
+                                </li>
+                                <li class="nav-item" role="platform">
+                                    <button class="nav-link platformitem" id="pills-whatsapp-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-whatsapp" type="button" role="tab" aria-controls="pills-whatsapp"
+                                        aria-selected="false">WhatsApp</button>
+                                </li>
                             </ul>
                         </div>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab">
+
+                            <table class="subscriptionpackages website">
+                                <tr>
+                                    <th class="header1">
+                                        Subscription
+                                    </th>
+                                    <th class="header1">Trial</th>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td class="free">
+                                        Free
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Access To Full Website (Excluding MDEX Live, CBOT Live, CC Expert)
+                                    </td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            
+                                            <input class="form-check-input" type="radio" name="package" id="access"
+                                                value="freetrial">
+                                            &nbsp;<label class="form-check-label" for="access">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Agri Pack*
+                                    </td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="access"
+                                                value="agripack">
+                                            &nbsp;<label class="form-check-label" for="agripack">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Metals Pack**</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="metals"
+                                                value="metals">
+                                            &nbsp;<label class="form-check-label" for="metals">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MDEX Live (CPO Futures)</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="mdexlive"
+                                                value="mdexlive">
+                                            &nbsp;<label class="form-check-label" for="mdexlive">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CBOT Live</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="cbotlive"
+                                                value="cbotlive">
+                                            &nbsp;<label class="form-check-label" for="cbotlive">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vegetable Oil</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package"
+                                                id="vegetableoil" value="vegetableoil">
+                                            &nbsp;<label class="form-check-label" for="vegetableoil">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pulses</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                value="pulses">
+                                            &nbsp;<label class="form-check-label" for="pulses">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cotton</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="cotton"
+                                                value="cotton">
+                                            &nbsp;<label class="form-check-label" for="cotton">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Spices</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="spices"
+                                                value="spices">
+                                            &nbsp;<label class="form-check-label" for="spices">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sugar/Gur</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="sugargur"
+                                                value="sugargur">
+                                            &nbsp;<label class="form-check-label" for="sugargur">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Plantation</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="plantation"
+                                                value="plantation">
+                                            &nbsp;<label class="form-check-label" for="plantation">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Grains</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="grains"
+                                                value="grains">
+                                            &nbsp;<label class="form-check-label" for="grains">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Precious Metals (Gold & Silver)</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package"
+                                                id="preciousmetals" value="preciousmetals">
+                                            &nbsp;<label class="form-check-label" for="preciousmetals">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Base Metals (Copper + Zinc + Aluminum)</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="basemetals"
+                                                value="basemetals">
+                                            &nbsp;<label class="form-check-label" for="basemetals">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Energy (Crude oil + Natural Gas)</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="energy"
+                                                value="energy">
+                                            &nbsp;<label class="form-check-label" for="energy">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Other (Guar Complex, Potato & Mentha Oil)</td>
+                                    <td>
+                                        <div class="form-check me-5 Packageradio">
+                                            <input class="form-check-input" type="radio" name="package" id="other"
+                                                value="other">
+                                            &nbsp;<label class="form-check-label" for="other">Free</label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+                            </div>
+                            <div class="tab-pane fade" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
+
+                                <table class="subscriptionpackages SMS">
+                                    <tr>
+                                        <th></th>
+                                        <th class="header1">Subscription</th>
+                                        <th class="header1">Trial</th>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="free">Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oil</td>
+                                        <td>CC Oil - Mega Pack</td>
+                                        <td> 
+                                            <input class="form-check-input" type="radio" name="package" value="cc_oil_mega"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - Maharashtra</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_oil_maharashtra"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - Madhya Pradesh</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_oil_mp"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - Rajasthan</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_oil_rajasthan"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - Uttar Pradesh</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_oil_up"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - West Bengal</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_oil_wb"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - Gujarat</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_oil_gujarat"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Oil - Andhra Pradesh</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_oil_ap"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soyseed</td>
+                                        <td>CC Soyseed</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_soyseed"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cotton</td>
+                                        <td>CC Cotton</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_cotton"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pulses</td>
+                                        <td>CC Pulses</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_pulses"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Metal</td>
+                                        <td>CC Metal - 15 Min</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_15"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Metal - 30 Min</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_30"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Metal - 60 Min</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_60"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Metal - 120 Min</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_120"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Metal - 180 Min</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_180"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precious Metal</td>
+                                        <td>CC Metal - Bullion</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_bullion"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CC Metal - Mini Bullion</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_metal_mini_bullion"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rubber</td>
+                                        <td>CC Rubber</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_rubber"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spices</td>
+                                        <td>CC Spices</td>
+                                        <td><input class="form-check-input"  type="radio" name="package" value="cc_spices"> Free</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                            <div class="tab-pane fade" id="pills-whatsapp" role="tabpanel" aria-labelledby="pills-whatsapp-tab">
+                                <table class="subscriptionpackages wattsapp">
+                                    <tr>
+                                        <th>Subscription</th>
+                                        <th>Packages</th>
+                                        <th class="header1">Free</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Oil</td>
+                                        <td>CC Oil - Mega Pack</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_oil"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soyseed</td>
+                                        <td>CC Soyseed</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_soyseed"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cotton</td>
+                                        <td>CC Cotton</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_cotton"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pulses</td>
+                                        <td>CC Pulses</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_pulses"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">Metal</td>
+                                        <td>CC Metal - 15 Min</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_15"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CC Metal - 30 Min</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_30"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CC Metal - 60 Min</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_60"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CC Metal - 120 Min</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_120"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CC Metal - 180 Min</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_180"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">Precious Metal</td>
+                                        <td>CC Metal - Bullion</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_bullion"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CC Metal - Mini Bullion</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_metal_mini_bullion"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rubber</td>
+                                        <td>CC Rubber</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_rubber"> Free</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spices</td>
+                                        <td>CC Spices</td>
+                                        <td><input class="form-check-input" type="radio" name="package" value="cc_spices"> Free</td>
+                                    </tr>
+                                </table>
+                                
+                                
+                               
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 order-1">
+                            <div class="reasoncard p-4 w-75 ms-5">
+                                <h4 class="subheading pb-3">
+                                    7 Great Reasons to Join
+                                </h4>
+                                <ul class="reasons p-0 gap-5">
+                                    <li>In-depth coverage in Price and Market Behaviour</li>
+                                    <li>Access live data from 200 markets, trading exchange in India & globally.</li>
+                                    <li>Realtime News & Analysis on 10 commodities.</li>
+                                    <li>Expert Interviews & insights.</li>
+                                    <li>Trading Views & recommendations.</li>
+                                    <li>Multiple delivery channels - Internet & mobile.</li>
+                                    <li>24/7 customer support.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row collapse" id="Subscription" data-bs-parent="#subscriptionContainer">
+                        <div class="row mx-0">
+                            <ul class="nav nav-pills d-flex gap-3 mb-5" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="platform">
+                                    <button class="nav-link active platformitem" id="pills-website-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-website-paid" type="button" role="tab" aria-controls="pills-website"
+                                        aria-selected="true">Website</button>
+                                </li>
+                                <li class="nav-item" role="platform">
+                                    <button class="nav-link platformitem" id="pills-sms-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-sms-paid" type="button" role="tab" aria-controls="pills-sms"
+                                        aria-selected="false">SMS</button>
+                                </li>
+                                <li class="nav-item" role="platform">
+                                    <button class="nav-link platformitem" id="pills-whatsapp-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-whatsapp-paid" type="button" role="tab" aria-controls="pills-whatsapp-paid"
+                                        aria-selected="false">WhatsApp</button>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-website-paid" role="tabpanel" aria-labelledby="pills-website-tab">
+
+                                <table class="subscriptionpackages website">
+                                    <tr>
+                                        <th class="header1">
+                                            Subscription
+                                        </th>
+                                        <th class="header1">Monthly(Rs)</th>
+                                        <th class="header1">Quarterly(Rs)</th>
+                                        <th class="header1">Half Year(Rs)</th>
+                                        <th class="header1">Annual(Rs)</th>
+        
+                                    </tr>
+                                    <tr>
+                                        <td> </td>
+                                        <td class="free">25,000</td>
+                                        <td class="free">50,000</td>
+                                        <td class="free">80,000</td>
+                                        <td class="free">1,40,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Access To Full Website (Excluding MDEX Live, CBOT Live, CC Expert)
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">50,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">50,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">80,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">1,40,000</label>
+                                            </div>
+                                        </td>
+        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Agri Pack*
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="agripack">
+                                                &nbsp;<label class="form-check-label" for="agripack">40000</label>
+                                            </div>
+        
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">40,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">70,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">1,20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Metals Pack**</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="metals"
+                                                    value="metals">
+                                                &nbsp;<label class="form-check-label" for="metals">12,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">12,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">22,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">40,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>MDEX Live (CPO Futures)</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="mdexlive"
+                                                    value="mdexlive">
+                                                &nbsp;<label class="form-check-label" for="mdexlive">12,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">12,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">22,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">40,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>CBOT Live</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="cbotlive"
+                                                    value="cbotlive">
+                                                &nbsp;<label class="form-check-label" for="cbotlive">35,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">35,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">60,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">1,00,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vegetable Oil</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="vegetableoil"
+                                                    value="vegetableoil">
+                                                &nbsp;<label class="form-check-label" for="vegetableoil">7,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">7,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">13,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">50,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pulses</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cotton</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spices</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sugar/Gur</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plantation</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grains</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precious Metals (Gold & Silver)</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Base Metals (Copper + Zinc + Aluminum)</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="pulses"
+                                                    value="pulses">
+                                                &nbsp;<label class="form-check-label" for="pulses">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">6,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">11,000</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">20,000</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Energy (Crude oil + Natural Gas)</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="energy"
+                                                    value="energy">
+                                                &nbsp;<label class="form-check-label" for="energy">Free</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">Free</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">Free</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">Free</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other (Guar Complex, Potato & Mentha Oil)</td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="other"
+                                                    value="other">
+                                                &nbsp;<label class="form-check-label" for="other">Free</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">Free</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">Free</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-check me-5 Packageradio">
+                                                <input class="form-check-input" type="radio" name="package" id="access"
+                                                    value="freetrial">
+                                                &nbsp;<label class="form-check-label" for="access">Free</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+        
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="pills-sms-paid" role="tabpanel" aria-labelledby="pills-sms-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <table class="subscriptionpackages SMS ">
+                                            <tr>
+                                                <th>Subscription</th>
+                                                <th>Packages</th>
+                                                <th>Annual (Rs)</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Oil</td>
+                                                <td>CC Oil - Mega Pack</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soyseed</td>
+                                                <td>CC Soyseed</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cotton</td>
+                                                <td>CC Cotton</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pulses</td>
+                                                <td>CC Pulses</td>
+                                                <td>3000</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="5">Metal</td>
+                                                <td>CC Metal - 15 Min</td>
+                                                <td>8000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 30 Min</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 60 Min</td>
+                                                <td>2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 120 Min</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 180 Min</td>
+                                                <td>1100</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Precious Metal</td>
+                                                <td>CC Metal - Bullion</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - Mini Bullion</td>
+                                                <td>900</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rubber</td>
+                                                <td>CC Rubber</td>
+                                                <td>2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spices</td>
+                                                <td>CC Spices</td>
+                                                <td>3000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 order-1">
+                                        <div class="reasoncard p-4 w-75 ms-5">
+                                            <h4 class="subheading pb-3">
+                                                7 Great Reasons to Join
+                                            </h4>
+                                            <ul class="reasons p-0 gap-5">
+                                                <li>In-depth coverage in Price and Market Behaviour</li>
+                                                <li>Access live data from 200 markets, trading exchange in India & globally.</li>
+                                                <li>Realtime News & Analysis on 10 commodities.</li>
+                                                <li>Expert Interviews & insights.</li>
+                                                <li>Trading Views & recommendations.</li>
+                                                <li>Multiple delivery channels - Internet & mobile.</li>
+                                                <li>24/7 customer support.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane fade" id="pills-whatsapp-paid" role="tabpanel" aria-labelledby="pills-whatsapp-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <table class="subscriptionpackages wattsapp">
+                                            <tr>
+                                                <th>Subscription</th>
+                                                <th>Packages</th>
+                                                <th>Annual (Rs)</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Oil</td>
+                                                <td>CC Oil - Mega Pack</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Soyseed</td>
+                                                <td>CC Soyseed</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cotton</td>
+                                                <td>CC Cotton</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pulses</td>
+                                                <td>CC Pulses</td>
+                                                <td>3000</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="5">Metal</td>
+                                                <td>CC Metal - 15 Min</td>
+                                                <td>8000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 30 Min</td>
+                                                <td>4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 60 Min</td>
+                                                <td>2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 120 Min</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - 180 Min</td>
+                                                <td>1100</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2">Precious Metal</td>
+                                                <td>CC Metal - Bullion</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CC Metal - Mini Bullion</td>
+                                                <td>900</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rubber</td>
+                                                <td>CC Rubber</td>
+                                                <td>2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spices</td>
+                                                <td>CC Spices</td>
+                                                <td>3000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 order-1">
+                                        <div class="reasoncard p-4 w-75 ms-5">
+                                            <h4 class="subheading pb-3">
+                                                7 Great Reasons to Join
+                                            </h4>
+                                            <ul class="reasons p-0 gap-5">
+                                                <li>In-depth coverage in Price and Market Behaviour</li>
+                                                <li>Access live data from 200 markets, trading exchange in India & globally.</li>
+                                                <li>Realtime News & Analysis on 10 commodities.</li>
+                                                <li>Expert Interviews & insights.</li>
+                                                <li>Trading Views & recommendations.</li>
+                                                <li>Multiple delivery channels - Internet & mobile.</li>
+                                                <li>24/7 customer support.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>        
+                                
+                                
+                               
+                            </div>
+                            </div>
                     </div>
                 </div>
-                <div class="row" id="Subscription">
-                    <table class="subscriptionpackages">
-                        <tr>
-                            <th class="header1">
-                                Subscription
-                            </th>
-                            <th class="header1">Monthly(Rs)</th>
-                            <th class="header1">Quarterly(Rs)</th>
-                            <th class="header1">Half Year(Rs)</th>
-                            <th class="header1">Annual(Rs)</th>
 
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td class="free">25,000</td>
-                            <td class="free">50,000</td>
-                            <td class="free">80,000</td>
-                            <td class="free">1,40,000</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Access To Full Website (Excluding MDEX Live, CBOT Live, CC Expert)
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">50,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">50,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">80,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">1,40,000</label>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                Agri Pack*
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="agripack">
-                                    &nbsp;<label class="form-check-label" for="agripack">40000</label>
-                                </div>
-
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">40,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">70,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">1,20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Metals Pack**</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="metals"
-                                        value="metals">
-                                    &nbsp;<label class="form-check-label" for="metals">12,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">12,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">22,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">40,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>MDEX Live (CPO Futures)</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="mdexlive"
-                                        value="mdexlive">
-                                    &nbsp;<label class="form-check-label" for="mdexlive">12,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">12,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">22,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">40,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>CBOT Live</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="cbotlive"
-                                        value="cbotlive">
-                                    &nbsp;<label class="form-check-label" for="cbotlive">35,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">35,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">60,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">1,00,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Vegetable Oil</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="vegetableoil"
-                                        value="vegetableoil">
-                                    &nbsp;<label class="form-check-label" for="vegetableoil">7,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">7,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">13,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">50,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Pulses</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cotton</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Spices</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Sugar/Gur</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Plantation</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Grains</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Precious Metals (Gold & Silver)</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Base Metals (Copper + Zinc + Aluminum)</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="pulses"
-                                        value="pulses">
-                                    &nbsp;<label class="form-check-label" for="pulses">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">6,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">11,000</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">20,000</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Energy (Crude oil + Natural Gas)</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="energy"
-                                        value="energy">
-                                    &nbsp;<label class="form-check-label" for="energy">Free</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">Free</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">Free</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">Free</label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Other (Guar Complex, Potato & Mentha Oil)</td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="other"
-                                        value="other">
-                                    &nbsp;<label class="form-check-label" for="other">Free</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">Free</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">Free</label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check me-5 Packageradio">
-                                    <input class="form-check-input" type="radio" name="package" id="access"
-                                        value="freetrial">
-                                    &nbsp;<label class="form-check-label" for="access">Free</label>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
                 <div class="row">
                     <div class="col-md-6">
                         <p class="Gstcontent">
@@ -825,16 +1234,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
-
-
-
-
-
-    <script>
-
-    </script>
 
 </body>
