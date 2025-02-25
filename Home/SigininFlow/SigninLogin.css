@@ -187,14 +187,7 @@ label{
     width: 30%;
 
   }
-  .subscriptiontype{
-    background: #FFF1DB;
-    border-radius: 10px;
-    padding: 20px 20px 20px 40px;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20.4px;
-  }
+
   .reasoncard {
     background: #FFEDD5 url('./images/Mask group.png') no-repeat center/cover;
     border-radius: 20px;

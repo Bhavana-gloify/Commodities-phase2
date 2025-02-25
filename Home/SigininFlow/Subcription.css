@@ -1,0 +1,40 @@
+
+
+.subscriptiontypesection{
+    gap:25px;
+}
+.subscriptiontype{
+    background: #FFF1DB;
+    border-radius: 10px;
+    padding: 20px 20px 20px 40px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.4px;
+    gap:30px
+ }
+
+ .custom-width {
+    width: 75%; /* Default for small screens */
+}
+
+
+
+
+
+
+  @media screen and (max-width: 700px) {
+
+    .subscriptiontypesection{
+        gap:10px;
+    }
+  .subscriptiontype{
+    padding: 10px 10px 10px 40px;
+    font-size: 17px;
+    gap:15px
+
+  }
+  .custom-width {
+    width: 100%;
+}
+
+}
