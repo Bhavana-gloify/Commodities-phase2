@@ -1,40 +1,220 @@
 
-
-.subscriptiontypesection{
-    gap:25px;
+.headline{
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 42px !important;
 }
-.subscriptiontype{
-    background: #FFF1DB;
-    border-radius: 10px;
-    padding: 20px 20px 20px 40px;
-    font-size: 17px;
+.header1{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.nav-item .active{
+  color: #FFFFFF !important;
+  background: #DC8513 !important;
+  font-weight: 600 !important;
+}
+.free{
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.subscriptiontypesection {
+  gap: 25px;
+}
+
+.subscriptiontype {
+  background: #FFF1DB;
+  border-radius: 10px;
+  padding: 20px 20px 20px 40px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20.4px;
+  gap: 30px
+}
+
+.custom-width {
+  width: 75%;
+  /* Default for small screens */
+}
+
+
+.packages{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.subscriptionpackages {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; 
+  border: 1px solid #cccccc; 
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 0 auto; 
+  box-shadow: 0px 4px 14px 0px #00000012;
+
+}
+
+.subscriptionpackages th,
+.subscriptionpackages td {
+  padding: 15px;
+  text-align: left; 
+}
+
+.subscriptionpackages th {
+  font-weight: bold; 
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Styling for the second row */
+.subscriptionpackages tr:nth-child(2) td {
+  border-bottom: 1px solid #cccccc; 
+}
+.subscriptionpackages tr td:not(:last-child),th:not(:last-child){
+  border-right: 1px solid #cccccc; 
+
+}
+
+/* Remove extra borders between cells */
+.subscriptionpackages td {
+  border: none; /* No individual cell borders */
+}
+
+.subscriptionpackages .free {
+  text-align: center; 
+}
+.reasoncard {
+  background: #FFEDD5 url('./images/Mask group.png') no-repeat center/cover;
+  border-radius: 20px;
+}
+.subheading{
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+}
+.reasons {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  list-style: none; /* Removes default bullets */
+  padding: 0; /* Removes default list padding */
+}
+
+.reasons li {
+  position: relative; /* Ensures the ::before is positioned relative to <li> */
+  padding-left: 30px; /* Adds space for the SVG icon */
+  padding-bottom: 20px;
+}
+
+.reasons li::before {
+  content: '';
+  position: absolute;
+  left: 0; /* Position the icon at the start */
+  top: 3%; /* Center the icon vertically */
+  /* transform: translateY(-50%); */
+  width: 20px; /* Set SVG icon width */
+  height: 20px; /* Set SVG icon height */
+  background: url('./images/liststyleicon.svg') no-repeat center center; /* Add SVG icon */
+  background-size: contain; /* Ensures the icon fits within its dimensions */
+}
+.Gstcontent{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+
+
+}  
+.totalamounttable {
+  border-collapse: separate; /* Change from collapse to separate */
+  border-spacing: 0;
+  box-shadow: 0px 4px 15px 0px #0000000F;
+  border-radius: 20px;
+  overflow: hidden; /* Add this to clip child elements */
+  width: 100%; /* Optional: Adjust width */
+}
+
+.totalamount > td {
+  border: .5px solid #DCDCDC;
+  padding: 20px 25px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #fff; /* Optional: Set background for visibility */
+}
+
+.platformitem{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  background: #F1F0F0;
+  border-radius: 50px !important;
+  padding:15px;
+  color:#475467;
+  width: 139px;
+}
+.platformitem.progres{
+  background: #DC8513 !important;
+  color: #FFFFFF !important;
+}
+
+.totalamount:first-child td:first-child {
+  border-top-left-radius: 20px;
+}
+.totalamount:first-child td:last-child {
+  border-top-right-radius: 20px;
+}
+.totalamount:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+.totalamount:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .navgroup {
+    gap: 1px;
+  }
+  .navbarbtn {
+    height: 48px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 20.4px;
-    gap:30px
- }
-
- .custom-width {
-    width: 75%; /* Default for small screens */
+    padding: 10px;
+    border: 1px solid #F8F9F9 !important;
+    text-wrap: nowrap !important;
+    width: 100%;
+  }
+  .completed {
+    width: 14px;
+    height: 14px;
+  }
+  .headline{
+    font-size: 20px !important;
+    line-height: 30px !important;
 }
 
+  .subscriptiontypesection {
+    gap: 10px;
+  }
 
-
-
-
-
-  @media screen and (max-width: 700px) {
-
-    .subscriptiontypesection{
-        gap:10px;
-    }
-  .subscriptiontype{
+  .subscriptiontype {
     padding: 10px 10px 10px 40px;
     font-size: 17px;
-    gap:15px
-
+    gap: 15px
   }
+
   .custom-width {
     width: 100%;
-}
+  }
 
 }
